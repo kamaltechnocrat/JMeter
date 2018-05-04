@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SOV-Regression-First-Report" verbose="9" annotations="jdk">
+
+	<test name="Setup SOV Database">
+		<groups>
+			<run>
+				<exclude name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.Sov_PreTestNG" />
+		</classes>
+	</test>
+
+	<test name="Manage CFP FY13 DOE FUNDING_OPP">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU001" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU004" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU005" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU006" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU014" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU020" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU021" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU022" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU023" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU024" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU026" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU030" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU031" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU033" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU034" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU037" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU038" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU043" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU052" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU060" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_SU061" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_T093" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_T126" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_T173" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy13_doe.Test_CFPfy13_T249" />
+		</classes>
+	</test>
+
+	<test name="Manage 20 Amendments on 1 Funding Opp">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.amend_20_times.Amend_CFPfy13_SU020" />
+		</classes>
+	</test>
+
+</suite>

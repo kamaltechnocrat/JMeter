@@ -1,0 +1,86 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-EForm-Function-Enhancement-Report" verbose="9" annotations="jdk">	
+	
+	<test name="PO Managing EForms LBF Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.CloneEFormLBFF" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.CloneFormletLBFF" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.ClonePubEFormLBFF" /> 
+			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_AndFieldBF" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_AvailInAllLists" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_CRUD" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_MandFields" />	 
+		</classes>	
+	</test>
+	
+	<test name="PO Managing EForms LBF Sync">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_MoreFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_EqualFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_LessFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_LessFields" /> 
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_MoreFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_NoSync_AdminFrm" />
+										 
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_EqualFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_EqualFieldsFO" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Award_EqualFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_IPASS_EqualFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_NoSync_Profile" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_EqualFieldsFO" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Sub_EqualFields" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms LBF Filtering">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_AdminFrm" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_ProfileFO" /> 
+			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_AdminFrmFO" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_IPASS" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_Profile" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_Sub" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms LBF Amendment">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_DelRowsTrgt_AddRowsSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_DelRowsTrgt_AmendSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_DelRowsSrcOnAmend" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_AddRowsSrcOnAmend" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_AddRowsTrgt_AmendSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_NoSync_Sub" />  
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_NoSync_SubFO" />
+			 
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_AddRowsTrgt_DelRowsSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_NoSync_IPASS" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_Sync_IPASS" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_Sync_Sub" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_Sync_SubFO" />
+		</classes>
+	</test>
+</suite>

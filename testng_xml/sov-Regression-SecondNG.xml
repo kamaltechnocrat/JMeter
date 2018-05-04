@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SOV-Regression-Second-Report" verbose="9" annotations="jdk">
+
+	<test name="Manage Nord FY14 AOE FUNDING_OPP">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.nord_fy14_aoe.Test_Nordfy14_SU060" />		
+			<class name="test_Suite.tests.clients.sov.nord_fy14_aoe.Test_Nordfy14_SU061" />	
+		</classes>
+	</test>
+
+	<test name="Manage Tech Ed Equip FY13">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.tech_ed_fy13.Test_TechEdfy13_P004" />		
+			<class name="test_Suite.tests.clients.sov.tech_ed_fy13.Test_TechEdfy13_T041" />	
+			<class name="test_Suite.tests.clients.sov.tech_ed_fy13.Test_TechEdfy13_T068" />		
+			<class name="test_Suite.tests.clients.sov.tech_ed_fy13.Test_TechEdfy13_U006" />	
+			<class name="test_Suite.tests.clients.sov.tech_ed_fy13.Test_TechEdfy13_U041" />
+		</classes>
+	</test>
+
+	<test name="Manage 20 Amendments on Nord FY14 AOE FUNDING_OPP">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.amend_20_times.Amend_Nordfy14_SU060" /> 
+		</classes>
+	</test>
+
+	<test name="Manage 20 Amendments on Tech Ed Equip FY13 FOPP">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.amend_20_times.Amend_TechEdfy13_P004" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,196 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fourth-Regression-Report" verbose="2" annotations="jdk">
+	
+	<test name="FO Front Office Applicants">
+		<groups>
+			<run>
+				<include name="ApplicantsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_04NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms LBF Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.CloneEFormLBFF" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.CloneFormletLBFF" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.ClonePubEFormLBFF" />
+			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_AndFieldBF" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_AvailInAllLists" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_CRUD" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfConfig.LBFF_MandFields" />	
+		</classes>	
+	</test>
+	<!-- 
+	<test name="PO 3.3 Features Testing Setup">
+		<groups>
+			<run>
+				<exclude name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_3.MustRunFirst" />
+		</classes>
+	</test>
+	 -->
+	<test name="Managing Associate Applicants">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />			
+			</run>		
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestAddingSelf_RepresentedApplicantType" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestAssocRolesAvailabilityInEFormFunc" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestAssocToParentEFormFunc" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestFOGroupRoleCreation" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestForDuplicateApplicantTypeCreation" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestInactiveApplicantType" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestNewApplicantTypeAvailabilityInFO" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestNewUserCreationWithSelfRepresented" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestNonSelfRepresentedUser" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestParentTypeInEFormFunc" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestPrimaryApplicantSubmission" />
+			<class name="test_Suite.tests.r3_3.associateApplicants.TestSelfRepresentedApplicantTypeAvailabilityNG" />		
+		</classes>	
+	</test>
+	
+	<test name="PO 3.3.9 Features Testing Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_3_9.PrepareBudgetingFirst" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing FOPP Commitment And Balance Tracking">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />			
+			</run>		
+		</groups>
+		
+		<classes>		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AmendAwardedAmountAndChange" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRefundedAmountBulk" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRefundedAmountSingle" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRescindedAmountBulk" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRescindedAmountSingle" />							
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardThenCancelAmountSingle" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardThenRefundAmountSingle" />			
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.ReviewAndAwardAmountBulk" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.ReviewAndAwardAmountSingle" />		
+		</classes>
+	</test>
+	
+    
+    <test name="PO Managing PushBack Project Data Storage Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.MustRunFirst_PushBack" />
+			
+		</classes>	
+	</test>
+	
+	<test name="PO Managing PushBack Project Data Storage">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_DataGrid_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_MinNmaxProp_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_NoProp_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_TypeProp_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.AmendmentsOnPushBack" />
+			
+		</classes>	
+	</test>	
+	
+<!-- 
+    <test name="PO Managing Audit Setup">
+		<groups>
+			<run>
+				<include name="AuditRepNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_1.Audit.auditRunFirst" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Audit">
+		<groups>
+			<run>
+				<include name="AuditRepNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_1.Audit.auditEventsNG" />
+			<class name="test_Suite.tests.r4_1.Audit.auditExportNG" />
+			<class name="test_Suite.tests.r4_1.Audit.auditHistoryNG" />
+		</classes>
+	</test>
+	 -->
+	<test name="PO Managing Non Workflow Data">
+		<groups>
+			<run>
+				<include name="FetchNonWorkFlowData" />
+			</run>
+		</groups>
+		
+		<classes>	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_AdminEfromData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_AppProfileData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_appProfileMajorFunctionsData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_BudgetEformData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_GridViewofList_Data" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_OrganizationEformData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_ProjectEformData" />		
+		</classes>
+	</test>	
+	<!-- 
+	<test name="PO Managing EForms LBF Filtering">
+		<groups>
+			<run>
+				<exclude name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_AdminFrm" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_ProfileFO" />			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_AdminFrmFO" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_IPASS" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_Profile" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnFilter.LBF_Filter_Sub" />
+		</classes>
+	</test>	
+	 -->
+</suite>

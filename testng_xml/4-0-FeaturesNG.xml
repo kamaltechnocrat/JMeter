@@ -1,0 +1,186 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="4.0 Features" verbose="9" annotations="jdk">
+
+ 	<test name="preTest">
+		<groups>
+			<run>
+				<exclude name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>	
+	
+	<test name="PO Managing BF From Org e.From setup">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_RunFirst" />
+		</classes>	
+	</test>
+	
+	<test name="PO Managing BF From Org e.From">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_AppSubmission" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_AwardForm" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_IPASubmission" />
+		</classes>	
+	</test>
+	
+	<test name="PO Managing BF From Org e.From setup">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF_Amend.LBF_RunFirstAmended" />
+		</classes>	
+	</test>                                     
+	
+	<test name="PO Managing BF From Org e.From">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF_Amend.LBF_AppSubmissionAmended" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF_Amend.LBF_IPASubmissionAmended" />
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Project Data Storage Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_MustRunFirst" />
+			
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Project Data Storage">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.projDataStorage.CreateNewProjEFormNG" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.CreateOrgAndSubmitProjNG" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.TestEvaluateProjectsListNG" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.TestProjEFormInProjList" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_ApplicantSubmission_BringForward"/>
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_AwardBringForward"/>
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_IPA_BringForward"/>
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Project Data Storage Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+	
+			<class name="test_Suite.tests.r4_0.projDataStorage_Amend.ProjectEForm_MustRunFirst_Amended" />
+			
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Project Data Storage">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.projDataStorage_Amend.ProjectEForm_ApplicantSubmission_BringForward_Amend"/>
+			<class name="test_Suite.tests.r4_0.projDataStorage_Amend.ProjectEForm_IPA_BringForward_Amend"/>
+		</classes>	
+	</test>
+	
+    
+    <test name="PO Managing Project Data Storage Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.MustRunFirst_PushBack" />
+			
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Project Data Storage">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_DataGrid_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_MinNmaxProp_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_NoProp_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.Verify_TypeProp_PushBack" />
+			<class name="test_Suite.tests.r4_0.ProjectEForm_PushBack.AmendmentsOnPushBack" />
+			
+		</classes>	
+	</test> 
+	
+	<test name="PO-FO OnDemand Submission Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.MustRunFirst_ODSS" />
+			
+		</classes>	
+	</test>
+		
+	<test name="PO-FO OnDemand Submission">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReqSubmission" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PANotReqSubmission" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReq_Inactive" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReq_PastDate" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReq_POOnly" />
+		</classes>	
+	</test>
+			
+	
+	
+</suite>

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-UI-Lists-Report" annotations="jdk">
+	<test verbose="2" name="UI Lists Cases">
+		<groups>
+			<run>
+				<include name="UI_ListNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.ui.Documents_FiltersTestNG" />
+			<class name="test_Suite.tests.ui.Documnets_SortingTestNG" />
+			<class name="test_Suite.tests.ui.InBasket_FiltersTestNG" />
+			<class name="test_Suite.tests.ui.InBasket_SortingTestNG" />
+			<class name="test_Suite.tests.ui.LockedOutUsers_FiltersTestNG" />
+			<class name="test_Suite.tests.ui.LockedOutUsers_SortingTestNG" />
+		</classes>
+	</test>
+</suite>

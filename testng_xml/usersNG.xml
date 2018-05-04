@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Users-Report" annotations="jdk">
+
+	<test verbose="2" name="PO Managing Users Extra">
+		<groups>
+			<run>
+				<exclude name="UsersNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.users.CreateFOUserInPONG" />
+			<class name="test_Suite.tests.users.CreateUsersNG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1858_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1858_02NG" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="PO Managing Users">
+		<groups>
+			<run>
+				<include name="UsersNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2372_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2373_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2374_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2375_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2375_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2376_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2377_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2378_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2379_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2380_01NG" />
+		</classes>
+	</test>
+</suite>

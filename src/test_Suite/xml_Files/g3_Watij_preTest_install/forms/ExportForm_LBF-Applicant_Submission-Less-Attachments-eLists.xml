@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission" formIdentifier="LBF-Applicant Submission-Less-Attachments-eLists" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="LBF Applicant Submission Less Attachments Lists"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="LBF Applicant Submission Less Attachments Lists"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="LBF Applicant Submission Less Attachments Lists"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="LBF Applicant Submission Less Attachments Lists"/>
+	</FormTitles>
+	<DatePublished date="2009.08.27 AD 14:37:51 EDT"/>
+	<DefaultFormlet identifier="Submission-Summary-Fields-LBF"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission-Summary-Fields-LBF">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary Fields LBF"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary Fields LBF"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary Fields LBF"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary Fields LBF"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary Fields LBF"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary Fields LBF"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary Fields LBF"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.AttachmentList" identifier="Attachment-List-Fields-LBF">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Attachment List Fields LBF"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Attachment List Fields LBF"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Attachment List Fields LBF"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Attachment List Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Attachment List Fields LBF"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Attachment List Fields LBF"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Attachment List Fields LBF"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Attachment List Fields LBF"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListBringForward" type="List Bring Forward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[Attachment-List-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<FormletDocuments>
+				<FormletDocument identifier="Word" required="true">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_DOC</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Word"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Word"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Word"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Word"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Picture" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_JPG</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Picture"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Picture"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Picture"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Picture"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Power-Point" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_MPP</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Power-Point"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Power-Point"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Power-Point"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Power-Point"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Adobe" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_PDF</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Adobe"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Adobe"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Adobe"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Adobe"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Rich-Text" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_RTF</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Rich-Text"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Rich-Text"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Rich-Text"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Rich-Text"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Plain-Text" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_TXT</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Plain-Text"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Plain-Text"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Plain-Text"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Plain-Text"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Corel" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_WPD</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Corel"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Corel"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Corel"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Corel"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Excel" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_XLS</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Excel"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Excel"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Excel"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Excel"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Compressed-File" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_ZIP</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Compressed-File"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Compressed-File"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Compressed-File"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Compressed-File"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Markup-Language" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_XML</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Markup-Language"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Markup-Language"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Markup-Language"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Markup-Language"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Word-07" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_DOCX</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Word-07"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Word-07"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Word-07"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Word-07"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Excel-07" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_XLSX</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Excel-07"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Excel-07"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Excel-07"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Excel-07"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Any-Format" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_ALL_FORMATS</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeCountryCode="CA" localeLangCode="fr" title="Any-Format"/>
+						<Type localeCountryCode="CA" localeLangCode="en" title="Any-Format"/>
+						<Type localeCountryCode="US" localeLangCode="en" title="Any-Format"/>
+						<Type localeCountryCode="GB" localeLangCode="en" title="Any-Format"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeCountryCode="CA" localeLangCode="fr" title="Instruction"/>
+						<Instruction localeCountryCode="CA" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="US" localeLangCode="en" title="Instruction"/>
+						<Instruction localeCountryCode="GB" localeLangCode="en" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+			</FormletDocuments>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.AttachmentDetails" identifier="Attachment Details">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Attachment Details"/>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Détails du fichier joint"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Attachment Details"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Attachment Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="File Description" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="--"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="--"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="--"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Document Description"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Description du document"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Document Description"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Document Description"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Document Description:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Description du document:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Document Description:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Document Description:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Filename" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="File Name:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Nom de fichier:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="File Name:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="File Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="MangledFilename" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Mangled File Name:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Nom de fichier tronqué:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Mangled File Name:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Mangled File Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="DateAttached" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="No Attachment"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="Pas de fichier joint"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="No Attachment"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="No Attachment"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Date Attached"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Joint le"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Date Attached"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Date Attached"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Date Attached:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Joint le:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Date Attached:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Date Attached:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

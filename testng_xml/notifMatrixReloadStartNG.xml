@@ -1,0 +1,170 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Notif-Matrix-Start-Report" annotations="jdk">
+
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	<test name="Notif Matrix Reload Testing Setup">
+		<groups>
+			<run>
+				<include name="NotificationWorkflow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.MustRunFirst" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notif-PA-FOPP-S1905_01">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifySubStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifySubStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyReviewStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyReviewStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyApprovalStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyApprovalStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.AwardStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.AwardStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.IPASStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.IPASStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAAppSubStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAAppSubStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAReviewStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAReviewStepExitNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAApprovalStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAApprovalStepExitNotif" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notif-PA-FOPP-S1905_02">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AppSubAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AppSubAmendRequestNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ReviewAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ReviewAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ApprovalAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ApprovalAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAppAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAppAmendReqRejectNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAppSubAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAppSubAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAppSubAppAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAReviewAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAReviewAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAApprovalAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAApprovalAmendReqNotif" />
+		</classes>
+     </test>
+
+     <test name="Manage A-Notif-PA-FOPP-S1905_03">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ReviewStepEvalAssignedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ReviewStepEvalNeededNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ApprovalStepEvalAssignedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ApprovalStepEvalNeededNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ApprovalStepRejectedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAReviewEvalAssignedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAReviewEvalNeededNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalAssignedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalNeededNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalStepRejectedNotif" />
+		</classes>	
+     </test>
+     
+      <test name="Manage A-Notif-PA-FOPP-S1905_04">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.AppSubStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.ReviewStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.ApprovalStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.AwardStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.IPASStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAAppSubStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAReviewStepDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAApprovalStepDueNotif" />
+		</classes>
+	</test>	
+	
+	<test name="Manage ProjectActivity Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityCompletedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityDueDateNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityImmediateNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityOneDayBeforeNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityScheduledNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityTwoDayBeforeNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.VerifyAdHocNotif" />
+			</classes>
+	</test>	
+	
+	<test name="Manage Sub Schedule Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalAmendReqNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalRejectedNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASScheduleDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASSConditionalScheduleDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASSFalseConditionalValSchedDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.PASubDueNotifWhenNoScheduleDueDate" />	
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.PAApprovalRejectedNotif" />		
+	   </classes>
+	 </test>	
+	
+	<test name="Manage Post-Award Step Notifications for Observation">
+		<groups>
+			<run>
+				<exclude name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+	   		<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyPAStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyPAStepExitNotif" />
+	   		<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyPAStepEntryNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyPAStepExitNotif" />
+	   		<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAmendDueNotif" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAmendReqNotif" />	
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAStepDueNotif" />
+	   </classes>
+	 </test>
+	   
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reference>
+<table name="Assoc Universities Reference Table">
+<rows>
+<row>
+<column name="university-code">321</column>
+<column name="university-name">Ottawa U</column>
+</row>
+<row>
+<column name="university-code">3256564</column>
+<column name="university-name">Carleton U</column>
+</row>
+<row>
+<column name="university-code">987456</column>
+<column name="university-name">McGill U</column>
+</row>
+</rows>
+</table>
+</reference>

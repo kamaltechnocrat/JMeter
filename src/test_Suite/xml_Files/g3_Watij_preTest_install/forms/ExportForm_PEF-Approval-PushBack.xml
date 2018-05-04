@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ProjectApproval" formIdentifier="PEF-Approval-PushBack" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="en" title="PEF Approval PushBack"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="PEF Approval PushBack"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="PEF Approval PushBack"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="PEF Approval PushBack"/>
+	</FormTitles>
+	<DatePublished date="2012.05.10 AD 12:59:04 EDT"/>
+	<DefaultFormlet identifier="Submission Summary"/>
+	<RenderTombstoneData value="2"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions>
+		<Function className="com.infoterra.grantium.model.forms.functions.PushBackToProjectFormFunction" type="Push Back To Project Form Function">
+			<Properties>
+				<Property propertyName="stringParameter1">
+					<Value valueClass="java.lang.String"><![CDATA[Approved]]></Value>
+				</Property>
+				<Property propertyName="stringParameter2">
+					<Value valueClass="java.lang.String"><![CDATA[Approved]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+		<Function className="com.infoterra.grantium.model.forms.functions.PushBackToProjectFormFunction" type="Push Back To Project Form Function">
+			<Properties>
+				<Property propertyName="stringParameter1">
+					<Value valueClass="java.lang.String"><![CDATA[Checkbox]]></Value>
+				</Property>
+				<Property propertyName="stringParameter2">
+					<Value valueClass="java.lang.String"><![CDATA[Checkbox]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+		<Function className="com.infoterra.grantium.model.forms.functions.PushBackToProjectFormFunction" type="Push Back To Project Form Function">
+			<Properties>
+				<Property propertyName="stringParameter1">
+					<Value valueClass="java.lang.String"><![CDATA[Date]]></Value>
+				</Property>
+				<Property propertyName="stringParameter2">
+					<Value valueClass="java.lang.String"><![CDATA[Date]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+		<Function className="com.infoterra.grantium.model.forms.functions.PushBackToProjectFormFunction" type="Push Back To Project Form Function">
+			<Properties>
+				<Property propertyName="stringParameter1">
+					<Value valueClass="java.lang.String"><![CDATA[EIN Number]]></Value>
+				</Property>
+				<Property propertyName="stringParameter2">
+					<Value valueClass="java.lang.String"><![CDATA[EIN Number]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+		<Function className="com.infoterra.grantium.model.forms.functions.PushBackToProjectFormFunction" type="Push Back To Project Form Function">
+			<Properties>
+				<Property propertyName="stringParameter1">
+					<Value valueClass="java.lang.String"><![CDATA[Email Address]]></Value>
+				</Property>
+				<Property propertyName="stringParameter2">
+					<Value valueClass="java.lang.String"><![CDATA[Email Address]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+		<Function className="com.infoterra.grantium.model.forms.functions.PushBackToProjectFormFunction" type="Push Back To Project Form Function">
+			<Properties>
+				<Property propertyName="stringParameter1">
+					<Value valueClass="java.lang.String"><![CDATA[Web Address]]></Value>
+				</Property>
+				<Property propertyName="stringParameter2">
+					<Value valueClass="java.lang.String"><![CDATA[Web Address]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+	</FormFunctions>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission Summary">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="No-Propreties-Sub-Fields-PEF">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="No Propreties Fields PEF"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="No Propreties Fields PEF"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="No Propreties Fields PEF"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="No Propreties Fields PEF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="No Propreties Fields PEF"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="No Propreties Fields PEF"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="No Propreties Fields PEF"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="No Propreties Fields PEF"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_ApprovalDropDown" identifier="Approved" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Approval Dropdown"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Approval Dropdown"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Approval Dropdown"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Approval Dropdown"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" identifier="Checkbox" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Checkbox"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Checkbox"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Checkbox"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Checkbox"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="Date" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Date"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Date"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Date"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Date"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_EINNumber" identifier="EIN Number" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="EIN Number"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="EIN Number"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="EIN Number"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="EIN Number"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_EmailAddress" identifier="Email Address" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Email Address"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Email Address"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Email Address"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Email Address"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_WebAddress" identifier="Web Address" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Web Address"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Web Address"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Web Address"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Web Address"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+			</Fields>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

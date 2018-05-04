@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-FOPP-Report" annotations="jdk">
+	<test name="PO Managing Funding Opportunity List Enahancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_3.lists_Enhance.TrnsfrListFiltering" />
+		</classes>
+	</test>
+</suite>

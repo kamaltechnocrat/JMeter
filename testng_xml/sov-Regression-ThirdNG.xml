@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SOV-Regression-Third-Report" verbose="9" annotations="jdk">
+
+	<test name="Manage CFP FY14 AOE FUNDING_OPP">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.cfp_fy14_aoe.Test_CFPfy14_SU003_ACSU" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy14_aoe.Test_CFPfy14_SU003_dms" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy14_aoe.Test_CFPfy14_SU003_WIP" />		
+			<class name="test_Suite.tests.clients.sov.cfp_fy14_aoe.Test_CFPfy14_SU061" />
+			<class name="test_Suite.tests.clients.sov.cfp_fy14_aoe.Test_CFPfy14_T173" />		
+		</classes>
+	</test>
+
+	<test name="Manage 20 Amendments on CFP FY14 AOE FUNDING_OPP">
+		<groups>
+			<run>
+				<include name="SovRegTest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.clients.sov.amend_20_times.Amend_CFPfy14_SU003_dms" />
+		</classes>
+	</test>
+
+</suite>

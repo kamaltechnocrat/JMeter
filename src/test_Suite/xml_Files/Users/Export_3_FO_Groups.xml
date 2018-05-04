@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserGroupIntegration version="6.1.0.0">
+    <IntegrateGroups>
+        <IntegrateGroup readonly="true" name="G3_FO_SchoolRep">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+        <IntegrateGroup readonly="true" name="G3_FO_Recommenders">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+        <IntegrateGroup readonly="false" name="G3_FO_Group1">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+    </IntegrateGroups>
+</UserGroupIntegration>

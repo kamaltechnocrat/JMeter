@@ -1,0 +1,23 @@
+DS_LONG_TEXT,LONG_TEXT,Long-Text,BF-FOPP-Review-eForm-Target,Min-And-Max-Properties-eFormFields,Long Text,Submission,A-BF-FOPP-FOPP-Target,Min-And-Max-Properties-eFormFields
+DS_NUMERIC,NUMERIC,Numeric,BF-FOPP-Review-eForm-Target,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Target,Min-And-Max-Properties-eFormFields
+DS_SHOR_TEXT,SHOR_TEXT,Short-Text,BF-FOPP-Review-eForm-Target,Min-And-Max-Properties-eFormFields,Short Text,Submission,A-BF-FOPP-FOPP-Target,Min-And-Max-Properties-eFormFields
+DS_NUMERIC2,NUMERIC2,Numeric2,BF-FOPP-Review-eForm-Target,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Target,Min-And-Max-Properties-eFormFields
+DS_REVIEW_SCORE,REVIEW_SCORE,Review-Score,BF-FOPP-Review-eForm-Target,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Target,Min-And-Max-Properties-eFormFields
+DS_APPROVED,APPROVED,Approved,BF-FOPP-ProjectApproval-eForm-Target,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Target,Dropdown-eFormFields
+DS_PARENT_DROPDOWN,PARENT_DROPDOWN,Parent-Dropdown,BF-FOPP-ProjectApproval-eForm-Target,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Target,Dropdown-eFormFields
+DS_CHILD_DROPDOWN,CHILD_DROPDOWN,Child-Dropdown,BF-FOPP-ProjectApproval-eForm-Target,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Target,Dropdown-eFormFields
+DS_MANY_TO_MANY,MANY_TO_MANY,Many-to-Many,BF-FOPP-PO-Submission-eForm-Target,Dropdown-M2M-eFormFields,Many To Many,Submission,A-BF-FOPP-FOPP-Target,Dropdown-M2M-eFormFields
+DS_RADIO_BUTTON,RADIO_BUTTON,Radio-Button,BF-FOPP-PO-Submission-eForm-Target,Dropdown-M2M-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Target,Dropdown-M2M-eFormFields
+DS_AGREEMENT_DETAILS,AGREEMENT_DETAILS,Agreement Details,BF-FOPP-Award-eForm-Target,Agreement-Details-eFormField,Short Text,Submission,A-BF-FOPP-FOPP-Target,Agreement-Details-eFormField
+,,,,,,,,
+DS_LONG_TEXT,LONG_TEXT,Long-Text,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Long Text,Submission,A-BF-FOPP-FOPP-Source,Min-And-Max-Properties-eFormFields
+DS_NUMERIC,NUMERIC,Numeric,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source,Min-And-Max-Properties-eFormFields
+DS_SHOR_TEXT,SHOR_TEXT,Short-Text,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Short Text,Submission,A-BF-FOPP-FOPP-Source,Min-And-Max-Properties-eFormFields
+DS_NUMERIC2,NUMERIC2,Numeric2,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source,Min-And-Max-Properties-eFormFields
+DS_REVIEW_SCORE,REVIEW_SCORE,Review-Score,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source,Min-And-Max-Properties-eFormFields
+DS_APPROVED,APPROVED,Approved,BF-FOPP-ProjectApproval-eForm-Source,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Source,Dropdown-eFormFields
+DS_PARENT_DROPDOWN,PARENT_DROPDOWN,Parent-Dropdown,BF-FOPP-ProjectApproval-eForm-Source,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Source,Dropdown-eFormFields
+DS_CHILD_DROPDOWN,CHILD_DROPDOWN,Child-Dropdown,BF-FOPP-ProjectApproval-eForm-Source,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Source,Dropdown-eFormFields
+DS_MANY_TO_MANY,MANY_TO_MANY,Many-to-Many,BF-FOPP-PO-Submission-eForm-Source,Dropdown-M2M-eFormFields,Many To Many,Submission,A-BF-FOPP-FOPP-Source,Dropdown-M2M-eFormFields
+DS_RADIO_BUTTON,RADIO_BUTTON,Radio-Button,BF-FOPP-PO-Submission-eForm-Source,Dropdown-M2M-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source,Dropdown-M2M-eFormFields
+DS_AGREEMENT_DETAILS,AGREEMENT_DETAILS,Agreement Details,BF-FOPP-Award-eForm-Source,Agreement-Details-eFormField,Short Text,Submission,A-BF-FOPP-FOPP-Source,Agreement-Details-eFormField

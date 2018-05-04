@@ -1,0 +1,45 @@
+DF_APPROVAL_DROPDOWN,APPROVAL_DROPDOWN,Approval Dropdown,LBF-Administration-Source-eLists,No-Propreties-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,No-Propreties-Fields-LBF
+DF_CHECKBOX,CHECKBOX,Checkbox,LBF-Administration-Source-eLists,No-Propreties-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,No-Propreties-Fields-LBF
+DF_DATE,DATE,Date,LBF-Administration-Source-eLists,No-Propreties-Sub-Fields-LBF,Date,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,No-Propreties-Fields-LBF
+DF_EIN_NUMBER,EIN_NUMBER,EIN Number,LBF-Administration-Source-eLists,No-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,No-Propreties-Fields-LBF
+DF_EMAIL_ADDRESS,EMAIL_ADDRESS,EmailAddress,LBF-Administration-Source-eLists,No-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,No-Propreties-Fields-LBF
+DF_WEB_ADDRESS,WEB_ADDRESS,Web Address,LBF-Administration-Source-eLists,No-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,No-Propreties-Fields-LBF
+DF_LONG_TEXT,LONG_TEXT,Long Text,LBF-Administration-Source-eLists,Min-And-Max-Propreties-Sub-Fields-LBF,Long Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Min-And-Max-Propreties-Fields-LBF
+DF_NUMERIC,NUMERIC,Numeric,LBF-Administration-Source-eLists,Min-And-Max-Propreties-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Min-And-Max-Propreties-Fields-LBF
+DF_PASSWORD,PASSWORD,Password,LBF-Administration-Source-eLists,Min-And-Max-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Min-And-Max-Propreties-Fields-LBF
+DF_SHORT_TEXT,SHORT_TEXT,Short Text,LBF-Administration-Source-eLists,Min-And-Max-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Min-And-Max-Propreties-Fields-LBF
+DF_REVIEW_SCORE,REVIEW_SCORE,Review Score,LBF-Administration-Source-eLists,Min-And-Max-Propreties-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Min-And-Max-Propreties-Fields-LBF
+DF_DATEATTACHED,DATEATTACHED,DateAttached,LBF-Administration-Source-eLists,Attachment-Details,Date,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Attachment-List-Fields-LBF
+DF_FILE_DESCRIPTION,FILE_DESCRIPTION,File Description,LBF-Administration-Source-eLists,Attachment-Details,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Attachment-List-Fields-LBF
+DF_FILENAME,FILENAME,Filename,LBF-Administration-Source-eLists,Attachment-Details,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Attachment-List-Fields-LBF
+DF_MANGLEDFILENAME,MANGLEDFILENAME,MangledFilename,LBF-Administration-Source-eLists,Attachment-Details,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Attachment-List-Fields-LBF
+DF_DATA_GRID_LOOKUP_A1,DATA_GRID_LOOKUP_A1,Data Grid Lookup A1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_A2,DATA_GRID_LOOKUP_A2,Data Grid Lookup A2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_A3,DATA_GRID_LOOKUP_A3,Data Grid Lookup A3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_A4,DATA_GRID_LOOKUP_A4,Data Grid Lookup A4,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_B1,DATA_GRID_LOOKUP_B1,Data Grid Lookup B1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_B2,DATA_GRID_LOOKUP_B2,Data Grid Lookup B2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_B3,DATA_GRID_LOOKUP_B3,Data Grid Lookup B3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_B4,DATA_GRID_LOOKUP_B4,Data Grid Lookup B4,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_C1,DATA_GRID_LOOKUP_C1,Data Grid Lookup C1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_C2,DATA_GRID_LOOKUP_C2,Data Grid Lookup C2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_C3,DATA_GRID_LOOKUP_C3,Data Grid Lookup C3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_LOOKUP_C4,DATA_GRID_LOOKUP_C4,Data Grid Lookup C4,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_A1,DATA_GRID_NUMERIC_A1,Data Grid Numeric A1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_A2,DATA_GRID_NUMERIC_A2,Data Grid Numeric A2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_A3,DATA_GRID_NUMERIC_A3,Data Grid Numeric A3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_B1,DATA_GRID_NUMERIC_B1,Data Grid Numeric B1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_B2,DATA_GRID_NUMERIC_B2,Data Grid Numeric B2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_B3,DATA_GRID_NUMERIC_B3,Data Grid Numeric B3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_C1,DATA_GRID_NUMERIC_C1,Data Grid Numeric C1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_C2,DATA_GRID_NUMERIC_C2,Data Grid Numeric C2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_NUMERIC_C3,DATA_GRID_NUMERIC_C3,Data Grid Numeric C3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_A1,DATA_GRID_TEXT_A1,Data Grid Text A1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_A2,DATA_GRID_TEXT_A2,Data Grid Text A2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_A3,DATA_GRID_TEXT_A3,Data Grid Text A3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_B1,DATA_GRID_TEXT_B1,Data Grid Text B1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_B2,DATA_GRID_TEXT_B2,Data Grid Text B2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_B3,DATA_GRID_TEXT_B3,Data Grid Text B3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_C1,DATA_GRID_TEXT_C1,Data Grid Text C1,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_C2,DATA_GRID_TEXT_C2,Data Grid Text C2,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DF_DATA_GRID_TEXT_C3,DATA_GRID_TEXT_C3,Data Grid Text C3,LBF-Administration-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF

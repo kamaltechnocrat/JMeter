@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Post-Award-Report" annotations="jdk">
+  <test verbose="2" name="Post-Award">  
+  	<groups>
+    	<run>
+    		<include name="WorkflowNG" />
+    	</run>
+    </groups>
+    <classes>
+	  <class name="test_Suite.tests.post_Award.A_PA_GnrlProgramNG"/>
+      <class name="test_Suite.tests.post_Award.B_PA_FO_ProjectNG"/>
+      <class name="test_Suite.tests.post_Award.C_PA_PO_ProjectNG"/>  
+      <class name="test_Suite.tests.post_Award.D_PA_NonCriticalReviewStepNG"/> 
+      <class name="test_Suite.tests.post_Award.E_PA_ProgramSubmissionStepNG"/> 
+      <class name="test_Suite.tests.post_Award.F_PA_DoublePost_AwardNG"/>  
+      <class name="test_Suite.tests.post_Award.G_PA_DecisionStepNG"/>
+    </classes>
+  </test>
+</suite>

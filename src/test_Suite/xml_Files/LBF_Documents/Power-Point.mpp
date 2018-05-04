@@ -1,0 +1,9 @@
+CD \workspace\grantium_qa_watij_trunk
+
+rem set JAVA_HOME='C:\Program Files\Java\jdk1.5.0_16'
+
+set ANT_OPTS="-Xmx512M"
+
+ant reporting-Functions
+
+rem set JAVA_HOME=""

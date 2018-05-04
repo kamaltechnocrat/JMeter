@@ -1,0 +1,208 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="3_0-Fetaures-Report" verbose="9" annotations="jdk">
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO - FO 3.0 Features Testing Setup">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.SSmustRunFirst" />	
+			<class name="test_Suite.tests.r3_0.CfgRunFirst" />	
+		</classes>
+	</test>
+	
+	<test name="PO Managing e.Form Submission Versioning">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>	
+			<class name="test_Suite.tests.r3_0.submissionVersion.TestPASubVersionInLists" />
+			<class name="test_Suite.tests.r3_0.submissionVersion.TestSubVersionInLists" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Submission Access">
+		<groups>
+			<run>
+				<include name="ProjectNG" />
+			</run>
+		</groups>
+		
+		<classes>	
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestOtherPOGAccessToFOFacingSubmission" />
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestOtherPOGAccessToPA_FOFacingSubmission" />	
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestPOGAccessToFOFacingSubmission" />
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestPOGAccessToPA_FOFacingSubmission" />	
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestStepStaffAccessToFOFacingSubmission" />
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestStepStaffAccessToPA_FOFacingSubmission" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Submission Access with Removed Staff">
+		<groups>
+			<run>
+				<include name="ProjectNG" />
+			</run>
+		</groups>
+		
+		<classes>	
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestRemovedPOGMember_PA_Access" />
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestRemovedPOGMemberAccess" />	
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestRemovedStepStaffMember_PA_Access" />
+			<class name="test_Suite.tests.r3_0.submissionAccess.TestRemovedStepStaffMemberAccess" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing e.Form Submission Summary Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.submissionSummary.SSConfigTesting" />
+			<class name="test_Suite.tests.r3_0.submissionSummary.SSDisplayTesting" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing e.Form Submission Summary">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.submissionSummary.SSAfterAddingRowsToList" />
+			<class name="test_Suite.tests.r3_0.submissionSummary.SSAfterProjectTransfer" />
+			<class name="test_Suite.tests.r3_0.submissionSummary.SSUponDeletingRowFromList" />	
+		</classes> 
+	</test>
+	
+	<test name="PO Managing Step Amendment">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestAmendedSubmissionsNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestCancelingAmendmentBeforeReSubmit" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestCancelingLastAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestCancelingStepAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestExitEvaluationStepOnNotUsedNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestExitEvaluationStepOnReExecutionNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestReExecutingEvaluationStepNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestRequestStepAmendment" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestRequestStepAmendmentPage" />
+		</classes> 
+	</test>
+	
+	<test name="PO Managing Expanded Controls">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.expandedControl.TestAccessAcrossProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestAccessAcrossProjectsToSubmissionsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestAccessWithinProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestNonAssignedAccessWithinProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestOtherStepStaffAccessWithingProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestStepStaffAccessWithinProjectsNG" />
+		</classes> 
+	</test>
+	
+	<test name="PO Managing 3-State Funding Opps">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.threeStateFundingOpp.TestActiveAndfHideProjNG" />
+			<class name="test_Suite.tests.r3_0.threeStateFundingOpp.TestActiveFoppNG" />
+			<class name="test_Suite.tests.r3_0.threeStateFundingOpp.TestInactiveAndHideProjNG" />
+			<class name="test_Suite.tests.r3_0.threeStateFundingOpp.TestInactiveFoppNG" />
+			<class name="test_Suite.tests.r3_0.threeStateFundingOpp.TestInternalAndHideProjNG" />
+			<class name="test_Suite.tests.r3_0.threeStateFundingOpp.TestInternalFoppNG" />
+		</classes> 
+	</test>
+	
+	<test name="PO Managing Expanded Controls">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.expandedControl.TestAccessAcrossProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestAccessAcrossProjectsToSubmissionsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestAccessWithinProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestNonAssignedAccessWithinProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestOtherStepStaffAccessWithingProjectsNG" />
+			<class name="test_Suite.tests.r3_0.expandedControl.TestStepStaffAccessWithinProjectsNG" />
+		</classes> 
+	</test>
+	
+	
+	<test name="PO Managing Post-Award Re-Execution">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.post_AwardRe_Execution.CFGPostAward_NotApproved_StepAmendment" />
+			<class name="test_Suite.tests.r3_0.post_AwardRe_Execution.CFGPostAward_NotCompleted_StepAmendment" />
+			<class name="test_Suite.tests.r3_0.post_AwardRe_Execution.CFGPostAward_NotStarted_StepAmendment" />
+			<class name="test_Suite.tests.r3_0.post_AwardRe_Execution.CFGPostAwardStepAmendment" />
+			<class name="test_Suite.tests.r3_0.post_AwardRe_Execution.Test_PA_ReExecutionNG" />
+			<class name="test_Suite.tests.r3_0.post_AwardRe_Execution.TestAddingNewClaim_PA_ReExecNG" />
+		</classes>
+	</test>
+	
+	<test name="FO Managing Applicant Amendments">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgAmendNowApplicantAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgApplicantAmendmentRequestSubNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgApproveApplicantAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgChangeAmenderNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgChangeAmenderOnAmendNowNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgChangeApproverNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgRejectApplicantAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.applicantAmendments.CfgRequestSecondApplicantAmendmentNG" />
+		</classes>
+	</test>
+</suite>

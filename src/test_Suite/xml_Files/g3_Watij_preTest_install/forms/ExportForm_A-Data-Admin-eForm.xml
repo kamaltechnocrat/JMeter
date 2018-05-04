@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form formIdentifier="A-Data-Admin-eForm" version="6.1.0.0" className="com.infoterra.grantium.model.forms.Form_Program">
+	<FormTitles>
+		<Title localeLangCode="en" localeCountryCode="CA" title="A Data Admin eForm"/>
+		<Title localeLangCode="fr" localeCountryCode="CA" title="A Data Admin eForm"/>
+		<Title localeLangCode="en" localeCountryCode="GB" title="A Data Admin eForm"/>
+		<Title localeLangCode="en" localeCountryCode="US" title="A Data Admin eForm"/>
+	</FormTitles>
+	<DatePublished date="2013.07.30 AD 11:28:17 IST"/>
+	<Description text=""/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet identifier="All_Fields" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" Order="0">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="All_Fields"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="All_Fields"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field identifier="Field_17" className="com.infoterra.grantium.model.forms.fields.Field_ReviewScore" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions>
+						<Description localeLangCode="en" localeCountryCode="CA" title=""/>
+						<Description localeLangCode="fr" localeCountryCode="CA" title=""/>
+						<Description localeLangCode="en" localeCountryCode="GB" title=""/>
+						<Description localeLangCode="en" localeCountryCode="US" title=""/>
+					</Descriptions>
+					<FieldLabels>
+						<Label localeLangCode="en" localeCountryCode="CA" title="Field_17:"/>
+						<Label localeLangCode="fr" localeCountryCode="CA" title="Field_17:"/>
+						<Label localeLangCode="en" localeCountryCode="GB" title="Field_17:"/>
+						<Label localeLangCode="en" localeCountryCode="US" title="Field_17:"/>
+					</FieldLabels>
+					<ToolTips>
+						<ToolTip localeLangCode="en" localeCountryCode="CA" title=""/>
+						<ToolTip localeLangCode="fr" localeCountryCode="CA" title=""/>
+						<ToolTip localeLangCode="en" localeCountryCode="GB" title=""/>
+						<ToolTip localeLangCode="en" localeCountryCode="US" title=""/>
+					</ToolTips>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[10.0]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="weight">
+							<Value valueClass="java.lang.Double"><![CDATA[1.0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

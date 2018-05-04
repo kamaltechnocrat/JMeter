@@ -1,0 +1,2836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission" formIdentifier="SF424 Version 02 Watij, OMB Number 4040-0004" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Application Form"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Application Form"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="Application Form"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Application Form"/>
+	</FormTitles>
+	<DatePublished date="2008.10.22 AD 08:38:29 EDT"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="1-7">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Application Type"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Application Type"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Application Type"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Application Type"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Application Type"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Application Type"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Application Type"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Application Type"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="1.SubmissionType" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="1. Type of Submission:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="1. Type of Submission:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="1. Type of Submission:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="1. Type of Submission:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="SF424_SUBMISSION_TYPE"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="2.ApplicationType" mandatory="true">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="2. Type of Application:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="2. Type of Application:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="2. Type of Application:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="2. Type of Application:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="SF424_APPLICATION_TYPE"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="2.ApplicationType_Revision_Label" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="If &quot;Revision&quot;, specify:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="If &quot;Revision&quot;, specify:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="If &quot;Revision&quot;, specify:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="If &quot;Revision&quot;, specify:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="2.ApplicationType_Revision_Award" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Award:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Award:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Award:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Award:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="SF424_DIRECTION"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="2.ApplicationType_Revision_Duration" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Duration:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Duration:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Duration:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Duration:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="SF424_DIRECTION"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="2.ApplicationType_Other" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="If &quot;Other&quot;, specify:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="If &quot;Other&quot;, specify:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="If &quot;Other&quot;, specify:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="If &quot;Other&quot;, specify:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[21]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="3.DateReceived" mandatory="false">
+					<LineSpacing value="2"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="3. Date Received:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="3. Date Received:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="3. Date Received:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="3. Date Received:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="4.ApplicantIdentifier" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="4. Applicant Identifier:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="4. Applicant Identifier:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="4. Applicant Identifier:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="4. Applicant Identifier:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="5a.FederalEntityIdentifier" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="5a. Federal Entity Identifier:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="5a. Federal Entity Identifier:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="5a. Federal Entity Identifier:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="5a. Federal Entity Identifier:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="5b.FederalAwardIdentifier" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="5b. Federal Award Identifier:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="5b. Federal Award Identifier:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="5b. Federal Award Identifier:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="5b. Federal Award Identifier:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="6.DateReceivedByState" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="6. Date Received by State:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="6. Date Received by State:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="6. Date Received by State:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="6. Date Received by State:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="7.StateApplicationIdentifier" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="7. State Application Identifier:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="7. State Application Identifier:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="7. State Application Identifier:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="7. State Application Identifier:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="8">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Applicant"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Applicant"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Applicant"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Applicant"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Applicant"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Applicant"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Applicant"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Applicant"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="8.Applicant_Label" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="8. Applicant"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="8. Applicant"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="8. Applicant"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="8. Applicant"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8a.LegalName" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8a.LegalName]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="a. Legal Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="a. Legal Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="a. Legal Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="a. Legal Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[60]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8b.EIN_TIN" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8b.EIN_TIN]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="b. Employer/Taxpayer Identification Number (EIN/TIN xx-xxxxxxx):"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="b. Employer/Taxpayer Identification Number (EIN/TIN xx-xxxxxxx):"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="b. Employer/Taxpayer Identification Number (EIN/TIN xx-xxxxxxx):"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="b. Employer/Taxpayer Identification Number (EIN/TIN xx-xxxxxxx):"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[9]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8c.DUNS" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8c.DUNS]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="c. Organizational DUNS:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="c. Organizational DUNS:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="c. Organizational DUNS:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="c. Organizational DUNS:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[9]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[13]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="8d.Address_Label" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="d. Address"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="d. Address"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="d. Address"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="d. Address"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8d.Street1" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.Street1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Street 1:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Street 1:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Street 1:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Street 1:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[55]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8d.Street2" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.Street2]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Street 2:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Street 2:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Street 2:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Street 2:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[55]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8d.City" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.City]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="City:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="City:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="City:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="City:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[35]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8d.County" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.County]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="County:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="County:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="County:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="County:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="8d.State" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.State]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="State:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="State:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="State:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="State:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_US_STATES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="8d.Province" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.Province]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Province:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Province:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Province:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Province:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_CANADIAN_PROVINCES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="8d.Country" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.Country]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Country:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Country:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Country:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Country:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_COUNTRIES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_PostalCode" identifier="8d.ZipCode" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8d.ZipCode]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Zip / Postal Code:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Zip / Postal Code:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Zip / Postal Code:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Zip / Postal Code:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="inputStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="displayStyle_Canadian">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="displayStyle_American">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="8e.OrganizationalUnit_label" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="e. Organizational Unit"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="e. Organizational Unit"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="e. Organizational Unit"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="e. Organizational Unit"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8e.Department" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8e.Department]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Department Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Department Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Department Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Department Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="8e.Division" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[8e.Division]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Division Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Division Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Division Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Division Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="8f.ContactInstructions" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="f. Name and contact information of person to be contacted on matters involving this application"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="f. Name and contact information of person to be contacted on matters involving this application"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="f. Name and contact information of person to be contacted on matters involving this application"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="f. Name and contact information of person to be contacted on matters involving this application"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="Contact_Prefix" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_Prefix]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Prefix:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Prefix:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Prefix:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Prefix:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_PREFIXES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_FirstName" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_FirstName]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="First Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="First Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="First Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="First Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[35]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_MiddleName" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_MiddleName]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Middle Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Middle Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Middle Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Middle Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_LastName" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_LastName]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Last Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Last Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Last Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Last Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[60]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="Contact_Suffix" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_Suffix]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Suffix:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Suffix:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Suffix:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Suffix:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_SUFFIXES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_Title" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_Title]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Title:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Title:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[45]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_OrganizationAffiliation" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_OrganizationAffiliation]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Organizational Affiliation:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Organizational Affiliation:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Organizational Affiliation:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Organizational Affiliation:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[60]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_Phone1" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_Phone1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Telephone Number:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Telephone Number:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Telephone Number:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Telephone Number:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Contact_Fax" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_Fax]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Fax Number:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Fax Number:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Fax Number:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Fax Number:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_EmailAddress" identifier="Contact_Email" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Contact_Email]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Email:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Email:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Email:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Email:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="2" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="9-13">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Application Details"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Application Details"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Application Details"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Application Details"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Application Details"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Application Details"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Application Details"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Application Details"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_M2M" identifier="9.ApplicantType" mandatory="true">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="9. Type of Applicant (Select up to three applicant type(s) in accordance with agency instructions):"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="9. Type of Applicant (Select up to three applicant type(s) in accordance with agency instructions):"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="9. Type of Applicant (Select up to three applicant type(s) in accordance with agency instructions):"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="9. Type of Applicant (Select up to three applicant type(s) in accordance with agency instructions):"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="SF424_APPLICANT_TYPE_V2"/>
+							</Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="9.ApplicantType_Other" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="If &quot;Other&quot; please specify:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="If &quot;Other&quot; please specify:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="If &quot;Other&quot; please specify:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="If &quot;Other&quot; please specify:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[30]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="10.FederalAgency" mandatory="true">
+					<LineSpacing value="2"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="10. Name of Federal Agency:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="10. Name of Federal Agency:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="10. Name of Federal Agency:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="10. Name of Federal Agency:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[60]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="11.CFDA_Number" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="11. Catalog of Federal Domestic Assistance Number/Title:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="11. Catalog of Federal Domestic Assistance Number/Title:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="11. Catalog of Federal Domestic Assistance Number/Title:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="11. Catalog of Federal Domestic Assistance Number/Title:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[15]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="11.CFDA_Title" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="CFDA Title:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="CFDA Title:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="CFDA Title:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="CFDA Title:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[120]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="12.FundingOpportunity_Number" mandatory="true">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="12. Funding Opportunity Number:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="12. Funding Opportunity Number:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="12. Funding Opportunity Number:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="12. Funding Opportunity Number:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[40]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="12.FundingOpportunity_Title" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Title:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Title:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[255]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="13.CompetitionIdentification_Number" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="13. Competition Identification Number:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="13. Competition Identification Number:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="13. Competition Identification Number:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="13. Competition Identification Number:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[40]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="13.CompetitionIdentification_Title" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Title:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Title:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[255]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="3" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="14-17">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Project"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Project"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Project"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Project"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Project"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Project"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Project"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Project"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_LongText" identifier="14.AffectedAreas" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="14. Area's Affected by Project (Cities, Counties, States, etc.):"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="14. Area's Affected by Project (Cities, Counties, States, etc.):"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="14. Area's Affected by Project (Cities, Counties, States, etc.):"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="14. Area's Affected by Project (Cities, Counties, States, etc.):"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[250]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_LongText" identifier="15.ProjectTitle" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[ProjectDescription_Title]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="15. Descriptive Title of Applicant's Project:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="15. Descriptive Title of Applicant's Project:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="15. Descriptive Title of Applicant's Project:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="15. Descriptive Title of Applicant's Project:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[200]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="16.CongressionalDistrict_Label" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions>
+						<Description localeCountryCode="CA" localeLangCode="en" title="Enter in the format: 2 characters State Abbreviation - 3 characters District Number, e.g., CA-005 for California 5th district, CA-012 for California 12th district, NC-103 for North Carolina's 103rd district."/>
+						<Description localeCountryCode="CA" localeLangCode="fr" title="Enter in the format: 2 characters State Abbreviation - 3 characters District Number, e.g., CA-005 for California 5th district, CA-012 for California 12th district, NC-103 for North Carolina's 103rd district."/>
+						<Description localeCountryCode="US" localeLangCode="en" title="Enter in the format: 2 characters State Abbreviation - 3 characters District Number, e.g., CA-005 for California 5th district, CA-012 for California 12th district, NC-103 for North Carolina's 103rd district."/>
+						<Description localeCountryCode="GB" localeLangCode="en" title="Enter in the format: 2 characters State Abbreviation - 3 characters District Number, e.g., CA-005 for California 5th district, CA-012 for California 12th district, NC-103 for North Carolina's 103rd district."/>
+					</Descriptions>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="16. Congressional Districts of"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="16. Congressional Districts of"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="16. Congressional Districts of"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="16. Congressional Districts of"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_LongText" identifier="16a.CongressionalDistrict_Applicant" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="a. Applicant:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="a. Applicant:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="a. Applicant:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="a. Applicant:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[500]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_LongText" identifier="16b.ProjectCongressionalDistricts" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="b. Program/Project:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="b. Program/Project:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="b. Program/Project:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="b. Program/Project:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[300]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="17.ProjectDates" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="17. Proposed Project"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="17. Proposed Project"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="17. Proposed Project"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="17. Proposed Project"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="17a.ProjectStartDate" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="a. Start Date:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="a. Start Date:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="a. Start Date:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="a. Start Date:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="17b.ProjectEndDate" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="b. End Date:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="b. End Date:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="b. End Date:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="b. End Date:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="4" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="18">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Funding"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Funding"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Funding"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Funding"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Funding"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Funding"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Funding"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Funding"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Instructions" identifier="18.EstimatedFunding_Instructions" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions>
+						<Description localeCountryCode="CA" localeLangCode="en" title="Enter the amount requested or to be contributed during the first funding/budget period by each contributor.  Value of in-kind contributions should be included on appropriate lines, as applicable.  If the action will result in a dollar change to an existing award, indicate only the amount of the change."/>
+						<Description localeCountryCode="CA" localeLangCode="fr" title="Enter the amount requested or to be contributed during the first funding/budget period by each contributor.  Value of in-kind contributions should be included on appropriate lines, as applicable.  If the action will result in a dollar change to an existing award, indicate only the amount of the change."/>
+						<Description localeCountryCode="US" localeLangCode="en" title="Enter the amount requested or to be contributed during the first funding/budget period by each contributor.  Value of in-kind contributions should be included on appropriate lines, as applicable.  If the action will result in a dollar change to an existing award, indicate only the amount of the change."/>
+						<Description localeCountryCode="GB" localeLangCode="en" title="Enter the amount requested or to be contributed during the first funding/budget period by each contributor.  Value of in-kind contributions should be included on appropriate lines, as applicable.  If the action will result in a dollar change to an existing award, indicate only the amount of the change."/>
+					</Descriptions>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Instructions"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Instructions"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Instructions"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Instructions"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="18.EstimatedFunding_Label" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="18. Estimated Funding ($)"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="18. Estimated Funding ($)"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="18. Estimated Funding ($)"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="18. Estimated Funding ($)"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18a.Federal" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="a. Federal:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="a. Federal:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="a. Federal:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="a. Federal:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[9.9999999999999E11]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18b.Applicant" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="b. Applicant:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="b. Applicant:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="b. Applicant:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="b. Applicant:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[9.9999999999999E11]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18c.State" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="c. State:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="c. State:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="c. State:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="c. State:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[9.9999999999999E11]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18d.Local" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="d. Local:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="d. Local:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="d. Local:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="d. Local:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[9.9999999999999E11]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18e.Other" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="e. Other:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="e. Other:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="e. Other:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="e. Other:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[9.9999999999999E11]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18f.ProgramIncome" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="f: Program Income:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="f: Program Income:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="f: Program Income:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="f: Program Income:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value valueClass="java.lang.Double"><![CDATA[9.9999999999999E11]]></Value>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="18f.Total" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.NumericSum" type="Numeric Sum">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[18a.Federal]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value valueClass="java.lang.String"><![CDATA[18b.Applicant]]></Value>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value valueClass="java.lang.String"><![CDATA[18c.State]]></Value>
+								</Property>
+								<Property propertyName="stringParameter4">
+									<Value valueClass="java.lang.String"><![CDATA[18d.Local]]></Value>
+								</Property>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.NumericSum" type="Numeric Sum">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[18e.Other]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value valueClass="java.lang.String"><![CDATA[18f.ProgramIncome]]></Value>
+								</Property>
+								<Property propertyName="stringParameter4">
+									<Value/>
+								</Property>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter2">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter3">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter4">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter5">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter6">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter7">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter8">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter9">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="booleanParameter10">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="group_IDs_Read">
+									<Value isList="true"/>
+								</Property>
+								<Property propertyName="group_IDs_Write">
+									<Value isList="true"/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="g. TOTAL:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="g. TOTAL:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="g. TOTAL:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="g. TOTAL:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="5" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="19-20">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Compliance"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Compliance"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Compliance"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Compliance"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Compliance"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Compliance"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Compliance"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Compliance"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="19.ApplicationSubjectToReview" mandatory="true">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="19. Is Application Subject to Review By State Executive Order 12372 Process?"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="19. Is Application Subject to Review By State Executive Order 12372 Process?"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="19. Is Application Subject to Review By State Executive Order 12372 Process?"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="19. Is Application Subject to Review By State Executive Order 12372 Process?"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="SF424_COMPLIANCE_REVIEW"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="19a.AvailableForReviewDate" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="If &quot;YES&quot;, enter date this application was made available to the State for review on:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="If &quot;YES&quot;, enter date this application was made available to the State for review on:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="If &quot;YES&quot;, enter date this application was made available to the State for review on:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="If &quot;YES&quot;, enter date this application was made available to the State for review on:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="20.DelinquentOnFederalDebt" mandatory="true">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="20. Is the Applicant Deliquent on any Federal Debt?"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="20. Is the Applicant Deliquent on any Federal Debt?"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="20. Is the Applicant Deliquent on any Federal Debt?"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="20. Is the Applicant Deliquent on any Federal Debt?"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_YESNO"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_LongText" identifier="20a.DelinquentExplaination" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="If &quot;YES,&quot; provide explanation:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="If &quot;YES,&quot; provide explanation:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="If &quot;YES,&quot; provide explanation:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="If &quot;YES,&quot; provide explanation:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[3150]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="6" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="21">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Declaration"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Declaration"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Declaration"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Declaration"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Declaration"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Declaration"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Declaration"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Declaration"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="21.Declaration_Label_1" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="21. By signing this application, I certify (1) to the statements contained in the list of certifications** and (2) that the statements herein are true, complete, and accurate to the best of my knowledge. I also provide the required assurances** and agree to comply with any resulting terms if I accept an award. I am aware that any false, ficticious, or fraudulent statements or claims may subject me to criminal, civil, or administrative penalties. (U.S. Code, Title 218, Section 1001)"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="21. By signing this application, I certify (1) to the statements contained in the list of certifications** and (2) that the statements herein are true, complete, and accurate to the best of my knowledge. I also provide the required assurances** and agree to comply with any resulting terms if I accept an award. I am aware that any false, ficticious, or fraudulent statements or claims may subject me to criminal, civil, or administrative penalties. (U.S. Code, Title 218, Section 1001)"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="21. By signing this application, I certify (1) to the statements contained in the list of certifications** and (2) that the statements herein are true, complete, and accurate to the best of my knowledge. I also provide the required assurances** and agree to comply with any resulting terms if I accept an award. I am aware that any false, ficticious, or fraudulent statements or claims may subject me to criminal, civil, or administrative penalties. (U.S. Code, Title 218, Section 1001)"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="21. By signing this application, I certify (1) to the statements contained in the list of certifications** and (2) that the statements herein are true, complete, and accurate to the best of my knowledge. I also provide the required assurances** and agree to comply with any resulting terms if I accept an award. I am aware that any false, ficticious, or fraudulent statements or claims may subject me to criminal, civil, or administrative penalties. (U.S. Code, Title 218, Section 1001)"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" identifier="21.IAgree" mandatory="true">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="I AGREE:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="I AGREE:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="I AGREE:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="I AGREE:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="21.Declaration_Label_2" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="** The list of certifications and assurances, on an internet site where you may obtain this list, is contained in the announcement or agency specific instructions."/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="** The list of certifications and assurances, on an internet site where you may obtain this list, is contained in the announcement or agency specific instructions."/>
+						<Label localeCountryCode="US" localeLangCode="en" title="** The list of certifications and assurances, on an internet site where you may obtain this list, is contained in the announcement or agency specific instructions."/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="** The list of certifications and assurances, on an internet site where you may obtain this list, is contained in the announcement or agency specific instructions."/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="AuthorizedRep_Label" mandatory="false">
+					<LineSpacing value="2"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Authorized Representative"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Authorized Representative"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Authorized Representative"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Authorized Representative"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="AuthorizedRep_Prefix" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Prefix:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Prefix:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Prefix:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Prefix:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_PREFIXES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="AuthorizedRep_FirstName" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="First Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="First Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="First Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="First Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[35]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="AuthorizedRep_MiddleName" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Middle Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Middle Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Middle Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Middle Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="AuthorizedRep_LastName" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Last Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Last Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Last Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Last Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[60]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="AuthorizedRep_Suffix" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Suffix:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Suffix:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Suffix:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Suffix:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_SUFFIXES"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="AuthorizedRep_Title" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Title:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Title:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Title:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[45]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="AuthorizedRep_Phone1" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Telephone Number:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Telephone Number:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Telephone Number:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Telephone Number:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="AuthorizedRep_Fax" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Fax Number:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Fax Number:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Fax Number:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Fax Number:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[25]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_EmailAddress" identifier="AuthorizedRep_Email" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Email:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Email:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Email:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Email:"/>
+					</FieldLabels>
+					<Properties/>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="AuthorizedRep_Signature" mandatory="false">
+					<LineSpacing value="1"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Signature of Authorized Representative:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Signature of Authorized Representative:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Signature of Authorized Representative:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Signature of Authorized Representative:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Label" identifier="AuthorizedRep_DateSigned" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Date Signed:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Date Signed:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Date Signed:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Date Signed:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="7" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="SS">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

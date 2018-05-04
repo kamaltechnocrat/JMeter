@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Projects-Report" annotations="jdk">
+	<test verbose="9" name="PO Projects">
+		<groups>
+			<run>
+				<include name="ProjectListNG" />
+				<include name="WorkflowNG" />
+				<include name="ApplicantsNG" />
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.applicants.TransferProjectsNG" />
+			<class name="test_Suite.tests.general.G_Re_ExecuteOnSubmissionAmendNG" />
+			<class name="test_Suite.tests.post_Award.E_PA_ProgramSubmissionStepNG" />
+			<class name="test_Suite.tests.projectList.TestSubmissionHistoryListNG" />
+			
+			<class name="test_Suite.tests.workflow.AmendInitialClaim" />
+			<class name="test_Suite.tests.workflow.BlockReExecOnAmend" />
+			<class name="test_Suite.tests.workflow.ReExecOnAmendNG" /> 
+			<class name="test_Suite.tests.workflow.ReExecOnAmendNG" />
+			<class name="test_Suite.tests.workflow.ProjectStatusFilterInAppSub" />
+			<class name="test_Suite.tests.workflow.UpdatingProjectNameAndNumber" />
+			
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2722_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2723_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2724_01NG" />
+		</classes>
+	</test>
+</suite>

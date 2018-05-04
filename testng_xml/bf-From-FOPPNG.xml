@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Watij-BF-From-FOPP-Report" annotations="jdk">
+  <test name="PO Managing EForms BF From FOPP preparation">
+    <groups>
+    	<run>
+    		<include name="EFormsNG" />
+    	</run>
+    </groups>    
+    <classes>
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.Must_Run_First" />
+    </classes>
+  </test>
+  
+  <test name="PO Managing EForms BF From FOPP">
+    <groups>
+    	<run>
+    		<include name="EFormsNG" />
+    	</run>
+    </groups>    
+    <classes>
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInFO.BfOnAmend" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInFO.BfOnTransfer" />    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInFO.BfToSteps" />
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInPO.BfOnAmend" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInPO.BfOnTransfer" />    	    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInPO.BfToSteps" />
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInFO.SrcProjAfterTransfer" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInFO.SrcProjAvail" />    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInFO.SrcProjInWizard" />
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInPO.SrcProjAfterTransfer" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInPO.SrcProjAvail" />
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.foppBF_Config.BFSettingsInFoppDetials" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.foppBF_Config.CloningFoppBF" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.foppBF_Config.SrcStepsInEFormData" />
+    </classes>
+  </test>
+</suite>

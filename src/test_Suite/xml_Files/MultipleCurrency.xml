@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form formIdentifier="MultipleCurrency" version="6.1.0.0" className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission">
+	<FormTitles>
+		<Title localeLangCode="en" localeCountryCode="CA" title="Mulitple Currency"/>
+		<Title localeLangCode="fr" localeCountryCode="CA" title="Mulitple Currency"/>
+		<Title localeLangCode="en" localeCountryCode="GB" title="Mulitple Currency"/>
+		<Title localeLangCode="en" localeCountryCode="US" title="Mulitple Currency"/>
+	</FormTitles>
+	<Description text=""/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet identifier="Numeric field" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" Order="0">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Numeric field"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Numeric field"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Numeric field"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Numeric field"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Numeric field"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Numeric field"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Numeric field"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Numeric field"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field identifier="Numeric Data" className="com.infoterra.grantium.model.forms.fields.Field_Number" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeLangCode="en" localeCountryCode="CA" title="Numeric Data"/>
+						<Label localeLangCode="fr" localeCountryCode="CA" title="Numeric Data"/>
+						<Label localeLangCode="en" localeCountryCode="GB" title="Numeric Data"/>
+						<Label localeLangCode="en" localeCountryCode="US" title="Numeric Data"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="currencySymbol">
+							<Value isList="false">
+								<Choice value="CURRENCY_SYMBOL_DOLLAR"/>
+							</Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field identifier="Numeric Data Grid Value" className="com.infoterra.grantium.model.forms.fields.Field_Grid" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeLangCode="en" localeCountryCode="CA" title="Numeric Data Grid Value:"/>
+						<Label localeLangCode="fr" localeCountryCode="CA" title="Numeric Data Grid Value:"/>
+						<Label localeLangCode="en" localeCountryCode="GB" title="Numeric Data Grid Value:"/>
+						<Label localeLangCode="en" localeCountryCode="US" title="Numeric Data Grid Value:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="pdfExport_TopRowAsTitle">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+						<Property propertyName="pdfExport_LeftColumnAsTitle">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+					<CellTypes>
+						<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_FixedText">
+							<Properties>
+								<Property propertyName="fixedText">
+									<CellText localeLangCode="en" localeCountryCode="CA" title="Numeric Value"/>
+									<CellText localeLangCode="fr" localeCountryCode="CA" title="Numeric Value"/>
+									<CellText localeLangCode="en" localeCountryCode="GB" title="Numeric Value"/>
+									<CellText localeLangCode="en" localeCountryCode="US" title="Numeric Value"/>
+								</Property>
+								<Property propertyName="alignment">
+									<Value valueClass="java.lang.Integer" value="1"/>
+								</Property>
+								<Property propertyName="backgroundcolorcode">
+									<Value valueClass="java.lang.String" value=""/>
+								</Property>
+								<Property propertyName="backgroundcolor">
+									<Value valueClass="java.lang.String" value=""/>
+								</Property>
+							</Properties>
+							<CellLocations>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value valueClass="java.lang.Integer" value="0"/>
+									</Property>
+									<Property propertyName="column">
+										<Value valueClass="java.lang.Integer" value="0"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value valueClass="java.lang.Integer" value="0"/>
+									</Property>
+									<Property propertyName="column">
+										<Value valueClass="java.lang.Integer" value="1"/>
+									</Property>
+								</CellLocation>
+							</CellLocations>
+						</CellType>
+						<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_Numeric">
+							<Properties>
+								<Property propertyName="minimumValue">
+									<Value/>
+								</Property>
+								<Property propertyName="maximumValue">
+									<Value/>
+								</Property>
+								<Property propertyName="numberOfDecimals">
+									<Value valueClass="java.lang.Integer" value="2"/>
+								</Property>
+								<Property propertyName="decoration">
+									<Value valueClass="java.lang.Integer" value="0"/>
+								</Property>
+								<Property propertyName="currencySymbol">
+									<Value valueClass="java.lang.String" value="CURRENCY_SYMBOL_DOLLAR"/>
+								</Property>
+								<Property propertyName="groupDigits">
+									<Value valueClass="java.lang.Boolean" value="true"/>
+								</Property>
+								<Property propertyName="mandatory">
+									<Value valueClass="java.lang.Boolean" value="false"/>
+								</Property>
+								<Property propertyName="alignment">
+									<Value valueClass="java.lang.Integer" value="2"/>
+								</Property>								
+								<Property propertyName="backgroundcolorcode">
+									<Value valueClass="java.lang.String" value=""/>
+								</Property>
+								<Property propertyName="backgroundcolor">
+									<Value valueClass="java.lang.String" value=""/>
+								</Property>
+							</Properties>
+							<CellLocations>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value valueClass="java.lang.Integer" value="1"/>
+									</Property>
+									<Property propertyName="column">
+										<Value valueClass="java.lang.Integer" value="0"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value valueClass="java.lang.Integer" value="1"/>
+									</Property>
+									<Property propertyName="column">
+										<Value valueClass="java.lang.Integer" value="1"/>
+									</Property>
+								</CellLocation>
+							</CellLocations>
+						</CellType>
+					</CellTypes>
+					<ColumnWidths>
+						<ColumnWidth identifier="0" value="20"/>
+						<ColumnWidth identifier="1" value="20"/>
+						<ColumnWidth identifier="2" value="20"/>
+					</ColumnWidths>
+				</Field>
+			</Fields>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

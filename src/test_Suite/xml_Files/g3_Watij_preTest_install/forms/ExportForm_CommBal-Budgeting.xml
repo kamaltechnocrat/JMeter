@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_Budgeting" formIdentifier="CommBal-Budgeting" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Budgeting Form"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Budgeting Form"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="Budgeting Form"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Budgeting Form"/>
+	</FormTitles>
+	<DatePublished date="2012.02.22 AD 11:09:52 EST"/>
+	<DefaultFormlet identifier="Budgeting"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Budgeting">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Budgeting"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Budgeting"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Budgeting"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Budgeting"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Budgeting"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Budgeting"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Budgeting"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Budgeting"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_INITIAL_BALANCE_ID" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Initial Balance:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Initial Balance:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Initial Balance:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Initial Balance:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_SUM_OF_AWARDED_ID" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Sum of Awarded:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Sum of Awarded:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Sum of Awarded:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Sum of Awarded:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_SUM_OF_RESCINDED_ID" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Sum of Rescinded:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Sum of Rescinded:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Sum of Rescinded:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Sum of Rescinded:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_SUM_OF_REFUNDED_ID" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Sum of Refunded:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Sum of Refunded:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Sum of Refunded:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Sum of Refunded:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_SUM_OF_PAYMENT_ID" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Sum of Payment:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Sum of Payment:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Sum of Payment:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Sum of Payment:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_SUM_OF_CANCEL_ID" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Sum of Cancel:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Sum of Cancel:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Sum of Cancel:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Sum of Cancel:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="BUDGETING_SUM_OF_REFUND_ID" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Sum of Refund:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Sum of Refund:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Sum of Refund:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Sum of Refund:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="CURRENT_BALANCE" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedValue" type="Calculated Value">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${BUDGETING_INITIAL_BALANCE_ID}-${BUDGETING_SUM_OF_AWARDED_ID}+${BUDGETING_SUM_OF_RESCINDED_ID}+${BUDGETING_SUM_OF_REFUNDED_ID}
++${BUDGETING_SUM_OF_CANCEL_ID}+${BUDGETING_SUM_OF_REFUND_ID}]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Current Balance:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Current Balance:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Current Balance:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Current Balance:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission Summary">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

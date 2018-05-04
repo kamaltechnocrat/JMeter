@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Workflow-Report" annotations="jdk">
+  <test verbose="2" name="Workflow cases">
+    <groups>
+    	<run>
+    		<include name="WorkflowNG" />
+    	</run>
+    </groups>
+    <classes>
+      	<class name="test_Suite.tests.workflow.DataGrid_BF_CalcValuesNG" />
+      	<class name="test_Suite.tests.workflow.GeneratePaymentScheduleNG" />
+      	<class name="test_Suite.tests.workflow.GPS_BF_Award_FundingGridNG" />
+      	<class name="test_Suite.tests.workflow.GPS_BF_Submission_FundingGridNG" />
+      	<class name="test_Suite.tests.workflow.GPS_BF_FundingGridNG" />
+      	<class name="test_Suite.tests.workflow.GPS_SubmissionDateNG" />
+		<class name="test_Suite.tests.workflow.Multi_WSS_DecisionStepsNG" />
+		<class name="test_Suite.tests.workflow.PA_TooManyEvalForms_AutoAssignNG" />
+		<class name="test_Suite.tests.workflow.PausedSubmissionScheduleNG" />
+		<class name="test_Suite.tests.workflow.ReExecOnAmendNG" />
+      	<class name="test_Suite.tests.workflow.RegionalAssignmentNG" />
+		<class name="test_Suite.tests.workflow.SubmissionScheduleNotificationsNG" />
+    </classes>
+  </test>
+</suite>

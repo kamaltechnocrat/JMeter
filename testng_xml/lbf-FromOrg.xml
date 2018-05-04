@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-LBF-From-Organization-Report" verbose="9" annotations="jdk">
+   <test name="PO Managing Organization LBF Setup">
+      <groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+    
+      <classes>
+         <class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_RunFirst" />    	 
+      </classes>
+   </test>
+  	
+	<test name="PO Managing Organization Form LBF">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>			
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_AppSubmission" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_AwardForm" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_IPASubmission" />
+		</classes>
+   </test>
+</suite>

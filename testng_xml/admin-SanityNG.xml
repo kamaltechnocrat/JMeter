@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Watij-Admin-Sanity-Report" annotations="jdk">
+  <test name="Admin Sanity" annotations="JDK">
+    <groups>
+    	<run>
+    		<include name="SanityNG"></include>
+    	</run>
+    </groups>
+    
+    <classes>
+      <class name="test_Suite.tests.sanity.AdminSanityTestNG"/>
+    </classes>
+  </test>
+  
+  <test name="Post Admin Sanity">
+    <groups>
+    	<run>
+    		<include name="SanityNG" />
+    	</run>
+    </groups>    
+    <classes>
+    	<class name="test_Suite.tests.sanity.PostSanityTestNG" />    	
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-Projects-Report" annotations="jdk">
+	<test name="PO Managing Phase I Ready for Archiving Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.DataArchive.PhaseI_ReadyForArchive.DataArchive_MustRunFirst" />
+		</classes>
+	
+	</test>
+	
+	
+	<test name="PO Managing Phase I Ready for Archiving">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestReadyForArchiveProjects" />
+			<class name="test_Suite.tests.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestReadyForArchive_Pushback_FOPP" />
+			<class name="test_Suite.tests.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestBulkEvaluation_Link" />
+			<class name="test_Suite.tests.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestAmendment_Link" />
+		</classes>	
+	</test>
+
+</suite>

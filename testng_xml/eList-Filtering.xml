@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-EListFiltering-Report" annotations="jdk">
+	<test name="PO Managing EFormsList Filtering">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_8.eListFiltering.EFieldInListColumnConfig" />
+			<class name="test_Suite.tests.r2_8.eListFiltering.eListFilteringAvailability" />
+			<class name="test_Suite.tests.r2_8.eListFiltering.FilterEList" />
+		</classes>		
+	</test>
+	
+</suite>

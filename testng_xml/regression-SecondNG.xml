@@ -1,0 +1,266 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Second-Regression-Report" verbose="2" annotations="jdk">	
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+
+  	<test name="BackOffice Managing ETL Tables">
+	    <groups>
+	    	<run>
+	    		<include name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_RebuildAndExecuteDatamart" />
+	    </classes>
+	  </test>
+	
+	<test name="PO Managing EForms Profile Data">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+		<class name="test_Suite.tests.r2_8.eFormProfileData.AppViewsProfileData" /> 
+		<class name="test_Suite.tests.r2_8.eFormProfileData.EFormProfileDataConfig" />
+		<class name="test_Suite.tests.r2_8.eFormProfileData.EFormProfileDataHandling" />
+		</classes>		
+	</test>
+	
+	<test name="PO Managing Projects Evaluation Enhancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>			
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.AmendSharedEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.AmendSharedPAEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.SharedEvaluation" />	
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.SharedPAEvaluation" />		
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.UnsubmittedEvaluations" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.UnsubmittedPAEvaluations" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Group Officers Assignment">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.AssignAmendToOfficersGroup" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.FoppAdminAssignOfficersToStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.NewGroupAssignmentToPAStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.OfficersAccessToSubmissions" />
+			
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.OfficersAssignementToSubmissions" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.FoppAdminAssignOfficersToPAStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.NewGroupAssignmentToStep" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Funding Opportunity List Enahancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_3.lists_Enhance.TrnsfrListFiltering" />
+		</classes>
+	</test>
+	
+	<test name="PO Manage Transfer Projects Capability">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.transferProjectsCapability.TestTransferToFoProjectAfterClosingNG" />
+			<class name="test_Suite.tests.r3_2.transferProjectsCapability.TestTransferToPoProjectAfterClosingNG" />
+		</classes>	
+	</test>
+	
+	<test name="PO Manage Project Creation In PO">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.forceFoppSelectionInPO.testFoppSelectionInPONG" />
+		</classes>
+	
+	</test>
+	
+	<test name="PO Manage Hide-Show Assigned Evaluations">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifyGroupsInSummaryByPogNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifyGroupsInSummaryNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifyNoGroupsInSummaryNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifySettingAndSavingGroupsInPaNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifySettingAndSavingGroupsNG" />
+		</classes>	
+	</test>
+
+	<test name=" PO - FO Amend In Place Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.StartWorkflowFirst" />
+		</classes>	
+	</test>
+	
+	<test name="PO - Managing Amend In Place">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendEvalInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendEvalNowInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendPASSInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendPASSNowInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendSubInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendSubNowInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.VerifySubAccessForInProgSubNG" />
+		</classes>
+	</test>
+	
+	<test name="PO - Managing Amendment Categories">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r3_4.amendCategory.AddMoreAmendmentCategoriesNG" />
+		</classes>
+	</test>
+	
+	
+	<test name="PO-FO Managing Shared Amendments Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_RunFirst" />
+		</classes>	
+	</test>
+	
+	<test name="PO-FO Managing Shared Amendments">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_AppliesinAppSubListsOnly" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_AppliesToReExecuted" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_AppliesToStepStaff" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_ExistsInAppSettings" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_FOFacingSubOnly" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_OnAmendNowNG" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_OnAmendNowPANG" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_PersistencyOnChanges" />
+		</classes>
+	</test>
+	
+	<test name="Back Office">
+		<parameter name="programOffice" value="Def" />
+		<parameter name="frontOffice" value="Def" />
+
+		<parameter name="po-LoginFields" value="true" />
+		<parameter name="po-ChangePassword" value="true" />
+		<parameter name="po-ForgotPassword" value="true" />
+
+		<parameter name="fo-LoginFields" value="true" />
+		<parameter name="fo-ChangePassword" value="true" />
+		<parameter name="fo-ForgotPassword" value="true" />
+		<parameter name="fo-Profile" value="true" />
+
+		<groups>
+			<run>
+				<exclude name="AuthenticationAPING" />
+			</run>
+		</groups>
+		<classes>
+			<!-- <class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_01NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_03NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_01NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3545_UserChangesPassword_AuthExtension_01NG" />
+			 <class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_02NG" /> -->
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_02NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_03NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3545_UserChangesPassword_AuthExtension_02NG" />
+		</classes>
+	</test>
+	
+	
+	<test name="PO Managing Users">
+		<groups>
+			<run>
+				<include name="UsersNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2372_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2373_01NG" />
+			<!-- <class name="test_Suite.tests.stories.release_2_0.iter_1.S2374_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2375_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2375_02NG" />		
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2376_01NG" />	
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2377_01NG" /> 
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2380_01NG" />				
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1858_01NG" /> -->
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2378_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2379_01NG" />		
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1858_02NG" />
+		</classes>
+	</test>
+	
+	<!-- <test name="PO Managing Program Approval Process">
+		<groups>
+			<run>
+				<exclude name="PapNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.general.D_GnrlPAPNG" />
+			<class name="test_Suite.tests.general.E_GnrlFndOppNG" />
+			<class name="test_Suite.tests.general.F_GnrlFndOppApprovalNG" />
+		</classes>
+	</test>	 -->
+</suite>

@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-Projects-Report" annotations="jdk">
+	<test name="PO Managing Phase III Ready for Archiving Setup">
+		<groups>
+			<run>
+				<include name="" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="" />
+		</classes>
+	
+	</test>
+	
+	
+	<test name="PO Managing Phase III Ready for Archiving">
+		<groups>
+			<run>
+				<include name="" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="" />
+			<class name="" />
+			<class name="" />
+			<class name="" />
+		</classes>	
+	</test>
+
+</suite>

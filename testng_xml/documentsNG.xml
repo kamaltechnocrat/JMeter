@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Documents-Report" annotations="jdk">
+	<test verbose="2" name="PO Managing Documents">
+		<groups>
+			<run>
+				<include name="DocumentsNG" />
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.documents.Documents_TestingNG" />
+			<class name="test_Suite.tests.documents.TestDocumentDetailsMandatoryFields" />
+			<class name="test_Suite.tests.documents.TestDocumentsINFOPPStepNG" />
+			<class name="test_Suite.tests.documents.TestDownloadDocumentsNG" />
+			<class name="test_Suite.tests.documents.TestDocumentTypeAddedAndUsedNG" />
+			<class name="test_Suite.tests.eForms.Test_DocumentsAttachmentListNG" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_Program" formIdentifier="BF-FOPP-Admin-eForm-Source" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="BF FOPP Admin eForm Source"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="BF FOPP Admin eForm Source"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="BF FOPP Admin eForm Source"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="BF FOPP Admin eForm Source"/>
+	</FormTitles>
+	<DatePublished date="2009.05.27 AD 09:18:36 EDT"/>
+	<DefaultFormlet identifier="Dropdown-M2M-eFormFields"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Dropdown-M2M-eFormFields">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown M2M eFormFields"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown M2M eFormFields"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown M2M eFormFields"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown M2M eFormFields"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown M2M eFormFields"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown M2M eFormFields"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown M2M eFormFields"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown M2M eFormFields"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_M2M" identifier="Many-to-Many" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions>
+						<Description localeCountryCode="CA" localeLangCode="fr" title="Check List M2M"/>
+						<Description localeCountryCode="CA" localeLangCode="en" title="Check List M2M"/>
+						<Description localeCountryCode="US" localeLangCode="en" title="Check List M2M"/>
+						<Description localeCountryCode="GB" localeLangCode="en" title="Check List M2M"/>
+					</Descriptions>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Many-to-Many"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Many-to-Many"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Many-to-Many"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Many-to-Many"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_CANADIAN_PROVINCES"/>
+							</Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_RadioButtons" identifier="Radio-Button" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Radio Button"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Radio Button"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Radio Button"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Radio Button"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="G3_US_STATES"/>
+							</Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission Summary">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

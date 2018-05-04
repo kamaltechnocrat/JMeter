@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_UserProfile" formIdentifier="User-Profile" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="US" localeLangCode="en" title="User Profile"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="User Profile"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="User Profile"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="User Profile"/>
+	</FormTitles>
+	<DatePublished date="2010.02.08 AD 14:55:06 EST"/>
+	<DefaultFormlet identifier="e.Form Question Holder"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="e.Form Question Holder">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Profile"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Profile"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Profile"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Profile"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Profile"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Profile"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Profile"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Profile"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short Text" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

@@ -1,0 +1,21 @@
+DA_NUMERIC,NUMERIC,Numeric,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Number,Applicant,Applicant,Min-And-Max-Properties-eFormFields
+DA_NUMERIC2,NUMERIC2,Numeric2,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Number,Applicant,Applicant,Min-And-Max-Properties-eFormFields
+DA_PASSWORD,PASSWORD,Password,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Short Text,Applicant,Applicant,Min-And-Max-Properties-eFormFields
+DA_PHONE_NUMBER,PHONE_NUMBER,Phone Number,Test-Applicant-Reporting-Function,Type-Properties-eFormFields,Short Text,Applicant,Applicant,Type-Properties-eFormFields
+DA_POSTAL_CODE,POSTAL_CODE,Postal Code,Test-Applicant-Reporting-Function,Type-Properties-eFormFields,Short Text,Applicant,Applicant,Type-Properties-eFormFields
+DA_REVIEW_SCORE,REVIEW_SCORE,Review Score,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Number,Applicant,Applicant,Min-And-Max-Properties-eFormFields
+DA_SHORT_TEXT,SHORT_TEXT,Short Text,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Short Text,Applicant,Applicant,Min-And-Max-Properties-eFormFields
+DA_WEB_ADDRESS,WEB_ADDRESS,Web Address,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Short Text,Applicant,Applicant,No-Properties-eFormFields
+DA_RADIO_BUTTON,RADIO_BUTTON,Radio Button,Test-Applicant-Reporting-Function,Dropdown-Lookup-Property-eFormFields,Number,Applicant,Applicant,Dropdown-Lookup-Property-eFormFields
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+DA_CHECKBOX,CHECKBOX,Checkbox,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Number,Applicant,Applicant,No-Properties-eFormFields
+DA_CHILD_DROPDOWN,CHILD_DROPDOWN,Child Dropdown,Test-Applicant-Reporting-Function,Dropdown-eFormFields,Dropdown,Applicant,Applicant,Dropdown-eFormFields
+DA_DATE,DATE,Date,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Date,Applicant,Applicant,No-Properties-eFormFields
+DA_DROPDOWN,DROPDOWN,Dropdown,Test-Applicant-Reporting-Function,Dropdown-eFormFields,Dropdown,Applicant,Applicant,Dropdown-eFormFields
+DA_EIN_NUMBER,EIN_NUMBER,EIN Number,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Short Text,Applicant,Applicant,No-Properties-eFormFields
+DA_EMAIL_ADDRESS,EMAIL_ADDRESS,EmailAddress,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Short Text,Applicant,Applicant,No-Properties-eFormFields
+DA_LONG_TEXT,LONG_TEXT,Long Text,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Long Text,Applicant,Applicant,Min-And-Max-Properties-eFormFields
+DA_MANY_TO_MANY,MANY_TO_MANY,Many-to-Many,Test-Applicant-Reporting-Function,Dropdown-Lookup-Property-eFormFields,Many To Many,Applicant,Applicant,Dropdown-Lookup-Property-eFormFields

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_FrontOfficeMultipleSubmission" formIdentifier="Assoc-Recommenders-Submission" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Assoc Recommenders Submission"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Assoc Recommenders Submission"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="Assoc Recommenders Submission"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Assoc Recommenders Submission"/>
+	</FormTitles>
+	<DatePublished date="2011.07.11 AD 11:05:10 EDT"/>
+	<DefaultFormlet identifier="Recommnder-Letter"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Recommnder-Letter">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Recommender Letter"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Recommender Letter"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Recommender Letter"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Recommender Letter"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Recommender Letter"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Recommender Letter"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Recommender Letter"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Recommender Letter"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_LongText" identifier="LETTER" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Recommendation Letter:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Recommendation Letter:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Recommendation Letter:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Recommendation Letter:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[1073741824]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[20]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="RECOMMENDER_NAME" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Recommender Name:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Recommender Name:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Recommender Name:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Recommender Name:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission-Summary">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

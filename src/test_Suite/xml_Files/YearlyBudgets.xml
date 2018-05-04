@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reference>
+<table name="Budget Reference Table">
+<rows>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_EQUIPMENT</column>
+<column name="allocated_budget">10000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_BUILDINGS</column>
+<column name="allocated_budget">20000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SALARIES</column>
+<column name="allocated_budget">100000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_TRAVEL</column>
+<column name="allocated_budget">8000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OVERHEAD</column>
+<column name="allocated_budget">6000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OTHER</column>
+<column name="allocated_budget">2000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2014</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_EQUIPMENT</column>
+<column name="allocated_budget">10000</column>
+<column name="start_date">2014/03/01</column>
+<column name="end_date">2015/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_EQUIPMENT</column>
+<column name="allocated_budget">11000</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_BUILDINGS</column>
+<column name="allocated_budget">22000</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SALARIES</column>
+<column name="allocated_budget">110000</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_TRAVEL</column>
+<column name="allocated_budget">9000</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OVERHEAD</column>
+<column name="allocated_budget">6500</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OTHER</column>
+<column name="allocated_budget">2200</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2015</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SUPPLIES</column>
+<column name="allocated_budget">4500</column>
+<column name="start_date">2015/03/01</column>
+<column name="end_date">2016/02/29</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_EQUIPMENT</column>
+<column name="allocated_budget">12000</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_BUILDINGS</column>
+<column name="allocated_budget">22000</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SALARIES</column>
+<column name="allocated_budget">125000</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_TRAVEL</column>
+<column name="allocated_budget">10000</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OVERHEAD</column>
+<column name="allocated_budget">7000</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OTHER</column>
+<column name="allocated_budget">2250</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2016</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SUPPLIES</column>
+<column name="allocated_budget">4500</column>
+<column name="start_date">2016/03/01</column>
+<column name="end_date">2017/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_EQUIPMENT</column>
+<column name="allocated_budget">12500</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_BUILDINGS</column>
+<column name="allocated_budget">23000</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SALARIES</column>
+<column name="allocated_budget">130000</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_TRAVEL</column>
+<column name="allocated_budget">10500</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OVERHEAD</column>
+<column name="allocated_budget">7250</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OTHER</column>
+<column name="allocated_budget">2300</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2017</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SUPPLIES</column>
+<column name="allocated_budget">5000</column>
+<column name="start_date">2017/03/01</column>
+<column name="end_date">2018/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_EQUIPMENT</column>
+<column name="allocated_budget">12500</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_CAPITAL</column>
+<column name="expense_type">CAPITAL_BUILDINGS</column>
+<column name="allocated_budget">23000</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SALARIES</column>
+<column name="allocated_budget">140000</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_TRAVEL</column>
+<column name="allocated_budget">11000</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OVERHEAD</column>
+<column name="allocated_budget">8000</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_OTHER</column>
+<column name="allocated_budget">2350</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+<row>
+<column name="Yearly_Budgets">2018</column>
+<column name="expense_category">EXPENSE_OPERATIONS</column>
+<column name="expense_type">OPERATIONS_SUPPLIES</column>
+<column name="allocated_budget">5000</column>
+<column name="start_date">2018/03/01</column>
+<column name="end_date">2019/02/28</column>
+</row>
+</rows>
+</table>
+</reference>

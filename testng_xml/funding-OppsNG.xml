@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Funding-Opportunities-Report" annotations="jdk">
+	<test verbose="2" name="PO Funding Opportunities">
+		<groups>
+			<run>
+				<exclude name="NotificationsNG" />
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.general.I_FO_FOPP_Notifications" />
+			<class name="test_Suite.tests.workflow.SubmissionScheduleNotificationsNG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_04NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1931_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1931_02NG" />
+			<class name="test_Suite.tests.post_Award.A_PA_GnrlProgramNG" />
+			<class name="test_Suite.tests.post_Award.B_PA_FO_ProjectNG" />
+			<class name="test_Suite.tests.post_Award.C_PA_PO_ProjectNG" />
+			<class name="test_Suite.tests.post_Award.D_PA_NonCriticalReviewStepNG" />
+			<class name="test_Suite.tests.post_Award.F_PA_DoublePost_AwardNG" />
+			<class name="test_Suite.tests.post_Award.G_PA_DecisionStepNG" />
+			<class name="test_Suite.tests.general.A_GnrlProgramNG" />
+			<class name="test_Suite.tests.general.B_FOGnrlProjectNG" />
+			<class name="test_Suite.tests.general.C_POGnrlProjectNG" />
+			<class name="test_Suite.tests.general.J_FO_WSS_DecisionStepsNG" />
+			<class name="test_Suite.tests.workflow.Multi_WSS_DecisionStepsNG" />
+			<class name="test_Suite.tests.workflow.PausedSubmissionScheduleNG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2360_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2360_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2391_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2625_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2626_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2627_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2628_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2631_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2631_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2835_01NG" />
+		</classes>
+	</test>
+
+</suite>

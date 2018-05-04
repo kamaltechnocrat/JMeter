@@ -1,0 +1,2255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserGroupIntegration version="6.1.0.0">
+	<IntegrateUsers>
+		<IntegrateUser login-name="westuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_westuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FWestUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LWestUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_West Clerks">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northeasternuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northeasternuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthEasternUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthEasternUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northeasternuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northeasternuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthEasternUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthEasternUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northeasternuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northeasternuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthEasternUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthEasternUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southwesternuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southwesternuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthWesternUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthWesternUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southwesternuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southwesternuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthWesternUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthWesternUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southwesternuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southwesternuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthWesternUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthWesternUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northwesternuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northwesternuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthWesternUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthWesternUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southwesternuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southwesternuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthWesternUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthWesternUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southwesternuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southwesternuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthWesternUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthWesternUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southeasternuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southeasternuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthEasternUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthEasternUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southeasternuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southeasternuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthEasternUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthEasternUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southeasternuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southeasternuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthEasternUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthEasternUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southeasternuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southeasternuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthEasternUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthEasternUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southeasternuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southeasternuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthEasternUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthEasternUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Financial Approvers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Financial Approvers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Financial Approvers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Financial Approvers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="southuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_southuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FSouthUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LSouthUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_South Financial Approvers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="eastuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_eastuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="LEastUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LEastUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_East Intake">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="eastuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_eastuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="LEastUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LEastUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_East Intake">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="eastuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_eastuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="LEastUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LEastUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_East Intake">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="eastuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_eastuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="LEastUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LEastUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_East Intake">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="westuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_westuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FWestUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LWestUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_West Clerks">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="westuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_westuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FWestUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LWestUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_West Clerks">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="westuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_westuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FWestUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LWestUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_West Clerks">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Financial Officers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Financial Officers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Financial Officers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="sant1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_sant1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="Test1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="Sanity1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="Sanity">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="G3">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="eastuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_eastuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="LEastUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LEastUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_East Intake">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="westuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_westuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FWestUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LWestUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_West Clerks">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Financial Officers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Financial Officers">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="sant2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_sant2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="Test2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="Sanity2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="Sanity">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="G3">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="sant3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_sant3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="Test3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="Sanity3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="Sanity">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="G3">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="sant4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_sant4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="Test4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="Sanity4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="Sanity">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="G3">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="sant5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_sant5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="Test5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="Sanity5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="Sanity">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="G3">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northwesternuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northwesternuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthWesternUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthWesternUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northwesternuser3">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northwesternuser3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthWesternUser3">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthWesternUser3">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northwesternuser4">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northwesternuser4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthWesternUser4">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthWesternUser4">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northwesternuser5">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northwesternuser5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthWesternUser5">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthWesternUser5">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Western">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-West-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northeasternuser1">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northeasternuser1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthEasternUser1">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthEasternUser1">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+		<IntegrateUser login-name="northeasternuser2">
+			<UserInfo>
+				<Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+				<City value="Ottawa">
+                </City>
+				<ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+				<ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+				<Country constant="CAN: CANADA">
+                </Country>
+				<Email value="qa_northeasternuser2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+				<EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+				<FirstName value="FNorthEasternUser2">
+                </FirstName>
+				<Language constant="LANGUAGES_ENGLISH">
+                </Language>
+				<LastName value="LNorthEasternUser2">
+                </LastName>
+				<Organization value="Grantium Inc.">
+                </Organization>
+				<PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+				<Position value="QA">
+                </Position>
+				<PostalCode value="K1P-5J9">
+                </PostalCode>
+				<ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+				<Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+			</UserInfo>
+			<AccessPoints>
+				<AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+			</AccessPoints>
+			<Parents>
+				<Parent name="G3_North Eastern">
+                </Parent>
+			</Parents>
+			<OrganizationalHierarchy>
+				<PrimaryOrganization>
+					<HierarchicalOrganization identifier="North-East-Id">
+                    </HierarchicalOrganization>
+				</PrimaryOrganization>
+			</OrganizationalHierarchy>
+		</IntegrateUser>
+	</IntegrateUsers>
+</UserGroupIntegration>

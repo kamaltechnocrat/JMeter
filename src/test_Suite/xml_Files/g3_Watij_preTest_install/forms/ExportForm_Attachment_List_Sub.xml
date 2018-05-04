@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission" formIdentifier="Attachment List Sub" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="US" localeLangCode="en" title="General Attachment List Submission"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="General Attachment List Submission"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="General Attachment List Submission"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="General Attachment List Submission"/>
+	</FormTitles>
+	<DefaultFormlet identifier="Attachment List Formlet"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.MenuItemOnly" identifier="Menu Item Only">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles/>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Menu"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Menu"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Menu"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Menu"/>
+			</FormletMenuTitles>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.AttachmentList" identifier="Attachment List Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="US" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="US" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Formlet"/>
+			</FormletMenuTitles>
+			<FormletFunctions/>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.AttachmentDetails" identifier="Attachment Details">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Attachment Details"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Attachment Details"/>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Détails du fichier joint"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Attachment Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="File Description" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="--"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="--"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="--"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Document Description"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Document Description"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Description du document"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Document Description"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Document Description:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Document Description:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Description du document:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Document Description:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Filename" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="File Name:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="File Name:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Nom de fichier:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="File Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="MangledFilename" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Mangled File Name:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Mangled File Name:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Nom de fichier tronqué:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Mangled File Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Date" identifier="DateAttached" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction" type="Simple User Access Grant">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="No Attachment"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="No Attachment"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="Pas de fichier joint"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="No Attachment"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Date Attached"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Date Attached"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Joint le"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Date Attached"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Date Attached:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Date Attached:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Joint le:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Date Attached:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="2" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission Summary">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="General Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="General Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="General Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="General Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

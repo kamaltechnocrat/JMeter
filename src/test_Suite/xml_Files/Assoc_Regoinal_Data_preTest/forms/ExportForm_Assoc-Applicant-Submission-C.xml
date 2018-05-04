@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission" formIdentifier="Assoc-Applicant-Submission-C" version="6.1.0.0">
+		<FormTitles>
+			<Title localeCountryCode="CA" localeLangCode="fr" title="Assoc Applicant Submission C"/>
+			<Title localeCountryCode="CA" localeLangCode="en" title="Assoc Applicant Submission C"/>
+			<Title localeCountryCode="US" localeLangCode="en" title="Assoc Applicant Submission C"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Assoc Applicant Submission C"/></FormTitles>
+		<DatePublished date="2011.09.19 AD 12:42:54 EDT"/>
+		<DefaultFormlet identifier="University-Information-Assoc"/>
+		<RenderTombstoneData value="1"/>
+		<RenderPubApplyNowButton value="0"/>
+		<RenderNextBackButtons value="true"/>
+		<FormFunctions>
+			<Function className="com.infoterra.grantium.model.forms.functions.AssociateToParentApplicant" type="Associate to Parent Applicant">
+				<Properties>
+					<Property propertyName="stringParameter1">
+						<Value valueClass="java.lang.String"><![CDATA[University-Name-dd|N]]></Value>
+					</Property>
+				</Properties>
+			</Function>
+		</FormFunctions>
+		<Formlets>
+			<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="University-Information-Assoc">
+				<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+				<FormletTitles>
+					<Title localeCountryCode="CA" localeLangCode="en" title="University Information Assoc"/>
+					<Title localeCountryCode="CA" localeLangCode="fr" title="University Information Assoc"/>
+					<Title localeCountryCode="US" localeLangCode="en" title="University Information Assoc"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="University Information Assoc"/></FormletTitles>
+				<MenuOptions indentLevel="0"/>
+				<IncludeInSummary include="true"/>
+				<FormletMenuTitles>
+					<Title localeCountryCode="CA" localeLangCode="en" title="University Information Assoc"/>
+					<Title localeCountryCode="CA" localeLangCode="fr" title="University Information Assoc"/>
+					<Title localeCountryCode="US" localeLangCode="en" title="University Information Assoc"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="University Information Assoc"/></FormletMenuTitles>
+				<FormletFunctions>
+					<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+						<Properties>
+							<Property propertyName="booleanParameter1">
+								<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+							</Property>
+						</Properties>
+					</Function>
+				</FormletFunctions>
+				<Fields>
+					<Field className="com.infoterra.grantium.model.forms.fields.Field_ParentApplicantDropDown" identifier="University-Name-dd" mandatory="true">
+						<LineSpacing value="0"/>
+						<FieldFunctions/>
+						<Descriptions/>
+						<FieldLabels>
+							<Label localeCountryCode="CA" localeLangCode="en" title="University Name:"/>
+							<Label localeCountryCode="CA" localeLangCode="fr" title="University Name:"/>
+							<Label localeCountryCode="US" localeLangCode="en" title="University Name:"/>
+							<Label localeCountryCode="GB" localeLangCode="en" title="University Name:"/>
+						</FieldLabels>
+						<ToolTips/>
+						<Properties>
+							<Property propertyName="applicantTypeID">
+								<Value isList="false">
+									<Choice value="G3_APPLICANT_TYPE_PARENT"/>
+								</Value>
+							</Property>
+							<Property propertyName="forceValueChoice">
+								<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+							</Property>
+							<Property propertyName="autoSaveOnChange">
+								<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+							</Property>
+						</Properties>
+					</Field>
+					<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="University-Code" mandatory="true">
+						<LineSpacing value="0"/>
+						<FieldFunctions>
+							<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+								<Properties>
+									<Property propertyName="stringParameter1">
+										<Value/>
+									</Property>
+									<Property propertyName="expression">
+										<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+									</Property>
+								</Properties>
+							</Function>
+							<Function className="com.infoterra.grantium.model.forms.functions.ComputedValue" type="Calculated Value">
+								<Properties>
+									<Property propertyName="intParameter1">
+										<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+									</Property>
+									<Property propertyName="stringParameter1">
+										<Value/>
+									</Property>
+									<Property propertyName="expression">
+										<Value valueClass="java.lang.String"><![CDATA[${University-Name-dd}]]></Value>
+									</Property>
+								</Properties>
+							</Function>
+						</FieldFunctions>
+						<Descriptions/>
+						<FieldLabels>
+							<Label localeCountryCode="CA" localeLangCode="en" title="U Code:"/>
+							<Label localeCountryCode="CA" localeLangCode="fr" title="U Code:"/>
+							<Label localeCountryCode="US" localeLangCode="en" title="U Code:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="U Code:"/></FieldLabels>
+						<Properties>
+							<Property propertyName="minimumLength">
+								<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+							</Property>
+							<Property propertyName="maximumLength">
+								<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+							</Property>
+						</Properties>
+					</Field>
+				</Fields>
+			</Formlet>
+			<Formlet className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission-Summary-Fields-Assoc">
+				<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+				<FormletTitles>
+					<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+					<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+					<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/></FormletTitles>
+				<MenuOptions indentLevel="0"/>
+				<IncludeInSummary include="false"/>
+				<FormletMenuTitles>
+					<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+					<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+					<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/></FormletMenuTitles>
+				<Properties>
+					<Property propertyName="displayLastUpdatedTime_wrapper">
+						<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+					</Property>
+					<Property propertyName="displayLastUpdatedBy">
+						<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+					</Property>
+					<Property propertyName="displayFieldsBelow_wrapper">
+						<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+					</Property>
+					<Property propertyName="displayFieldsBelow">
+						<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+					</Property>
+				</Properties>
+				<FormletFunctions/>
+				<Fields/>
+			</Formlet>
+		</Formlets>
+		<OrganizationalHierarchy>
+			<PrimaryOrganization>
+				<HierarchicalOrganization identifier="G3"/>
+				<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+			</PrimaryOrganization>
+		</OrganizationalHierarchy>
+	</Form>

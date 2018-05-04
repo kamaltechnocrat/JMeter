@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserGroupIntegration version="6.1.0.0">
+    <IntegrateUsers>
+        <IntegrateUser login-name="concou1">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Email value="qa_concodu1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Concod">
+                </FirstName>
+                <LastName value="Concordia">
+                </LastName>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="student3">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Email value="qa_student3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Student">
+                </FirstName>
+                <LastName value="Student3">
+                </LastName>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="mcgill">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Email value="mcguill@mail.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Mcgill">
+                </FirstName>
+                <LastName value="Mcgill">
+                </LastName>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="student4">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_student4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Student">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="Student4">
+                </LastName>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="student2">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_student2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Student">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="Student2">
+                </LastName>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G3_FO_Group1">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="student1">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Email value="qa_student1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Student">
+                </FirstName>
+                <LastName value="Student1">
+                </LastName>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G3_FO_Group1">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="caru1">
+            <UserInfo>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Email value="qa_caru1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <FirstName value="Carelton1">
+                </FirstName>
+                <LastName value="University">
+                </LastName>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FRONT_OFFICE">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+    </IntegrateUsers>
+</UserGroupIntegration>

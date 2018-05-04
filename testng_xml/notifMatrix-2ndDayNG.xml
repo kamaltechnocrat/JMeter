@@ -1,0 +1,189 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Notif-Matrix-Second-Day-Report" annotations="jdk">
+	
+	<test name="Manage A-Decision-Notif-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Decision_Notif_FOPP_Notifications.AppAmnedRequestedNotif_2ndDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Due-Notif-PA-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.ApprovalStepAmendNotifOnly_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.ReviewStepAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyApprovalStepDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyAwardAmendmentAloneNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyNoPASubDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyNoPASubEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyNoPASubExitNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyPASubDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyPASubEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyPASubExitNotif_2ndDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Gnrl-Notif-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Gnrl_Notif_FOPP_Notifications.AwardAmendmentStepExitNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.a_Gnrl_Notif_FOPP_Notifications.EvaluatorNeededNotification_2ndDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notif-Amend-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Notif_Amend_FOPP_Notifications.ApprovalStepEntryPausedStepNotif_2ndDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notify-Evaluators-PA-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Notify_Evaluators_PA_FOPP_Notif.ApprovalStepDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.a_Notify_Evaluators_PA_FOPP_Notif.ReviewStepAmendDue_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrix.a_Notify_Evaluators_PA_FOPP_Notif.StepEntryFrmAPausedStepNotif_2ndDay" />
+		</classes>	
+	</test>	
+	
+	 <!--
+
+    <test name="Manage A-Notif-PA-FOPP-S1905_01">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifySubStepExitNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyReviewStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyApprovalStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.AwardStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.IPASStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.IPASStepExitNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAReviewStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAReviewStepExitNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAApprovalStepEntryNotif_2ndDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notif-PA-FOPP-S1905_02">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AppSubAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ReviewAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ReviewAmendReqNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ApprovalAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ApprovalAmendReqNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendReqNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAppAmendReqNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAReviewAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAReviewAmendReqNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAApprovalAmendDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAApprovalAmendReqNotif_2ndDay" />
+		</classes>
+     </test>
+
+     <test name="Manage A-Notif-PA-FOPP-S1905_03">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ReviewStepEvalAssignedNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ReviewStepEvalNeededNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ApprovalStepEvalNeededNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAReviewEvalNeededNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalAssignedNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalNeededNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAReviewEvalAssignedNotif_2ndDay" />
+		</classes>	
+     </test>
+     
+      <test name="Manage A-Notif-PA-FOPP-S1905_04">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.AppSubStepDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.ReviewStepDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.IPASStepDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAReviewStepDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAApprovalStepDueNotif_2ndDay" />
+		</classes>
+	</test>		
+ 
+    <test name="Manage ProjectActivity Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityDueDateNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityOneDayBeforeNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityTwoDayBeforeNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityImmediateNotif_2ndDay" />
+		</classes>
+	</test>	
+	
+	<test name="Manage Sub Schedule Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalAmendReqNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASScheduleDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASSConditionalScheduleDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASSFalseConditionalValSchedDueNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.PASubDueNotifWhenNoScheduleDueDate_2ndDay" />
+	   </classes>
+	 </test>	
+	
+	<test name="Manage Post-Award Step Notifications for Observation">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyPAStepEntryNotif_2ndDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAStepDueNotif_2ndDay" />	
+	   </classes>
+	 </test>
+	 	 -->
+</suite>

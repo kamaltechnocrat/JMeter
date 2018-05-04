@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="3_0-Feataures-Report" verbose="9" annotations="jdk">
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<exclude name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Amendments Enhancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.OpenSubmissionIconInAmendList" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_FOApplicant_As_Amender_To_InitialClaim" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_FOApplicant_As_Amender" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender_To_InitialClaim" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_AssignsGroup_As_Amender" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_ReAssign_Amendment" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_AssignStepOfficerBeforeReexecute" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_Execute_PA_GroupOfficerAssignment" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_ExecuteApplicantAssignment" />	
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_ExecuteGroupOfficerAssignment" />
+		</classes>
+	</test>
+
+</suite>

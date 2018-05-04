@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-EForms-Report" annotations="jdk">
+	<test name="PO Managing EForms Workflow">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="test_Suite.tests.workflow.GPS_SubmissionDateNG" /> 
+			<class name="test_Suite.tests.workflow.GPS_BF_Award_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_Submission_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GeneratePaymentScheduleNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.DataGrid_BF_CalcValuesNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1886_01NG" />
+			<class name="test_Suite.tests.eForms.Test_G3UtilsNG" />
+			<class name="test_Suite.tests.eForms.TestAllEFormFieldsPDFNG" />
+			<class name="test_Suite.tests.eForms.TestEFormfieldFunctionsCRUDNG" />
+			<class name="test_Suite.tests.eForms.TestEFormFunctionCRUDNG" />
+			<class name="test_Suite.tests.eForms.TestFormletFunctionsCRUDNG" />
+			<!-- 
+				<class name="test_Suite.tests.eForms.CreateFormsNG" />
+			-->
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,2186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ReportingFields version="6.1.0.0">
+    <ReportingFolder>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <identifier>No_Propreties_Fields_LBF</identifier>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>No Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>No Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>No Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>No Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+            <reportingIdentifier>DA_APPROVAL_DROPDOWN</reportingIdentifier>
+            <fieldType>Field_DropDown</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Approval Dropdown</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Approval Dropdown</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Approval Dropdown</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Approval Dropdown</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Approval Dropdown</eFormFieldIdentifier>
+                <formIdentifier>LBF-Applicant Profile-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+            <reportingIdentifier>DA_CHECKBOX</reportingIdentifier>
+            <fieldType>Field_Number</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Checkbox</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Checkbox</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Checkbox</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Checkbox</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Checkbox</eFormFieldIdentifier>
+                <formIdentifier>LBF-Applicant Profile-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+            <reportingIdentifier>DA_DATE</reportingIdentifier>
+            <fieldType>Field_Date</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Date</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Date</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Date</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Date</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Date</eFormFieldIdentifier>
+                <formIdentifier>LBF-Applicant Profile-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+            <reportingIdentifier>DA_EIN_NUMBER</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>EIN Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>EIN Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>EIN Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>EIN Number</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>EIN Number</eFormFieldIdentifier>
+                <formIdentifier>LBF-Applicant Profile-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+            <reportingIdentifier>DA_EMAIL_ADDRESS</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Email Address</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Email Address</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Email Address</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Email Address</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Email Address</eFormFieldIdentifier>
+                <formIdentifier>LBF-Applicant Profile-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+            <reportingIdentifier>DA_WEB_ADDRESS</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Web Address</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Web Address</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Web Address</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Web Address</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Web Address</eFormFieldIdentifier>
+                <formIdentifier>LBF-Applicant Profile-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+    </ReportingFolder>
+    <ReportingFolder>
+        <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+        <identifier>Min_And_Max_Propreties_Fields_</identifier>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Min And Max Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Min And Max Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>Min And Max Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>Min And Max Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+            <reportingIdentifier>DF_LONG_TEXT</reportingIdentifier>
+            <fieldType>Field_LongText</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Long Text</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Long Text</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Long Text</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Long Text</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Long Text</eFormFieldIdentifier>
+                <formIdentifier>LBF-Administration-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+            <reportingIdentifier>DF_NUMERIC</reportingIdentifier>
+            <fieldType>Field_Number</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Numeric</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Numeric</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Numeric</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Numeric</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Numeric</eFormFieldIdentifier>
+                <formIdentifier>LBF-Administration-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+            <reportingIdentifier>DF_PASSWORD</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Password</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Password</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Password</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Password</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Password</eFormFieldIdentifier>
+                <formIdentifier>LBF-Administration-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+            <reportingIdentifier>DF_SHORT_TEXT</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Short Text</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Short Text</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Short Text</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Short Text</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Short Text</eFormFieldIdentifier>
+                <formIdentifier>LBF-Administration-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+            <reportingIdentifier>DF_REVIEW_SCORE</reportingIdentifier>
+            <fieldType>Field_Number</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Review Score</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Review Score</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Review Score</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Review Score</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Review Score</eFormFieldIdentifier>
+                <formIdentifier>LBF-Administration-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+    </ReportingFolder>
+    <ReportingFolder>
+        <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+        <identifier>Type_Propreties_Fields_LBF</identifier>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+            <reportingIdentifier>DO_PHONE_NUMBER</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Phone Number</eFormFieldIdentifier>
+                <formIdentifier>LBF-Organization-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+            <reportingIdentifier>DO_POSTAL_CODE</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Postal Code</eFormFieldIdentifier>
+                <formIdentifier>LBF-Organization-Source-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+    </ReportingFolder>
+    <ReportingFolder>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <identifier>Data_Grid_Fields_LBF</identifier>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Data Grid Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Data Grid Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>Data Grid Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>Data Grid Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_NUMERIC_A1</reportingIdentifier>
+            <fieldType>Field_Number</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Numeric</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>0</gridRow>
+                <gridColumn>0</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_NUMERIC_B2</reportingIdentifier>
+            <fieldType>Field_Number</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Numeric</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>1</gridRow>
+                <gridColumn>1</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_NUMERIC_C3</reportingIdentifier>
+            <fieldType>Field_Number</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Numeric_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Numeric</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>2</gridRow>
+                <gridColumn>2</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_TEXT_A1</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Text_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Text_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Text_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Text_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Text</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>0</gridRow>
+                <gridColumn>0</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_TEXT_B2</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Text_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Text_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Text_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Text_B2</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Text</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>1</gridRow>
+                <gridColumn>1</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_TEXT_C3</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Text_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Text_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Text_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Text_C3</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Text</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>2</gridRow>
+                <gridColumn>2</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_DATA_GRID_LOOKUP_A1</reportingIdentifier>
+            <fieldType>Field_DropDown</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Lookup_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Data Grid Lookup_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Data Grid Lookup_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Data Grid Lookup_A1</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Data-Grid-Lookup</eFormFieldIdentifier>
+                <formIdentifier>LBF-PO Submission-Equal-eLists</formIdentifier>
+                <gridRow>0</gridRow>
+                <gridColumn>0</gridColumn>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+    </ReportingFolder>
+    <ReportingFolder>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <identifier>Type_Propreties_Fields_LBF</identifier>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingFolderText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>Type Propreties Fields LBF</text>
+        </ReportingFolderText>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_PHONE_NUMBER</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Phone Number</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Phone Number</eFormFieldIdentifier>
+                <formIdentifier>LBF-Post Award Submission-Equal-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+        <ReportingField>
+            <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+            <reportingIdentifier>DS_POSTAL_CODE</reportingIdentifier>
+            <fieldType>Field_Text</fieldType>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>fr</languageCode>
+                    <countryCode>CA</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>US</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldText>
+                <Locale>
+                    <languageCode>en</languageCode>
+                    <countryCode>GB</countryCode>
+                </Locale>
+                <text>Postal Code</text>
+            </ReportingFieldText>
+            <ReportingFieldMapping>
+                <eFormFieldIdentifier>Postal Code</eFormFieldIdentifier>
+                <formIdentifier>LBF-Post Award Submission-Equal-eLists</formIdentifier>
+            </ReportingFieldMapping>
+            <system>false</system>
+            <list>true</list>
+            <typeEditable>true</typeEditable>
+            <usage>DIM</usage>
+        </ReportingField>
+    </ReportingFolder>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <reportingIdentifier>DA_LONG_TEXT</reportingIdentifier>
+        <fieldType>Field_LongText</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DA Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DA Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Long Text</eFormFieldIdentifier>
+            <formIdentifier>Test-Applicant-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <reportingIdentifier>DA_NUMERIC</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DA Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DA Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Numeric</eFormFieldIdentifier>
+            <formIdentifier>Test-Applicant-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <reportingIdentifier>DA_PASSWORD</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Password</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Password</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DA Password</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DA Password</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Password</eFormFieldIdentifier>
+            <formIdentifier>Test-Applicant-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <reportingIdentifier>DA_SHORT_TEXT</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DA Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DA Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Short Text</eFormFieldIdentifier>
+            <formIdentifier>Test-Applicant-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <reportingIdentifier>DA_NUMERIC2</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DA Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DA Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Numeric2</eFormFieldIdentifier>
+            <formIdentifier>Test-Applicant-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_APPLICANT</subject>
+        <reportingIdentifier>DA_REVIEW_SCORE</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DA Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DA Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DA Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Review Score</eFormFieldIdentifier>
+            <formIdentifier>Test-Applicant-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+        <reportingIdentifier>DF_PHONE_NUMBER</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DF Phone Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DF Phone Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DF Phone Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DF Phone Number</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Phone Number</eFormFieldIdentifier>
+            <formIdentifier>Test-Admin-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_FUNDINGOPPORTUNITY</subject>
+        <reportingIdentifier>DF_POSTAL_CODE</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DF Postal Code</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DF Postal Code</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DF Postal Code</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DF Postal Code</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Postal Code</eFormFieldIdentifier>
+            <formIdentifier>Test-Admin-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+        <reportingIdentifier>DO_CHECKBOX</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DO Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DO Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Checkbox</eFormFieldIdentifier>
+            <formIdentifier>Test-Organization-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+        <reportingIdentifier>DO_DATE</reportingIdentifier>
+        <fieldType>Field_Date</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Date</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Date</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DO Date</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DO Date</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Date</eFormFieldIdentifier>
+            <formIdentifier>Test-Organization-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+        <reportingIdentifier>DO_EIN_NUMBER</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DO EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DO EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>EIN Number</eFormFieldIdentifier>
+            <formIdentifier>Test-Organization-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+        <reportingIdentifier>DO_EMAIL_ADDRESS</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DO Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DO Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Email Address</eFormFieldIdentifier>
+            <formIdentifier>Test-Organization-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_ORGANIZATION</subject>
+        <reportingIdentifier>DO_WEB_ADDRESS</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DO Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DO Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DO Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Web Address</eFormFieldIdentifier>
+            <formIdentifier>Test-Organization-eForm-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_DROPDOWN</reportingIdentifier>
+        <fieldType>Field_DropDown</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Dropdown</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Submission-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_CHILD_DROPDOWN</reportingIdentifier>
+        <fieldType>Field_DropDown</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Child Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Child Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Child Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Child Dropdown</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Child Dropdown</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Submission-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_DROPDOWN_FROM_LIST_TEXT_VAL</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Dropdown From List _Text Value from Applicant Profile</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>Dropdown From List _Text Value from Applicant Profile</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>Dropdown From List _Text Value from Applicant Profile</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>Dropdown From List _Text Value from Applicant Profile</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Dropdown From List (Text Value from Applicant Profile)</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Submission-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_LONG_TEXT</reportingIdentifier>
+        <fieldType>Field_LongText</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Long Text</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Long Text</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Review-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_NUMERIC</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Numeric</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Numeric</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Review-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_PASSWORD</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Password</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Password</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Password</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Password</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Password</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Review-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_SHORT_TEXT</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Short Text</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Short Text</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Review-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_NUMERIC2</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Numeric2</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Numeric2</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Review-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_REVIEW_SCORE</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Review Score</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Review Score</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-Review-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_CHECKBOX</reportingIdentifier>
+        <fieldType>Field_Number</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Checkbox</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Checkbox</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-ProjectApproval-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_DATE</reportingIdentifier>
+        <fieldType>Field_Date</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Date</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Date</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Date</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Date</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Date</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-ProjectApproval-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_EIN_NUMBER</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS EIN Number</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>EIN Number</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-ProjectApproval-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_EMAIL_ADDRESS</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Email Address</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Email Address</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-ProjectApproval-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+    <ReportingField>
+        <subject>G3_REPORTING_FIELD_SUBJECT_SUBMISSION</subject>
+        <reportingIdentifier>DS_WEB_ADDRESS</reportingIdentifier>
+        <fieldType>Field_Text</fieldType>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>fr</languageCode>
+                <countryCode>CA</countryCode>
+            </Locale>
+            <text>DS Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>US</countryCode>
+            </Locale>
+            <text>DS Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldText>
+            <Locale>
+                <languageCode>en</languageCode>
+                <countryCode>GB</countryCode>
+            </Locale>
+            <text>DS Web Address</text>
+        </ReportingFieldText>
+        <ReportingFieldMapping>
+            <eFormFieldIdentifier>Web Address</eFormFieldIdentifier>
+            <formIdentifier>Test-Project-eForm-ProjectApproval-Reporting-Function</formIdentifier>
+        </ReportingFieldMapping>
+        <system>false</system>
+        <list>false</list>
+        <typeEditable>true</typeEditable>
+        <usage>DIM</usage>
+    </ReportingField>
+</ReportingFields>

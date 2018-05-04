@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Cases-Report" thread-count="5" configfailurepolicy="skip" verbose="9" skipfailedinvocationcounts="false" parallel="false" annotations="JDK" data-provider-thread-count="10">	
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<exclude name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO - FO 3.0 Features Testing Setup">
+		<groups>
+			<run>
+				<exclude name="EFormsNG" />
+				<exclude name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.SSmustRunFirst" />	
+			<class name="test_Suite.tests.r3_0.CfgRunFirst" />	
+		</classes>
+	</test>
+	
+	<test name="PO Managing Step Amendment">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<!-- <class name="test_Suite.tests.r3_0.stepAmendment.TestAddedStepStaffAfterReExecuteNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestAddedStepStaffBeforeReExecuteNG" />			
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestAmendedSubmissionsNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestCancelingAmendmentBeforeReSubmit" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestCancelingLastAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestCancelingStepAmendmentNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestExitEvaluationStepOnNotUsedNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestExitEvaluationStepOnReExecutionNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestReExecutingEvaluationStepNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestRemovedStepStaffAfterReExecuteNG" />
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestRequestStepAmendment" /> -->
+			<class name="test_Suite.tests.r3_0.stepAmendment.TestRequestStepAmendmentPage" />
+		</classes> 
+	</test>
+</suite>

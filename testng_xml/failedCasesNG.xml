@@ -1,0 +1,99 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-OneClass-Report" verbose="9" annotations="jdk">
+
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Evaluation Enhancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.AmendSharedEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.AmendSharedPAEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.SharedEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.SharedPAEvaluation" />			
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.UnsubmittedEvaluations" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.UnsubmittedPAEvaluations" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Amendments Enhancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.OpenSubmissionIconInAmendList" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_FOApplicant_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_AssignsGroup_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_AssignStepOfficerBeforeReexecute" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_Execute_PA_GroupOfficerAssignment" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_ExecuteApplicantAssignment" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_ExecuteGroupOfficerAssignment" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Group Officers Assignment">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.AssignAmendToOfficersGroup" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.FoppAdminAssignOfficersToPAStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.FoppAdminAssignOfficersToStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.NewGroupAssignmentToPAStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.NewGroupAssignmentToStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.OfficersAccessToSubmissions" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.OfficersAssignementToSubmissions" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects' Workflow">
+		<groups>
+			<run>
+				<include name="ProjectListNG" />
+				<include name="WorkflowNG" />
+				<include name="ApplicantsNG" />
+				<exclude name="ProjectsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.projectList.TestSubmissionHistoryListNG" />
+			<class name="test_Suite.tests.general.G_Re_ExecuteOnSubmissionAmendNG" />
+			<class name="test_Suite.tests.applicants.TransferProjectsNG" />
+			<class name="test_Suite.tests.post_Award.E_PA_ProgramSubmissionStepNG" />
+			<class name="test_Suite.tests.workflow.AmendInitialClaim" />
+			<class name="test_Suite.tests.workflow.BlockReExecOnAmend" />
+			<class name="test_Suite.tests.workflow.ProjectStatusFilterInAppSub" />
+			<class name="test_Suite.tests.workflow.ReExecOnAmendNG" />
+			<class name="test_Suite.tests.workflow.UpdatingProjectNameAndNumber" />
+			
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2722_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2723_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2724_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_02NG" />
+		</classes>
+	</test>
+</suite>

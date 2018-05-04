@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-OneClass-Report" verbose="9" annotations="jdk">
+	<test name="One Class">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.post_Award.B_PA_FO_ProjectNG" />
+		</classes>
+	</test>
+</suite>

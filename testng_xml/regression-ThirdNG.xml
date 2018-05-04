@@ -1,0 +1,160 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Third-Regression-Report" verbose="2" annotations="jdk">
+	
+	<test name="PO Managing BF From Org e.From setup">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_RunFirst" />
+		</classes>	
+	</test>                                     
+	
+	<test name="PO Managing BF From Org e.From">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_AppSubmission" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_AwardForm" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF.LBF_IPASubmission" />
+		</classes>	
+	</test>
+	
+	
+	<test name="PO Managing Amendment BF From Org e.From setup">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF_Amend.LBF_RunFirstAmended" />
+		</classes>	
+	</test>                                     
+	
+	<test name="PO Managing Amendment BF From Org e.From">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF_Amend.LBF_AppSubmissionAmended" />
+			<class name="test_Suite.tests.r4_0.BFFromOrgForm.LBF_Amend.LBF_IPASubmissionAmended" />
+		</classes>	
+	</test>
+	
+	<test name="PO Managing EForms LBF Amendment">
+		<groups>
+			<run>
+				<exclude name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_AddRowsSrcOnAmend" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_AddRowsTrgt_AmendSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_DelRowsTrgt_AmendSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_NoSync_IPASS" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_Sync_IPASS" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_Sync_Sub" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_Sync_SubFO" />			 
+			 <class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_DelRowsTrgt_AddRowsSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_DelRowsSrcOnAmend" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_AddRowsTrgt_DelRowsSrc" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_NoSync_SubFO" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnAmend.LBF_NoSync_Sub" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Documents">
+		<groups>
+			<run>
+				<include name="DocumentsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.eForms.Test_DocumentsAttachmentListNG" />			
+			<class name="test_Suite.tests.documents.TestDownloadDocumentsNG" />
+			<class name="test_Suite.tests.documents.Documents_TestingNG" />
+			<class name="test_Suite.tests.documents.TestDocumentDetailsMandatoryFields" />
+			<class name="test_Suite.tests.documents.TestDocumentsINFOPPStepNG" />
+			<class name="test_Suite.tests.documents.TestDocumentTypeAddedAndUsedNG" />
+		</classes>
+	</test>
+	
+	<test name=" PO - Bulk Evaluation Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.MustRunFirst" />
+		</classes>	
+	</test>
+	
+	<test name=" PO - Bulk Evaluation">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.BulkEvalPostAwardAmendedApprovalSteps" />
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.BulkEvalPostAwardApprovalSteps" />
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.BulkEvalPreAwardApprovalSteps" />
+		</classes>	
+	</test> 
+	<test name="Registrant Security">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />			
+			</run>		
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_3.RegistrantSecurity.NewFOUser_UAPInheritance" />		
+		</classes>	
+	</test>
+	
+	<test name="PO-FO OnDemand Submission Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.MustRunFirst_ODSS" />
+			
+		</classes>	
+	</test>
+		
+	<test name="PO-FO OnDemand Submission">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReqSubmission" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PANotReqSubmission" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReq_Inactive" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReq_PastDate" />
+			<class name="test_Suite.tests.r4_0.onDemandSubmission.ODSS_PAReq_POOnly" />
+		</classes>	
+	</test>
+
+</suite>

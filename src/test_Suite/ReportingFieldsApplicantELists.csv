@@ -1,0 +1,30 @@
+DA_DATA_GRID_LOOKUP_A1,DATA_GRID_LOOKUP_A1,Data Grid Lookup A1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_A2,DATA_GRID_LOOKUP_A2,Data Grid Lookup A2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_A3,DATA_GRID_LOOKUP_A3,Data Grid Lookup A3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_A4,DATA_GRID_LOOKUP_A4,Data Grid Lookup A4,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_B1,DATA_GRID_LOOKUP_B1,Data Grid Lookup B1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_B2,DATA_GRID_LOOKUP_B2,Data Grid Lookup B2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_B3,DATA_GRID_LOOKUP_B3,Data Grid Lookup B3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_B4,DATA_GRID_LOOKUP_B4,Data Grid Lookup B4,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_C1,DATA_GRID_LOOKUP_C1,Data Grid Lookup C1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_C2,DATA_GRID_LOOKUP_C2,Data Grid Lookup C2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_C3,DATA_GRID_LOOKUP_C3,Data Grid Lookup C3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_LOOKUP_C4,DATA_GRID_LOOKUP_C4,Data Grid Lookup C4,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_A1,DATA_GRID_NUMERIC_A1,Data Grid Numeric A1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_A2,DATA_GRID_NUMERIC_A2,Data Grid Numeric A2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_A3,DATA_GRID_NUMERIC_A3,Data Grid Numeric A3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_B1,DATA_GRID_NUMERIC_B1,Data Grid Numeric B1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_B2,DATA_GRID_NUMERIC_B2,Data Grid Numeric B2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_B3,DATA_GRID_NUMERIC_B3,Data Grid Numeric B3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_C1,DATA_GRID_NUMERIC_C1,Data Grid Numeric C1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_C2,DATA_GRID_NUMERIC_C2,Data Grid Numeric C2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_NUMERIC_C3,DATA_GRID_NUMERIC_C3,Data Grid Numeric C3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_A1,DATA_GRID_TEXT_A1,Data Grid Text A1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_A2,DATA_GRID_TEXT_A2,Data Grid Text A2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_A3,DATA_GRID_TEXT_A3,Data Grid Text A3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_B1,DATA_GRID_TEXT_B1,Data Grid Text B1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_B2,DATA_GRID_TEXT_B2,Data Grid Text B2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_B3,DATA_GRID_TEXT_B3,Data Grid Text B3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_C1,DATA_GRID_TEXT_C1,Data Grid Text C1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_C2,DATA_GRID_TEXT_C2,Data Grid Text C2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF
+DA_DATA_GRID_TEXT_C3,DATA_GRID_TEXT_C3,Data Grid Text C3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists,Data-Grid-Fields-LBF

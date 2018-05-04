@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-Projects-Report" annotations="jdk">
+	<test name="PO Managing Projects Group Officers Assignment">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.AssignAmendToOfficersGroup" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.FoppAdminAssignOfficersToPAStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.FoppAdminAssignOfficersToStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.NewGroupAssignmentToPAStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.NewGroupAssignmentToStep" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.OfficersAccessToSubmissions" />
+			<class name="test_Suite.tests.r2_9.feat_1.OfficersGroupAssignment.OfficersAssignementToSubmissions" />
+		</classes>
+	</test>
+</suite>

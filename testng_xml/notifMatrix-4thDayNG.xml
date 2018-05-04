@@ -1,0 +1,103 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Notif-Matrix-Fourth-Day-Report" annotations="jdk">
+	
+	<test name="Manage A-Decision-Notif-FOPP">
+		<groups>
+			<run>
+				<exclude name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Decision_Notif_FOPP_Notifications.AppAmndReqRejectedNotif_1stDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Due-Notif-PA-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.ReviewStepAmendDueNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyApprovalStepDueNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyAwardAmendmentAloneNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyNoPASubDueNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyNoPASubEntryNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyNoPASubExitNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.A_Due_Notif_PA_FOPP_Notif.VerifyPASubDueNotif_4thDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Gnrl-Notif-FOPP">
+		<groups>
+			<run>
+				<exclude name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Gnrl_Notif_FOPP_Notifications.ApprovalStepAmendmentNotif_1stDay" />
+		</classes>	
+	</test> 
+	
+	<test name="Manage A-Notif-Amend-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Notif_Amend_FOPP_Notifications.ApprovalStepAmendNotifOnly_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.a_Notif_Amend_FOPP_Notifications.ApprovalStepEntryPausedStepNotif_4thDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notify-Evaluators-PA-FOPP">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrix.a_Notify_Evaluators_PA_FOPP_Notif.ApprovalStepDueNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.a_Notify_Evaluators_PA_FOPP_Notif.ReviewStepAmendDue_4thDay" />
+			<class name="test_Suite.tests.notifications.matrix.a_Notify_Evaluators_PA_FOPP_Notif.StepEntryFrmAPausedStepNotif_4thDay" />
+		</classes>	
+	</test>
+	<!-- 
+    <test name="Manage A-Notif-PA-FOPP-S1905_02">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendReqNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAReviewAmendReqNotif_4thDay" />
+		</classes>	
+     </test>
+    <test name="Manage A-Notif-PA-FOPP-S1905_03">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalNeededNotif_4thDay" />
+		</classes>	
+     </test>
+         
+     <test name="Manage Sub Schedule Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalAmendReqNotif_4thDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalStepEntryNotif_4thDay" />
+	   </classes>
+	 </test>
+	  	 -->
+</suite>

@@ -1,0 +1,75 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="3-2-Fetaures-Report" verbose="9" annotations="jdk">
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Manage Transfer Projects Capability">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.transferProjectsCapability.TestTransferToFoProjectAfterClosingNG" />
+			<class name="test_Suite.tests.r3_2.transferProjectsCapability.TestTransferToPoProjectAfterClosingNG" />
+		</classes>	
+	</test>
+	
+	<test name="PO Manage Project Creation In PO">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.forceFoppSelectionInPO.testFoppSelectionInPONG" />
+		</classes>
+	
+	</test>
+	
+	<test name="PO Manage Hide-Show Assigned Evaluations">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifyGroupsInSummaryByPogNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifyGroupsInSummaryNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifyNoGroupsInSummaryNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifySettingAndSavingGroupsInPaNG" />
+			<class name="test_Suite.tests.r3_2.hideAssignedEvaluators.VerifySettingAndSavingGroupsNG" />
+		</classes>	
+	</test>
+	
+	<test name="Manage Multiple Amendments">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAbilityToContinuePaStepsNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAbilityToRequestAmendOnParentStepNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAddingNewScheduleAndSubmitItNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAddingNewScheduleOnAmendmentNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestInAbilityToRequestAmendOnParentStepNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestTokenBackToPostAwardNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestTokenDoNotBackToPostAwardNG" />
+		</classes>	
+	</test>
+
+</suite>

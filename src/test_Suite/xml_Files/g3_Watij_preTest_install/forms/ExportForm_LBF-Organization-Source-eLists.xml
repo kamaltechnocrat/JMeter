@@ -1,0 +1,2116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form formIdentifier="LBF-Organization-Source-eLists" version="6.1.0.0" className="com.infoterra.grantium.model.forms.Form_Organization">
+	<FormTitles>
+		<Title localeLangCode="en" localeCountryCode="CA" title="LBF Organization Source eLists"/>
+		<Title localeLangCode="fr" localeCountryCode="CA" title="LBF Organization Source eLists"/>
+		<Title localeLangCode="en" localeCountryCode="US" title="LBF Organization Source eLists"/>
+		<Title localeLangCode="en" localeCountryCode="GB" title="LBF Organization Source eLists"/>
+	</FormTitles>
+	<DatePublished date="2014.09.22 AD 13:14:28 EDT"/>
+	<DefaultFormlet identifier="Submission-Summary-Fields-LBF"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet identifier="Submission-Summary-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" Order="0">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Submission Summary Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Submission Summary Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Submission Summary Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Submission Summary Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Submission Summary Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Submission Summary Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Submission Summary Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Submission Summary Fields LBF"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="No-Propreties-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="1">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="No Propreties Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="No Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="No Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="No Propreties Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="No Propreties Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="No Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="No Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="No Propreties Fields LBF"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function type="List Bring Forward" className="com.infoterra.grantium.model.forms.functions.ListBringForward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[No-Propreties-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="No-Propreties-Sub-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="No Propreties Sub Fields LBF"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="No Propreties Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="No Propreties Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="No Propreties Sub Fields LBF"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Approval Dropdown" className="com.infoterra.grantium.model.forms.fields.Field_ApprovalDropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Approval Dropdown"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Approval Dropdown"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Approval Dropdown"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Approval Dropdown"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Approval Dropdown"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Approval Dropdown"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Approval Dropdown"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Approval Dropdown"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Checkbox" className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Checkbox"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Checkbox"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Checkbox"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Checkbox"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Checkbox"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Checkbox"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Checkbox"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Checkbox"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Date" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Date"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Date"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Date"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Date"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Date"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Date"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="EIN Number" className="com.infoterra.grantium.model.forms.fields.Field_EINNumber" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="EIN Number"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="EIN Number"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="EIN Number"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="EIN Number"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="EIN Number"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="EIN Number"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="EIN Number"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="EIN Number"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Email Address" className="com.infoterra.grantium.model.forms.fields.Field_EmailAddress" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Email Address"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Email Address"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Email Address"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Email Address"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Email Address"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Email Address"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Email Address"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Email Address"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Web Address" className="com.infoterra.grantium.model.forms.fields.Field_WebAddress" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Web Address"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Web Address"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Web Address"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Web Address"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Web Address"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Web Address"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Web Address"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Web Address"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Type-Propreties-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="2">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Type Propreties Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Type Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Type Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Type Propreties Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Type Propreties Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Type Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Type Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Type Propreties Fields LBF"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function type="List Bring Forward" className="com.infoterra.grantium.model.forms.functions.ListBringForward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[Type-Propreties-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Type-Propreties-Sub-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Type Propreties Sub Fields LBF"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Type Propreties Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Type Propreties Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Type Propreties Sub Fields LBF"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Phone Number" className="com.infoterra.grantium.model.forms.fields.Field_PhoneNumber" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Phone Number"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Phone Number"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Phone Number"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Phone Number"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Phone Number"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Phone Number"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Phone Number"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Phone Number"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="inputStyle">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+								<Property propertyName="displayStyle">
+									<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Postal Code" className="com.infoterra.grantium.model.forms.fields.Field_PostalCode" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Postal Code"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Postal Code"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Postal Code"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Postal Code"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Postal Code"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Postal Code"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Postal Code"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Postal Code"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="inputStyle">
+									<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+								</Property>
+								<Property propertyName="displayStyle_Canadian">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="displayStyle_American">
+									<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Min-And-Max-Propreties-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="3">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Min And Max Propreties Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Min And Max Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Min And Max Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Min And Max Propreties Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Min And Max Propreties Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Min And Max Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Min And Max Propreties Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Min And Max Propreties Fields LBF"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function type="List Bring Forward" className="com.infoterra.grantium.model.forms.functions.ListBringForward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[Min-And-Max-Propreties-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Min-And-Max-Propreties-Sub-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Min And Max Propreties Sub Fields LBF"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Min And Max Propreties Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Min And Max Propreties Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Min And Max Propreties Sub Fields LBF"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Long Text" className="com.infoterra.grantium.model.forms.fields.Field_LongText" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions>
+								<Description localeLangCode="en" localeCountryCode="CA" title="I'm Below!"/>
+								<Description localeLangCode="fr" localeCountryCode="CA" title="I'm Below!"/>
+								<Description localeLangCode="en" localeCountryCode="US" title="I'm Below!"/>
+								<Description localeLangCode="en" localeCountryCode="GB" title="I'm Below!"/>
+							</Descriptions>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Long Text"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Long Text"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Long Text"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Long Text"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Long Text"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Long Text"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Long Text"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Long Text"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[100]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[1000000]]></Value>
+								</Property>
+								<Property propertyName="numLines">
+									<Value valueClass="java.lang.Integer"><![CDATA[20]]></Value>
+								</Property>
+								<Property propertyName="displayStyle">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Numeric" className="com.infoterra.grantium.model.forms.fields.Field_Number" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Numeric"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Numeric"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Numeric"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Numeric"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Numeric"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Numeric"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Numeric"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Numeric"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimum">
+									<Value valueClass="java.lang.Double"><![CDATA[1000.0]]></Value>
+								</Property>
+								<Property propertyName="maximum">
+									<Value valueClass="java.lang.Double"><![CDATA[9000000.0]]></Value>
+								</Property>
+								<Property propertyName="numDecimals">
+									<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+								</Property>
+								<Property propertyName="groupDigits">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="decoration">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="currencySymbol">
+									<Value isList="false">
+										<Choice value="CURRENCY_SYMBOL_DOLLAR"/>
+									</Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Password" className="com.infoterra.grantium.model.forms.fields.Field_Password" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Password"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Password"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Password"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Password"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Password"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Password"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Password"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Password"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[16]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Short Text" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Short Text"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Short Text"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Short Text"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Short Text"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Short Text"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Short Text"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Short Text"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Short Text"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[100]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Review Score" className="com.infoterra.grantium.model.forms.fields.Field_ReviewScore" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Review Score"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Review Score"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Review Score"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Review Score"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Review Score"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Review Score"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Review Score"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Review Score"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimum">
+									<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+								</Property>
+								<Property propertyName="maximum">
+									<Value valueClass="java.lang.Double"><![CDATA[10.0]]></Value>
+								</Property>
+								<Property propertyName="numDecimals">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="groupDigits">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="weight">
+									<Value valueClass="java.lang.Double"><![CDATA[50.0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Data-Grid-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="4">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Data Grid Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Data Grid Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Data Grid Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Data Grid Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Data Grid Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Data Grid Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Data Grid Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Data Grid Fields LBF"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function type="List Bring Forward" className="com.infoterra.grantium.model.forms.functions.ListBringForward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[Data-Grid-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Data-Grid-Sub-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Data Grid Sub Fields LBF"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Data Grid Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Data Grid Sub Fields LBF"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Data Grid Sub Fields LBF"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Data-Grid-Numeric" className="com.infoterra.grantium.model.forms.fields.Field_Grid" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Data Grid Numeric"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Data Grid Numeric"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Data Grid Numeric"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Data Grid Numeric"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Data Grid Numeric"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Data Grid Numeric"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Data Grid Numeric"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Data Grid Numeric"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="pdfExport_TopRowAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="pdfExport_LeftColumnAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+							<CellTypes>
+								<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_Numeric">
+									<Properties>
+										<Property propertyName="minimumValue">
+											<Value/>
+										</Property>
+										<Property propertyName="maximumValue">
+											<Value/>
+										</Property>
+										<Property propertyName="numberOfDecimals">
+											<Value valueClass="java.lang.Integer" value="2"/>
+										</Property>
+										<Property propertyName="decoration">
+											<Value valueClass="java.lang.Integer" value="1"/>
+										</Property>
+										<Property propertyName="currencySymbol">
+											<Value valueClass="java.lang.String" value="CURRENCY_SYMBOL_DOLLAR"/>
+										</Property>
+										<Property propertyName="groupDigits">
+											<Value valueClass="java.lang.Boolean" value="true"/>
+										</Property>
+										<Property propertyName="mandatory">
+											<Value valueClass="java.lang.Boolean" value="false"/>
+										</Property>
+										<Property propertyName="alignment">
+											<Value valueClass="java.lang.Integer" value="2"/>
+										</Property>
+										<Property propertyName="titleText"/>
+										<Property propertyName="backgroundcolorcode">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+										<Property propertyName="backgroundcolor">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+									</Properties>
+									<CellLocations>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+									</CellLocations>
+								</CellType>
+							</CellTypes>
+							<ColumnWidths>
+								<ColumnWidth identifier="0" value="20"/>
+								<ColumnWidth identifier="1" value="20"/>
+								<ColumnWidth identifier="2" value="20"/>
+							</ColumnWidths>
+						</Field>
+						<Field identifier="Data-Grid-Text" className="com.infoterra.grantium.model.forms.fields.Field_Grid" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Data Grid Text"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Data Grid Text"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Data Grid Text"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Data Grid Text"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Data Grid Text"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Data Grid Text"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Data Grid Text"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Data Grid Text"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="pdfExport_TopRowAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="pdfExport_LeftColumnAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+							<CellTypes>
+								<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_TextEntry">
+									<Properties>
+										<Property propertyName="minimumLength">
+											<Value/>
+										</Property>
+										<Property propertyName="maximumLength">
+											<Value/>
+										</Property>
+										<Property propertyName="mandatory">
+											<Value valueClass="java.lang.Boolean" value="false"/>
+										</Property>
+										<Property propertyName="alignment">
+											<Value valueClass="java.lang.Integer" value="0"/>
+										</Property>
+										<Property propertyName="titleText"/>
+										<Property propertyName="backgroundcolorcode">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+										<Property propertyName="backgroundcolor">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+									</Properties>
+									<CellLocations>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+									</CellLocations>
+								</CellType>
+							</CellTypes>
+							<ColumnWidths>
+								<ColumnWidth identifier="0" value="20"/>
+								<ColumnWidth identifier="1" value="20"/>
+								<ColumnWidth identifier="2" value="20"/>
+							</ColumnWidths>
+						</Field>
+						<Field identifier="Data-Grid-Fixed-Text" className="com.infoterra.grantium.model.forms.fields.Field_Grid" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Data Grid Fixed Text"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Data Grid Fixed Text"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Data Grid Fixed Text"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Data Grid Fixed Text"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="pdfExport_TopRowAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="pdfExport_LeftColumnAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+							<CellTypes>
+								<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_FixedText">
+									<Properties>
+										<Property propertyName="fixedText">
+											<CellText localeLangCode="en" localeCountryCode="CA" title="Text"/>
+											<CellText localeLangCode="fr" localeCountryCode="CA" title="Text"/>
+											<CellText localeLangCode="en" localeCountryCode="US" title="Text"/>
+											<CellText localeLangCode="en" localeCountryCode="GB" title="Text"/>
+										</Property>
+										<Property propertyName="alignment">
+											<Value valueClass="java.lang.Integer" value="0"/>
+										</Property>
+										<Property propertyName="backgroundcolorcode">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+										<Property propertyName="backgroundcolor">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+									</Properties>
+									<CellLocations>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+									</CellLocations>
+								</CellType>
+							</CellTypes>
+							<ColumnWidths>
+								<ColumnWidth identifier="0" value="20"/>
+								<ColumnWidth identifier="1" value="20"/>
+							</ColumnWidths>
+						</Field>
+						<Field identifier="Data-Grid-Lookup" className="com.infoterra.grantium.model.forms.fields.Field_Grid" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Data Grid Lookup"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Data Grid Lookup"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Data Grid Lookup"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Data Grid Lookup"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Data Grid Lookup"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Data Grid Lookup"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Data Grid Lookup"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Data Grid Lookup"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="pdfExport_TopRowAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+								<Property propertyName="pdfExport_LeftColumnAsTitle">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+							<CellTypes>
+								<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_DropdownFromLookup">
+									<Properties>
+										<Property propertyName="lookupID">
+											<Value valueClass="java.lang.String" value="G3_CANADIAN_PROVINCES"/>
+										</Property>
+										<Property propertyName="mandatory">
+											<Value valueClass="java.lang.Boolean" value="false"/>
+										</Property>
+										<Property propertyName="titleText"/>
+										<Property propertyName="backgroundcolorcode">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+										<Property propertyName="backgroundcolor">
+											<Value valueClass="java.lang.String" value=""/>
+										</Property>
+									</Properties>
+									<CellLocations>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="3"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="0"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="3"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="1"/>
+											</Property>
+										</CellLocation>
+										<CellLocation>
+											<Property propertyName="row">
+												<Value valueClass="java.lang.Integer" value="3"/>
+											</Property>
+											<Property propertyName="column">
+												<Value valueClass="java.lang.Integer" value="2"/>
+											</Property>
+										</CellLocation>
+									</CellLocations>
+								</CellType>
+							</CellTypes>
+							<ColumnWidths>
+								<ColumnWidth identifier="0" value="20"/>
+								<ColumnWidth identifier="1" value="20"/>
+								<ColumnWidth identifier="2" value="20"/>
+							</ColumnWidths>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Attachment-List-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.AttachmentList" Order="5">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Attachment List Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Attachment List Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Attachment List Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Attachment List Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Attachment List Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Attachment List Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Attachment List Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Attachment List Fields LBF"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function type="List Bring Forward" className="com.infoterra.grantium.model.forms.functions.ListBringForward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[Attachment-List-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<FormletDocuments>
+				<FormletDocument identifier="Word" required="true">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_DOC</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Word"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Word"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Word"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Word"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Picture" required="true">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_JPG</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Picture"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Picture"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Picture"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Picture"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Power-Point" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_MPP</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Power-Point"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Power-Point"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Power-Point"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Power-Point"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Adobe" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_PDF</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Adobe"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Adobe"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Adobe"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Adobe"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Rich-Text" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_RTF</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Rich-Text"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Rich-Text"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Rich-Text"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Rich-Text"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Plain-Text" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_TXT</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Plain-Text"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Plain-Text"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Plain-Text"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Plain-Text"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Corel" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_WPD</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Corel"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Corel"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Corel"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Corel"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Excel" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_XLS</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Excel"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Excel"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Excel"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Excel"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Compressed-File" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_ZIP</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Compressed-File"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Compressed-File"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Compressed-File"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Compressed-File"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Markup-Language" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_XML</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Markup-Language"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Markup-Language"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Markup-Language"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Markup-Language"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Word-07" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_DOCX</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Word-07"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Word-07"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Word-07"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Word-07"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Excel-07" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_XLSX</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Excel-07"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Excel-07"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Excel-07"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Excel-07"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+				<FormletDocument identifier="Any-Format" required="false">
+					<MaximumSize>DOCUMENT_SIZE_1000KB</MaximumSize>
+					<DocumentFormats>
+						<Format>DOCUMENT_FORMAT_ALL_FORMATS</Format>
+					</DocumentFormats>
+					<DocumentTypes>
+						<Type localeLangCode="en" localeCountryCode="CA" title="Any-Format"/>
+						<Type localeLangCode="fr" localeCountryCode="CA" title="Any-Format"/>
+						<Type localeLangCode="en" localeCountryCode="US" title="Any-Format"/>
+						<Type localeLangCode="en" localeCountryCode="GB" title="Any-Format"/>
+					</DocumentTypes>
+					<DocumentInstructions>
+						<Instruction localeLangCode="en" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="fr" localeCountryCode="CA" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="US" title="Instruction"/>
+						<Instruction localeLangCode="en" localeCountryCode="GB" title="Instruction"/>
+					</DocumentInstructions>
+				</FormletDocument>
+			</FormletDocuments>
+			<SubFormlets>
+				<Formlet identifier="Attachment Details" className="com.infoterra.grantium.model.forms.formlets.AttachmentDetails">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Attachment Details"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Attachment Details"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Attachment Details"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Attachment Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="File Description" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Document Description"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Document Description"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Document Description"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Document Description"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Document Description:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Document Description:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Document Description:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Document Description:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Filename" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Simple User Access Grant" className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="File Name:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="File Name:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="File Name:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="File Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="MangledFilename" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Simple User Access Grant" className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Mangled File Name:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Mangled File Name:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Mangled File Name:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Mangled File Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="DateAttached" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Simple User Access Grant" className="com.infoterra.grantium.model.forms.functions.UserAccessRestriction">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="booleanParameter1">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter2">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter3">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter4">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter5">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter6">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter7">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter8">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter9">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="booleanParameter10">
+											<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+										</Property>
+										<Property propertyName="group_IDs_Read">
+											<Value isList="true"/>
+										</Property>
+										<Property propertyName="group_IDs_Write">
+											<Value isList="true"/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="No Attachment"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="No Attachment"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="No Attachment"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="No Attachment"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Date Attached"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Date Attached"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Date Attached"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Date Attached"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Date Attached:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Date Attached:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Date Attached:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Date Attached:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="PA-Submission-Schedule-Fields-LBF" className="com.infoterra.grantium.model.forms.formlets.SubmissionScheduleList" Order="6">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="PA Submission Schedule Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="PA Submission Schedule Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="PA Submission Schedule Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="PA Submission Schedule Fields LBF"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="PA Submission Schedule Fields LBF"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="PA Submission Schedule Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="PA Submission Schedule Fields LBF"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="PA Submission Schedule Fields LBF"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function type="List Bring Forward" className="com.infoterra.grantium.model.forms.functions.ListBringForward">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+						<Property propertyName="stringParameter1">
+							<Value valueClass="java.lang.String"><![CDATA[PA-Submission-Schedule-Fields-LBF]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Submission Details" className="com.infoterra.grantium.model.forms.formlets.SubmissionScheduleDetails">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Submission Details"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Submission Details"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Submission Details"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Submission Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Submission_Name" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="35" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Submission Name"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Submission Name"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Submission Name"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Submission Name"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Submission Name:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Submission Name:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Submission Name:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Submission Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Submission_PublicationStartDate" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Start Date"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Start Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Start Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Start Date"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Publication Start Date:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Publication Start Date:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Publication Start Date:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Publication Start Date:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Submission_ScheduleDueDate" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Due Date"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Due Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Due Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Due Date"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Schedule Due Date:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Schedule Due Date:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Schedule Due Date:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Schedule Due Date:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Submission_PublicationEndDate" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="End Date"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="End Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="End Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="End Date"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Publication End Date:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Publication End Date:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Publication End Date:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Publication End Date:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Submission_Form" className="com.infoterra.grantium.model.forms.fields.Field_SubmissionFormDropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="45" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="e.Form Name"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="e.Form Name"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="e.Form Name"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="e.Form Name"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Submission Form:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Submission Form:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Submission Form:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Submission Form:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Submission_Required" className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Required"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Required"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Required"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Required"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Required?:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Required?:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Required?:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Required?:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Submission_POOnly" className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="--"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="--"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Program Office Only"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Program Office Only"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Program Office Only"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Program Office Only"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Program Office Only?:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Program Office Only?:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Program Office Only?:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Program Office Only?:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

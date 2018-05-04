@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HierarchicalOrganizations version="6.1.0.0">
+	<HierarchicalOrganization identifier="G3">
+		<ParentOrganization>
+			<OrganizationReference identifier="-null-">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+			<OrganizationReference identifier="North-Id">
+            </OrganizationReference>
+			<OrganizationReference identifier="East-Id">
+            </OrganizationReference>
+			<OrganizationReference identifier="West-Id">
+            </OrganizationReference>
+			<OrganizationReference identifier="South-Id">
+            </OrganizationReference>
+		</ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="G3" name="Grantium G3">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="G3">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="G3" name="Grantium G3">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="G3">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="G3" name="Grantium G3">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="G3">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="G3" name="Grantium G3">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="G3">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="false">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+        </LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="North-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="G3">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+			<OrganizationReference identifier="North-East-Id">
+            </OrganizationReference>
+			<OrganizationReference identifier="North-West-Id">
+            </OrganizationReference>
+		</ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="North" name="Grantium North">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="North-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="North" name="Grantium North">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="North-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="North" name="Grantium North">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="North-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="North" name="Grantium North">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="North-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true" inheritedChangesOn="2008.11.20 08:45:10 -0500">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+			<LookupMapping lookup-value-constant="Regions_North East-L">
+            </LookupMapping>
+			<LookupMapping lookup-value-constant="Regions_North-L">
+            </LookupMapping>
+		</LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="East-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="G3">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>            
+        </ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="East" name="Grantium East">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="East" name="Grantium East">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="East" name="Grantium East">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="East" name="Grantium East">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true" inheritedChangesOn="2008.11.20 08:45:10 -0500">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+			<LookupMapping lookup-value-constant="Regions_South East-L">
+            </LookupMapping>
+			<LookupMapping lookup-value-constant="Regions_East-L">
+            </LookupMapping>
+		</LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="North-East-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="East-Id">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+        </ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="Northeast" name="Northeastern Name">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="North-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Northeast" name="Northeastern Name">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="North-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Northeast" name="Northeastern Name">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="North-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Northeast" name="Northeastern Name">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="North-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+        </LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="North-West-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="East-Id">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+        </ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="Northwest" name="Northwestern Name">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="North-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Northwest" name="Northwestern Name">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="North-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Northwest" name="Northwestern Name">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="North-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Northwest" name="Northwestern Name">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="North-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+        </LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="West-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="G3">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+        </ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="West" name="Grantium West">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="West" name="Grantium West">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="West" name="Grantium West">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="West" name="Grantium West">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true" inheritedChangesOn="2008.11.20 08:45:10 -0500">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+			<LookupMapping lookup-value-constant="Regions_North West-L">
+            </LookupMapping>
+			<LookupMapping lookup-value-constant="Regions_West-L">
+            </LookupMapping>
+		</LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="South-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="G3">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+			<OrganizationReference identifier="South-East-Id">
+            </OrganizationReference>
+			<OrganizationReference identifier="South-West-Id">
+            </OrganizationReference>
+		</ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="South" name="Grantium South">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="South-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="South" name="Grantium South">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="South-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="South" name="Grantium South">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="South-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="South" name="Grantium South">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="South-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true" inheritedChangesOn="2008.11.20 08:45:10 -0500">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+			<LookupMapping lookup-value-constant="Regions_South-L">
+            </LookupMapping>
+			<LookupMapping lookup-value-constant="Regions_South West-L">
+            </LookupMapping>
+		</LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="South-East-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="South-Id">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+        </ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="Southeast" name="Southeastern Name">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="South-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Southeast" name="Southeastern Name">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="South-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Southeast" name="Southeastern Name">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="South-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Southeast" name="Southeastern Name">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="South-East-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true" inheritedChangesOn="2008.11.20 08:45:10 -0500">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+        </LookupMappings>
+	</HierarchicalOrganization>
+	<HierarchicalOrganization identifier="South-West-Id">
+		<ParentOrganization>
+			<OrganizationReference identifier="South-Id">
+            </OrganizationReference>
+		</ParentOrganization>
+		<ChildOrganizations>
+        </ChildOrganizations>
+		<OrganizationTexts>
+			<OrganizationText short-name="Southwest" name="Southwestern Name">
+				<Locale language-code="en" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="South-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Southwest" name="Southwestern Name">
+				<Locale language-code="en" country-code="US">
+                </Locale>
+				<OrganizationReference identifier="South-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Southwest" name="Southwestern Name">
+				<Locale language-code="fr" country-code="CA">
+                </Locale>
+				<OrganizationReference identifier="South-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+			<OrganizationText short-name="Southwest" name="Southwestern Name">
+				<Locale language-code="en" country-code="GB">
+                </Locale>
+				<OrganizationReference identifier="South-West-Id">
+                </OrganizationReference>
+			</OrganizationText>
+		</OrganizationTexts>
+		<OrganizationProperties type-constant="DEFAULT_ORGANIZATION_TYPE" status-constant="G3_ORGANIZATION_STATUS_ACTIVE" officer-login-name="shak">
+			<Locale language-code="en" country-code="CA">
+            </Locale>
+			<Inherit value="true" inheritedChangesOn="2008.11.20 08:45:10 -0500">
+            </Inherit>
+		</OrganizationProperties>
+		<LookupMappings>
+        </LookupMappings>
+	</HierarchicalOrganization>
+</HierarchicalOrganizations>

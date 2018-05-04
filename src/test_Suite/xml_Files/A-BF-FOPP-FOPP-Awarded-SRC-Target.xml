@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><Program name="A-BF-FOPP-FOPP-Awarded-SRC-Target" type="FundingOpportunity" version="6.1.0.0">
+	<ProgramManager manager="shak"/>
+	<Note note="A-BF-FOPP-FOPP-Awarded-SRC-Target"/>
+	<StartDate date="2009.05.27 AD 00:00:00 EDT"/>
+	<EndDate date="2020.05.31 AD 23:59:00 EDT"/>
+	<ProgramFormName name="BF-FOPP-Admin-eForm-Source"/>
+	<CasePrefix prefix="&quot;bfFopp.&quot;+%{G3Utils}.leftPadString(#{projectID}, 6, &quot;0&quot;)"/>
+	<PublicationFormName name="Publication Form"/>
+	<RegistrationStartDate date="2009.05.27 AD 00:00:00 EDT"/>
+	<RegistrationEndDate date="2020.05.31 AD 00:00:00 EDT"/>
+	<DisableFoProjectCreation value="false"/>
+	<ApplicantFormRequired value="false"/>
+	<DuplicateProjects value="G3_DUPLICATE_PROJECT_HANDLING_ALLOW"/>	
+	<BringForwardFromFundingOpportunities onlyIfAwarded="true">
+		<BringForwardFromFundingOpportunity fundingOpportunityIdentifier="A-BF-FOPP-FOPP-Source"/>
+	</BringForwardFromFundingOpportunities>
+	<ProgramStatus status="G3_PROGRAM_STATUS_ACTIVE"/>
+	<PreviouslyActive answer="false"/>
+	<ProgramTexts>
+		<ProgramText Text="A BF FOPP FOPP Awarded SRC Target" localeCountryCode="CA" localeLangCode="en"/>
+		<ProgramText Text="A BF FOPP FOPP Awarded SRC Target" localeCountryCode="US" localeLangCode="en"/>
+		<ProgramText Text="A BF FOPP FOPP Awarded SRC Target" localeCountryCode="CA" localeLangCode="fr"/>
+	<ProgramText Text="A BF FOPP FOPP Awarded SRC Target" localeCountryCode="GB" localeLangCode="en"/></ProgramTexts>
+	<ProgramStaff>
+		<StaffMember group="Staff" staffType="G3_STAFF_TYPE_PROGRAM_STAFF"/>
+	</ProgramStaff>
+	<Step className="com.infoterra.grantium.model.program.step.ApplicantSingleSubmissionStep" critical="true" groupAutoAssignment="false" stepIdentifier="A-BF-FOPP-Submission-Awarded-SRC-Target">
+		<StepAdministrator group="Staff" staffType="G3_STAFF_TYPE_PROGRAM_STAFF"/>
+		<StartDate date="2009.05.27 AD 00:00:00 EDT"/>
+		<EndDate date="2020.05.31 AD 23:59:00 EDT"/>
+		<ReexecuteOption constant="G3_REEXECUTION_UPON_AMENDMENT_NO"/>
+		<Properties>
+			<Property propertyName="formId">
+				<Value isList="false">
+					<Choice value="BF-FOPP-Submission-eForm-Target"/>
+				</Value>
+			</Property>
+		</Properties>
+		<StepTexts>
+			<StepText name="A BF FOPP Submission Awarded SRC Target">
+				<Locale localeCountryCode="CA" localeLangCode="en"/>
+			</StepText>
+			<StepText name="A BF FOPP Submission Awarded SRC Target">
+				<Locale localeCountryCode="US" localeLangCode="en"/>
+			</StepText>
+			<StepText name="A BF FOPP Submission Awarded SRC Target">
+				<Locale localeCountryCode="CA" localeLangCode="fr"/>
+			</StepText>
+		<StepText name="A BF FOPP Submission Awarded SRC Target">
+				<Locale localeCountryCode="GB" localeLangCode="en"/>
+			</StepText></StepTexts>
+		<StepStaffList>
+			<StepStaff staffType="G3_STAFF_TYPE_STEP_STAFF">
+				<Access identifier="Staff" type="Group"/>
+			</StepStaff>
+		</StepStaffList>
+		<StepFormDataList>
+			<StepFormData formOrder="0" stepIdentifier="A-BF-FOPP-Submission-Awarded-SRC-Target" systemForm="G3_STEP_DATA_FORM_TYPE_APPLICANT_PROFILE"/>
+			<StepFormData FromBF_FundingOp="A-BF-FOPP-FOPP-Source" formOrder="1" formStepIdentifier="A-BF-FOPP-Submission-Source" stepIdentifier="A-BF-FOPP-Submission-Awarded-SRC-Target"/>
+			<StepFormData FromBF_FundingOp="A-BF-FOPP-FOPP-Source" formOrder="2" formStepIdentifier="A-BF-FOPP-PO-Submission-Source" stepIdentifier="A-BF-FOPP-Submission-Awarded-SRC-Target"/>
+			<StepFormData formOrder="999" stepIdentifier="A-BF-FOPP-Submission-Awarded-SRC-Target" systemForm="G3_STEP_DATA_FORM_TYPE_PROGRAM_FORM"/>
+		</StepFormDataList>
+	</Step>
+	<Step className="com.infoterra.grantium.model.program.step.ProgramOfficeSingleSubmissionStep" critical="true" groupAutoAssignment="false" stepIdentifier="A-BF-FOPP-Closing-Step-Target">
+		<StepAdministrator group="Staff" staffType="G3_STAFF_TYPE_PROGRAM_STAFF"/>
+		<StartDate date="2009.05.27 AD 00:00:00 EDT"/>
+		<EndDate date="2020.05.31 AD 23:59:00 EDT"/>
+		<ReexecuteOption constant="G3_REEXECUTION_UPON_AMENDMENT_OPTIONAL_YES"/>
+		<Properties>
+			<Property propertyName="formId">
+				<Value isList="false">
+					<Choice value="Program Office Sub"/>
+				</Value>
+			</Property>
+		</Properties>
+		<StepTexts>
+			<StepText name="A BF FOPP Closing Step Target">
+				<Locale localeCountryCode="CA" localeLangCode="en"/>
+			</StepText>
+			<StepText name="A BF FOPP Closing Step Target">
+				<Locale localeCountryCode="US" localeLangCode="en"/>
+			</StepText>
+			<StepText name="A BF FOPP Closing Step Target">
+				<Locale localeCountryCode="CA" localeLangCode="fr"/>
+			</StepText>
+		<StepText name="A BF FOPP Closing Step Target">
+				<Locale localeCountryCode="GB" localeLangCode="en"/>
+			</StepText></StepTexts>
+		<StepStaffList>
+			<StepStaff staffType="G3_STAFF_TYPE_STEP_STAFF">
+				<Access identifier="Staff" type="Group"/>
+			</StepStaff>
+		</StepStaffList>
+	</Step>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Program>

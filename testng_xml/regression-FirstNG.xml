@@ -1,0 +1,276 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First-Regression-Report" verbose="2" annotations="jdk">
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+
+  	<test name="BackOffice Managing ETL Tables">
+	    <groups>
+	    	<run>
+	    		<include name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_RebuildAndExecuteDatamart" />
+	    </classes>
+	  </test>
+	
+	<test name="PO Managing Admin User Interface">
+		<groups>
+			<run>
+				<include name="UI_AdminNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.ui.Export_LookupsNG" />
+			<class name="test_Suite.tests.ui.Import_ApplicantTypesNG" />
+			<class name="test_Suite.tests.ui.FrontOfficeConfigNG" />
+			
+			<class name="test_Suite.tests.ui.GGCertificateNG" />
+			<class name="test_Suite.tests.ui.GGeFormsNG" />
+			<class name="test_Suite.tests.ui.GGFundingOppNG" />
+			<class name="test_Suite.tests.ui.GGTransactionResultNG" />
+			
+			<class name="test_Suite.tests.ui.ChangePasswordNG" />
+			
+			<class name="test_Suite.tests.ui.OrganizationConfigNG" />
+		</classes>
+	</test>
+	
+	<test name="PO/FO Managing Publications">
+		<groups>
+			<run>
+				<include name="PublicationsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.general.H_FOPublicationProjectNG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2049_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2049_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2050_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2050_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2050_03NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Organizations">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.workflow.RegionalAssignmentNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.eForms.CreateFormsNG" />
+			<class name="test_Suite.tests.eForms.Test_G3UtilsNG" />
+			<class name="test_Suite.tests.eForms.TestAllEFormFieldsPDFNG" />
+			<class name="test_Suite.tests.eForms.TestEFormfieldFunctionsCRUDNG" />
+			<class name="test_Suite.tests.eForms.TestEFormFunctionCRUDNG" />
+			<class name="test_Suite.tests.eForms.TestFormletFunctionsCRUDNG" />	
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1886_01NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Funding Opps">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.post_Award.A_PA_GnrlProgramNG" />
+			<class name="test_Suite.tests.post_Award.B_PA_FO_ProjectNG" />
+			<class name="test_Suite.tests.post_Award.C_PA_PO_ProjectNG" />
+			<class name="test_Suite.tests.post_Award.D_PA_NonCriticalReviewStepNG" />
+			<class name="test_Suite.tests.post_Award.G_PA_DecisionStepNG" />
+			<class name="test_Suite.tests.general.J_FO_WSS_DecisionStepsNG" />
+			<class name="test_Suite.tests.workflow.Multi_WSS_DecisionStepsNG" />
+			<class name="test_Suite.tests.workflow.PausedSubmissionScheduleNG" />
+			<class name="test_Suite.tests.workflow.PA_TooManyEvalForms_AutoAssignNG" />
+			<class name="test_Suite.tests.general.A_GnrlProgramNG" />
+			<class name="test_Suite.tests.general.B_FOGnrlProjectNG" />
+			<class name="test_Suite.tests.general.C_POGnrlProjectNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects' Workflow">
+		<groups>
+			<run>
+				<include name="ProjectListNG" />
+				<include name="WorkflowNG" />
+				<include name="ApplicantsNG" />
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.projectList.TestSubmissionHistoryListNG" />
+			<class name="test_Suite.tests.applicants.TransferProjectsNG" />
+			<class name="test_Suite.tests.post_Award.E_PA_ProgramSubmissionStepNG" />
+			<!-- class name="test_Suite.tests.post_Award.F_PA_DoublePost_AwardNG" /-->
+			<class name="test_Suite.tests.workflow.BlockReExecOnAmend" />
+			<class name="test_Suite.tests.workflow.ProjectStatusFilterInAppSub" />
+			<class name="test_Suite.tests.workflow.UpdatingProjectNameAndNumber" />
+			
+			<class name="test_Suite.tests.general.G_Re_ExecuteOnSubmissionAmendNG" />
+			<class name="test_Suite.tests.workflow.ReExecOnAmendNG" />
+			<class name="test_Suite.tests.workflow.AmendInitialClaim" />
+			
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_02NG" />
+			<!-- class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_01NG" /-->
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2722_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2723_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2724_01NG" />
+		</classes>
+	</test>
+	
+
+<test name="PO Managing Project Data Storage Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_MustRunFirst" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.PreProjectDataNG"/>
+			
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Project Data Storage">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_0.projDataStorage.CreateNewProjEFormNG" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.CreateOrgAndSubmitProjNG" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.TestEvaluateProjectsListNG" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.TestProjEFormInProjList" />
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_ApplicantSubmission_BringForward"/>
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_AwardBringForward"/>
+			<class name="test_Suite.tests.r4_0.projDataStorage.ProjectEForm_IPA_BringForward"/>
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Amendment Project Data Storage Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+	
+			<class name="test_Suite.tests.r4_0.projDataStorage_Amend.ProjectEForm_MustRunFirst_Amended" />
+			
+		</classes>	
+	</test>
+	
+	<test name="PO Managing Amendment Project Data Storage">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>			
+		</groups>
+		
+		<classes>
+			<!-- <class name="test_Suite.tests.r4_0.projDataStorage_Amend.PreProjectDataNG_Amend"/> -->
+			<class name="test_Suite.tests.r4_0.projDataStorage_Amend.ProjectEForm_ApplicantSubmission_BringForward_Amend"/>
+			<class name="test_Suite.tests.r4_0.projDataStorage_Amend.ProjectEForm_IPA_BringForward_Amend"/>
+		</classes>	
+	</test>
+	<!-- 
+	
+	<test name="PO Funding Opp Notifications">
+		<groups>
+			<run>
+				<include name="NotificationsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.general.I_FO_FOPP_Notifications" />
+			<class name="test_Suite.tests.workflow.SubmissionScheduleNotificationsNG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_04NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1931_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1931_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2360_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2360_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2391_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2625_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2626_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2627_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2628_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2631_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2631_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2835_01NG" />
+		</classes>	
+	</test>
+	<test name="PO Managing Reports Setp Up">
+		<groups>
+			<run>
+				<exclude name="ReportsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.MustRunFirstNG" />			
+			<class name="test_Suite.tests.reports.ReportingFieldsConfigNG" />			
+			<class name="test_Suite.tests.reports.ReportingTablesConfigNG" />	 			 
+		</classes>
+	</test>
+	
+	<test name="PO Managing Reports">
+		<groups>
+			<run>
+				<exclude name="ReportsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1939_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1940_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1941_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1942_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1943_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1944_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1946_01NG" />			
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1946_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1946_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1947_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1947_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1948_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_04NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_05NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_06NG" />
+		</classes>
+	</test>
+	 -->
+</suite>

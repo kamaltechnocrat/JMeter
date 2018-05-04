@@ -1,0 +1,1251 @@
+<project name="grantium_qa_watij_trunk" basedir="." default="populateG3">
+
+	<property name="grantium.watij.basedir" value="-Dgrantium.watij.basedir=C:\workspace\grantium_qa_watij_trunk\src\test_Suite\xml_files\" />
+
+	<property name="src.tests.dir" value="src" />
+	<property name="lib.tests.dir" value="Lib/TestNGLib/testng-5.14.1.jar" />
+	<property name="lib.watij.dir" value="Lib/WatijLib" />
+	<property name="lib.testng.dir" value="Lib/TestNGLib" />
+	<property name="lib.selenium.dir" value="Lib/SeleniumLib" />
+	<property name="lib.java.dir" value="Lib/JavaLib" />
+	<property name="lib.css.dir" value="Lib/TestNGLib/qaStyle.css" />
+	<property name="lib.oracle.dir" value="Lib/Oracle" />
+	<property name="build.dir" value="build" />
+	<property name="test.output.dir" value="test-output" />
+	<property name="test.outputPhaseI.dir" value="test-output-phaseI" />
+	<property name="test.outputPhaseII.dir" value="test-output-phaseII" />
+	<property name="test.outputPhaseIII.dir" value="test-output-phaseIII" />
+	<property name="test.outputSovFirst.dir" value="test-output-sov-first" />
+	<property name="test.outputSovSecond.dir" value="test-output-sov-second" />
+	<property name="test.outputSovThird.dir" value="test-output-sov-third" />
+	<property name="test.outputFirst.dir" value="test-output-first" />
+	<property name="test.outputSecond.dir" value="test-output-second" />
+	<property name="test.outputThird.dir" value="test-output-third" />
+	<property name="test.outputFourth.dir" value="test-output-fourth" />
+	<property name="test.outputFifth.dir" value="test-output-fifth" />
+	<property name="test.outputSixth.dir" value="test-output-sixth" />
+	<property name="gui.output.dir" value="test-output/ProjectsList-Report" />
+	
+	<property name="emma.report.dir" value="${basedir}/${test.output.dir}/emma-Report" />
+	
+	<property name="emma.firstReport.dir" value="${basedir}/${test.outputFirst.dir}/emma-Report" />
+	<property name="emma.secondReport.dir" value="${basedir}/${test.outputSecond.dir}/emma-Report" />
+	<property name="emma.thirdReport.dir" value="${basedir}/${test.outputThird.dir}/emma-Report" />
+	<property name="emma.fourthReport.dir" value="${basedir}/${test.outputFourth.dir}/emma-Report" />
+	
+	<property name="emma.meta.dir" value="\\qa-ws2008reg04/E$\workspace/__Weblogic" />
+    <property name="src.dir" value="\\qa-ws2008reg04/E$\workspace/G3_5_0_x/src" />
+	
+	<property name="relative.emma.report.dir" value="../emma-Report" />
+
+	<property name="debug" value="on" />
+
+	<path id="classpath">
+		<pathelement location="${build.dir}" />
+		<fileset dir="${lib.watij.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.testng.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.java.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.oracle.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<path id="classpath.tests">
+		<pathelement location="${build.dir}" />
+	</path>
+
+	<path id="classpath.testng">
+		<pathelement location="${build.dir}" />
+		<fileset dir="${lib.watij.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.testng.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.oracle.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.selenium.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.java.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<taskdef name="emma" classname="com.vladium.emma.emmaTask">
+		<classpath>
+			<fileset dir="${lib.watij.dir}">
+				<include name="emma_ant.jar" />
+				<include name="emma.jar" />
+			</fileset>
+		</classpath>
+	</taskdef>
+	
+
+    <!-- captures code coverage from the running container -->
+    <target name="emma-QA-coverage" description="outputs coverage file if war was built with war-instrumentedWithEmma">
+    	<copy file="${emma.meta.dir}/qa_metadata.em" todir="${emma.report.dir}" />
+          <emma>
+                <ctl connect="qa-ws2008reg04:47653" >
+                      <command name="coverage.get" args="${emma.report.dir}/qa_coverage.ec" />
+                </ctl>
+          </emma>
+    </target>
+
+	<target name="emma-QA-report" depends="emma-QA-coverage" description="Generates the Emma code coverage report">
+		<delete file="${emma.report.dir}/index.html"/>
+		<delete file="${emma.report.dir}/emma.xml"/>
+		<delete dir="${emma.report.dir}/_files"/>
+	    <emma>
+			<report sourcepath="${src.dir}" sort="+name,+class,+method,+block" metrics="method:70,block:80,line:80,class:100">
+
+	        <fileset dir="${emma.report.dir}" >
+	          <include name="**/*.em" />
+	          <include name="**/*.ec" />
+	        </fileset>
+
+	        <html outfile="${emma.report.dir}/index.html" depth="method" columns="name,class,method,block,line"/>
+			<xml outfile="${emma.report.dir}/emma.xml" depth="method" columns="name,class,method,block,line"/>
+	      </report>
+	    </emma>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${emma.report.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanPhaseI">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputPhaseI.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanPhaseII">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputPhaseII.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanPhaseIII">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputPhaseIII.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanFirst">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputFirst.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanSecond">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputSecond.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanThird">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputThird.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanFourth">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputFourth.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanFifth">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputFifth.dir}" quiet="true" />
+	</target>
+
+	<target name="cleanSixth">
+		<delete dir="${build.dir}" quiet="true" />
+		<delete dir="${test.output.dir}" quiet="true" />
+		<delete dir="${test.outputSixth.dir}" quiet="true" />
+	</target>
+
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+		<!-- <mkdir dir="${test.output.dir}" /> -->
+	</target>
+
+	<target name="compile.tests" depends="init">
+		<javac debug="${debug}" source="1.5" classpathref="classpath.testng" srcdir="${src.tests.dir}" destdir="${build.dir}" />
+	</target>
+
+	<target name="failed-tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="." includes="test-output/testng-failed.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="adminSanity" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="admin-sanityNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="junit-reports">
+		<junitreport todir="test-output">
+			<fileset dir="test-output/grantium_qa_watij">
+				<include name="*.xml" />
+			</fileset>
+			<report format="noframes" todir="test-report" />
+		</junitreport>
+	</target>
+
+	<target name="pretest02" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="preTest02NG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Pre-Test"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+		</testng>
+	</target>
+
+	<target name="cases" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="casesNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Cases"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="cases-First" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFirst.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="casesNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Cases"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="cases-Second" depends="cleanSecond,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSecond.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="casesNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Cases"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="etl" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="etl-DataMartNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Cases"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="documents" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="false" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="documentsNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="autoSave-OnChange" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="autoSave-OnChangeNG.xml" />
+		</testng>
+	</target>
+
+	<target name="bfFromFOPP" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="bf-From-FOPPNG.xml" />
+		</testng>
+	</target>
+
+	<target name="eFormLBFFunction" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="lbf-FunctionNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="LBF Functions Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="eForms" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="eFormsNG.xml" />
+		</testng>
+	</target>
+
+	<target name="eListFiltering" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="eList-Filtering.xml" />
+		</testng>
+	</target>
+
+	<target name="fundingOpportunities" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="funding-OppsNG.xml" />
+		</testng>
+	</target>
+
+	<target name="general" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="generalNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="oneClass" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="one-ClassNG.xml" />
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="failedCases" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="failedCasesNG.xml" />
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="projects" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="fals" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="projectsNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="My Test Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="publications" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="publicationsNG.xml" />
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="post-Award" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="post-AwardNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="very-Long-Regression" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="very-Long-RegressionNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Very Long Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="full-Regression" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="full-RegressionNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Full Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+	
+	<target name="full-64bit-Regression" depends="clean,compile.tests">
+			<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+			<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+				<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+				<jvmarg value="-server" />
+				<jvmarg value="-Xms640m" />
+				<jvmarg value="-Xmx640m" />
+				<jvmarg value="-XX:PermSize=128m" />
+				<jvmarg value="-XX:MaxPermSize=256m" />
+				<jvmarg value="-Xincgc" />
+				<jvmarg value="-Xss128k" />
+				<jvmarg value="-Dcom.sun.management.jmxremote" />
+				<jvmarg value="-Dcom.sun.management.jmxremote.authenticate=false" />
+				<jvmarg value="-Dcom.sun.management.jmxremote.ssl=false" />
+				<jvmarg value="-Dcom.sun.management.jmxremote.port=9999" />
+				<xmlfileset dir="./testng_xml" includes="full-64bit-RegressionNG.xml" />
+				<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+			</testng>
+	</target>
+
+	<target name="sov-Regression-First" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSovFirst.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="sov-Regression-FirstNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="SOV Regression First Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="sov-Regression-Second" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSovSecond.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="sov-Regression-SecondNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="SOV Regression Second Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="sov-Regression-Third" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSovThird.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="sov-Regression-ThirdNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="SOV Regression Third Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="quick-Regression" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="quick-RegressionNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="phaseI" depends="cleanPhaseI,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputPhaseI.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="PhaseING.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Phase I Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+	
+	<target name="phaseII" depends="cleanPhaseII,compile.tests">
+			<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+			<testng classpathref="classpath.testng" outputdir="${test.outputPhaseII.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+				<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+				<jvmarg value="-Xms768m" />
+				<jvmarg value="-Xmx768m" />
+				<jvmarg value="-XX:PermSize=128m" />
+				<jvmarg value="-XX:MaxPermSize=256m" />
+				<jvmarg value="-Xincgc" />
+				<jvmarg value="-Xss128k" />
+				<xmlfileset dir="./testng_xml" includes="PhaseIING.xml" />
+		        <sysproperty key="org.uncommons.reportng.title" value="Phase II Report"/>
+				<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+				<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+				<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+				<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+				<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+			</testng>
+		</target>
+	
+	<target name="phaseIII" depends="cleanPhaseIII,compile.tests">
+				<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+				<testng classpathref="classpath.testng" outputdir="${test.outputPhaseIII.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+					<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+					<jvmarg value="-Xms768m" />
+					<jvmarg value="-Xmx768m" />
+					<jvmarg value="-XX:PermSize=128m" />
+					<jvmarg value="-XX:MaxPermSize=256m" />
+					<jvmarg value="-Xincgc" />
+					<jvmarg value="-Xss128k" />
+					<xmlfileset dir="./testng_xml" includes="PhaseIIING.xml" />
+			        <sysproperty key="org.uncommons.reportng.title" value="Phase III Report"/>
+					<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+					<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+					<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+					<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+					<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+				</testng>
+			</target>
+
+	<target name="regression-First" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFirst.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="regression-FirstNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="First Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="regression-Second" depends="cleanSecond,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSecond.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="regression-SecondNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Second Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="regression-Third" depends="cleanThird,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputThird.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="regression-ThirdNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Third Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="regression-Fourth" depends="cleanFourth,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFourth.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="regression-FourthNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Fourth Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="regression-Fifth" depends="cleanFifth,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFifth.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="regression-FifthNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Fifth Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="regression-Sixth" depends="cleanSixth,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSixth.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="regression-SixthNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Sixth Regression Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notif-Start" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrixStartNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Start Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notif-First" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFirst.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrix-1stDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="First Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notif-Second" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSecond.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrix-2ndDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Second Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notif-Third" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputThird.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrix-3rdDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Third Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notif-Fourth" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFourth.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrix-4thDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Fourth Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notifReload-First" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFirst.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrixReload-1stDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="First Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notifReload-Second" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputSecond.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrixReload-2ndDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Second Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notifReload-Third" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputThird.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrixReload-3rdDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Third Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notifReload-Fourth" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.outputFourth.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrixReload-4thDayNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Fourth Day Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notifReload-Start" depends="cleanFirst,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms768m" />
+			<jvmarg value="-Xmx768m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notifMatrixReloadStartNG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Start Notification Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="populateG3" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="populate-G3NG.xml" />
+	        <sysproperty key="org.uncommons.reportng.title" value="Populate G3 Report"/>
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="${lib.css.dir}" />
+			<sysproperty key="org.uncommons.reportng.xml-dialect" value="testng" />
+			<sysproperty key="org.uncommons.reportng.coverage-report " value="${relative.emma.report.dir}/index.html" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="ui-Lists" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="ui-ListsNG.xml" />
+		</testng>
+	</target>
+
+	<target name="reporting-Functions" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="true" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="reporting-FunctionsNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="workflow" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.fest.swing.testng.ScreenshotOnFailureListener,org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="workflowNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="3_0-Features" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="3_0-FeaturesNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="3_2-Features" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="3_2-FeaturesNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="3_3-Features" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="3-3-FeaturesNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="applicants" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="applicantsNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="notifications" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms640m" />
+			<jvmarg value="-Xmx640m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="notificationsNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="authenticationAPI" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="authenticationAPING.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+
+	<target name="authAPIXX" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./authenticationsAPI_testng_XML" includes="testng-Auth-GD.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="users" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="usersNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+	<target name="reports" depends="clean,compile.tests">
+		<taskdef classpathref="classpath.testng" name="testng" classname="org.testng.TestNGAntTask" />
+		<testng classpathref="classpath.testng" outputdir="${test.output.dir}" haltonfailure="true" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+			<!--classfileset dir="${build.dir}" includes="**/*Test.class" /-->
+			<jvmarg value="-Xms512m" />
+			<jvmarg value="-Xmx512m" />
+			<jvmarg value="-XX:PermSize=128m" />
+			<jvmarg value="-XX:MaxPermSize=256m" />
+			<jvmarg value="-Xincgc" />
+			<jvmarg value="-Xss128k" />
+			<xmlfileset dir="./testng_xml" includes="reportsNG.xml" />
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />
+		</testng>
+	</target>
+
+</project>

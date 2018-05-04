@@ -1,0 +1,109 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Notif-Matrix-Third-Day-Report" annotations="jdk">
+
+    <test name="Manage A-Notif-PA-FOPP-S1905_01">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyReviewStepEntryNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyApprovalStepEntryNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.IPASStepEntryNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.IPASStepExitNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAReviewStepEntryNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.PAApprovalStepEntryNotif_3rdDay" />
+		</classes>	
+	</test>
+	
+	<test name="Manage A-Notif-PA-FOPP-S1905_02">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AppSubAmendDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ReviewAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ApprovalAmendDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.ApprovalAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.AwardAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAmendDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.IPASSAppAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAppSubAmendDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAAppSubAppAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAReviewAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAApprovalAmendDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_02.PAApprovalAmendReqNotif_3rdDay" />
+		</classes>
+     </test>
+
+     <test name="Manage A-Notif-PA-FOPP-S1905_03">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.ReviewStepEvalNeededNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalAssignedNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_03.PAApprovalEvalNeededNotif_3rdDay" />
+		</classes>	
+     </test>
+     
+      <test name="Manage A-Notif-PA-FOPP-S1905_04">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.ReviewStepDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.IPASStepDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_04.PAAppSubStepDueNotif_3rdDay" />
+		</classes>
+	</test>
+
+    <test name="Manage ProjectActivity Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityDueDateNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityOneDayBeforeNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.ProjectActivityNotif.ProjActivityImmediateNotif_3rdDay" />
+		</classes>
+	</test>	
+	
+	<test name="Manage Sub Schedule Notification">
+		<groups>
+			<run>
+				<include name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalAmendReqNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.ApprovalStepEntryNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASScheduleDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASSConditionalScheduleDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.IPASSFalseConditionalValSchedDueNotif_3rdDay" />
+			<class name="test_Suite.tests.notifications.matrixReload.SubScheduleEnhancement.PASubDueNotifWhenNoScheduleDueDate_3rdDay" />
+	   </classes>
+	 </test>	
+	
+	<test name="Manage Post-Award Step Notifications for Observation">
+		<groups>
+			<run>
+				<exclude name="NotificationWorkFlow" />
+			</run>
+		</groups>
+		<classes>
+		<class name="test_Suite.tests.notifications.matrixReload.A_Notif_PA_FOPP_S1905_1.VerifyPAStepEntryNotif_3rdDay" />
+	   </classes>
+	 </test>
+	  	 
+</suite>

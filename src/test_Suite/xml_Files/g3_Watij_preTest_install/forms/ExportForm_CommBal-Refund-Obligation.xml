@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_Review" formIdentifier="CommBal-Refund-Obligation" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="CommBal Refund Obligation"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="CommBal Refund Obligation"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="CommBal Refund Obligation"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="CommBal Refund Obligation"/>
+	</FormTitles>
+	<DatePublished date="2011.11.28 AD 11:17:17 EST"/>
+	<DefaultFormlet identifier="Refund"/>
+	<RenderTombstoneData value="1"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions>
+		<Function className="com.infoterra.grantium.model.forms.functions.UpdateCommitmentsFunction" type="Update Budget Amount">
+			<Properties>
+				<Property propertyName="eventType">
+					<Value valueClass="java.lang.Integer"><![CDATA[6]]></Value>
+				</Property>
+				<Property propertyName="commitmentAmountFieldIden">
+					<Value valueClass="java.lang.String"><![CDATA[Refund-Obligation]]></Value>
+				</Property>
+			</Properties>
+		</Function>
+	</FormFunctions>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Refund">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Refund"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Refund"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Refund"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Refund"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Refund"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Refund"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Refund"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Refund"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="Refund-Obligation" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.SimpleBringForward" type="Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[Payment-Amount]]></Value>
+								</Property>
+								<Property propertyName="stringParameter2">
+									<Value/>
+								</Property>
+								<Property propertyName="stringParameter3">
+									<Value/>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Enter Refund Amount:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Enter Refund Amount:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Enter Refund Amount:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Enter Refund Amount:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimum">
+							<Value/>
+						</Property>
+						<Property propertyName="maximum">
+							<Value/>
+						</Property>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="groupDigits">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="decoration">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

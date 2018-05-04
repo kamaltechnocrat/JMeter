@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form formIdentifier="B-Data-Admin-eform" version="6.1.0.0" className="com.infoterra.grantium.model.forms.Form_Program">
+	<FormTitles>
+		<Title localeLangCode="en" localeCountryCode="CA" title="B Data Admin efrom"/>
+		<Title localeLangCode="fr" localeCountryCode="CA" title="B Data Admin efrom"/>
+		<Title localeLangCode="en" localeCountryCode="GB" title="B Data Admin efrom"/>
+		<Title localeLangCode="en" localeCountryCode="US" title="B Data Admin efrom"/>
+	</FormTitles>
+	<DatePublished date="2013.08.05 AD 11:47:54 IST"/>
+	<Description text=""/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet identifier="Fiscal Years" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="0">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Years"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Years"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Years"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Years"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Years"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Years"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Years"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Years"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Fiscal Year Details" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Year Details"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Year Details"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Year Details"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Year Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Fiscal Name" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Bring Forward" className="com.infoterra.grantium.model.forms.functions.SimpleBringForward">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value valueClass="java.lang.String"><![CDATA[Fiscal Name]]></Value>
+										</Property>
+										<Property propertyName="stringParameter2">
+											<Value/>
+										</Property>
+										<Property propertyName="stringParameter3">
+											<Value/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Name"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Name"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Name"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Name"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Name:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Name:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Name:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Fiscal Start Date" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Bring Forward" className="com.infoterra.grantium.model.forms.functions.SimpleBringForward">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value valueClass="java.lang.String"><![CDATA[Fiscal Start Date]]></Value>
+										</Property>
+										<Property propertyName="stringParameter2">
+											<Value/>
+										</Property>
+										<Property propertyName="stringParameter3">
+											<Value/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Start Date"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Start Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Start Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Start Date"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Start Date:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Start Date:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Start Date:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Start Date:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+						<Field identifier="Fiscal End Date" className="com.infoterra.grantium.model.forms.fields.Field_Date" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Bring Forward" className="com.infoterra.grantium.model.forms.functions.SimpleBringForward">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value valueClass="java.lang.String"><![CDATA[Fiscal Start Date]]></Value>
+										</Property>
+										<Property propertyName="stringParameter2">
+											<Value/>
+										</Property>
+										<Property propertyName="stringParameter3">
+											<Value/>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal End Date"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal End Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal End Date"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal End Date"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal End Date:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal End Date:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal End Date:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal End Date:"/>
+							</FieldLabels>
+							<Properties/>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Fiscal Expenses" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="1">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Fiscal Expenses Details" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses Details"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses Details"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses Details"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Fiscal Expenses Category" className="com.infoterra.grantium.model.forms.fields.Field_DropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses Category"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses Category"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses Category"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses Category"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses Category:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses Category:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses Category:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses Category:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="lookupID">
+									<Value isList="false">
+										<Choice value="EXPENSE"/>
+									</Value>
+								</Property>
+								<Property propertyName="forceValueChoice">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Fiscal Expenses Sub-Category" className="com.infoterra.grantium.model.forms.fields.Field_DropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses Sub-Category"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses Sub-Category"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses Sub-Category"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses Sub-Category"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Expenses Sub-Category:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Expenses Sub-Category:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Expenses Sub-Category:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Expenses Sub-Category:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="lookupID">
+									<Value isList="false">
+										<Choice value="EXPENSE_SUB"/>
+									</Value>
+								</Property>
+								<Property propertyName="forceValueChoice">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Fiscal Funding" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="2">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Funding"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Funding"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Funding"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Funding"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Funding"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Funding"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Funding"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Funding"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Fiscal Funding Contributor Details" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Funding Contributor Details"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Funding Contributor Details"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Funding Contributor Details"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Funding Contributor Details"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="Fiscal Contributor Type" className="com.infoterra.grantium.model.forms.fields.Field_DropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Contributor Type"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Contributor Type"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Contributor Type"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Contributor Type"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Contributor Type:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Contributor Type:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Contributor Type:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Contributor Type:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="lookupID">
+									<Value isList="false">
+										<Choice value="CONTRIBUTOR_TYPE"/>
+									</Value>
+								</Property>
+								<Property propertyName="forceValueChoice">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Fiscal Contributor Name" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Contributor Type"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Contributor Type"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Contributor Type"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Contributor Type"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Contributor Name:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Contributor Name:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Contributor Name:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Contributor Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Fiscal Contribution Type" className="com.infoterra.grantium.model.forms.fields.Field_DropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title="---"/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Fiscal Contribution Type"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Fiscal Contribution Type"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Fiscal Contribution Type"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Fiscal Contribution Type"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Contribution Type:"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Contribution Type:"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Contribution Type:"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Contribution Type:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="lookupID">
+									<Value isList="false">
+										<Choice value="CONTRIBUTION_TYPE"/>
+									</Value>
+								</Property>
+								<Property propertyName="forceValueChoice">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet identifier="Fiscal Budget" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" Order="3">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Budget"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Budget"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Budget"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Budget"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Fiscal Budget"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Fiscal Budget"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Fiscal Budget"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Fiscal Budget"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field identifier="Fiscal Budget Grid" className="com.infoterra.grantium.model.forms.fields.Field_GridFromList" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeLangCode="en" localeCountryCode="CA" title="Fiscal Budget Grid:"/>
+						<Label localeLangCode="fr" localeCountryCode="CA" title="Fiscal Budget Grid:"/>
+						<Label localeLangCode="en" localeCountryCode="US" title="Fiscal Budget Grid:"/>
+						<Label localeLangCode="en" localeCountryCode="GB" title="Fiscal Budget Grid:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="numDecimals">
+							<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_XAxis">
+							<Value valueClass="java.lang.String"><![CDATA[Fiscal Name]]></Value>
+						</Property>
+						<Property propertyName="label_YAxis_Group1">
+							<Value isList="false">
+								<Choice value="Expenses"/>
+							</Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_YAxis_Group1_Level1">
+							<Value valueClass="java.lang.String"><![CDATA[Fiscal Expenses Category]]></Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_YAxis_Group1_Level2">
+							<Value valueClass="java.lang.String"><![CDATA[Fiscal Expenses Sub-Category]]></Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_YAxis_Group1_Level3">
+							<Value/>
+						</Property>
+						<Property propertyName="label_YAxis_Group2">
+							<Value isList="false">
+								<Choice value="Funding Sources"/>
+							</Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_YAxis_Group2_Level1">
+							<Value valueClass="java.lang.String"><![CDATA[Fiscal Contributor Type]]></Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_YAxis_Group2_Level2">
+							<Value valueClass="java.lang.String"><![CDATA[Fiscal Contributor Name]]></Value>
+						</Property>
+						<Property propertyName="fieldIdentifier_YAxis_Group2_Level3">
+							<Value valueClass="java.lang.String"><![CDATA[Fiscal Contribution Type]]></Value>
+						</Property>
+						<Property propertyName="includeColumn_Sum">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="label_SumColumn">
+							<Value isList="false">
+								<Choice value="Totals"/>
+							</Value>
+						</Property>
+						<Property propertyName="includeRows_Total">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="label_SumRows">
+							<Value isList="false">
+								<Choice value="Totals"/>
+							</Value>
+						</Property>
+						<Property propertyName="includeRows_SubTotal">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="label_SumRows2">
+							<Value isList="false">
+								<Choice value="Sub-Totals"/>
+							</Value>
+						</Property>
+						<Property propertyName="includeRows_SubSubTotal">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="label_SumRows3">
+							<Value isList="false">
+								<Choice value="Sub-Sub-Totals"/>
+							</Value>
+						</Property>
+						<Property propertyName="includeRows_Variance">
+							<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+						</Property>
+						<Property propertyName="label_VarianceRow">
+							<Value isList="false">
+								<Choice value="Variance"/>
+							</Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet identifier="Fiscal Summary" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" Order="4">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Summary"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Summary"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Summary"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Submission Summary"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Submission Summary"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Submission Summary"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

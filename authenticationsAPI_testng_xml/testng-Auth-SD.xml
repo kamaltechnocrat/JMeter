@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="watij-AuthAPI-DS">
+	<test verbose="9" name="AuthAPI-poSSO-foDefault" annotations="jdk">
+		<parameter name="programOffice" value="SSO" />
+		<parameter name="frontOffice" value="Def" />
+
+		<parameter name="po-LoginFields" value="false" />
+		<parameter name="po-ChangePassword" value="false" />
+		<parameter name="po-ForgotPassword" value="false" />
+
+		<parameter name="fo-LoginFields" value="true" />
+		<parameter name="fo-ChangePassword" value="true" />
+		<parameter name="fo-ForgotPassword" value="true" />
+		<parameter name="fo-Profile" value="true" />
+
+		<groups>
+			<run>
+				<include name="AuthenticationAPING" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.initializingAuthProvider" />
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_01NG" />
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_03NG" />
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_01NG" />
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_02NG" />
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_03NG" />
+			<class
+				name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3545_UserChangesPassword_AuthExtension_02NG" />
+		</classes>
+
+	</test>
+
+</suite>

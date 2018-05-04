@@ -1,0 +1,127 @@
+1,DA_CHECKBOX,CHECKBOX,Checkbox,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Number,Applicant,
+2,DA_CHILD_DROPDOWN,CHILD_DROPDOWN,Child Dropdown,Test-Applicant-Reporting-Function,Dropdown-eFormFields,Dropdown,Applicant,
+3,DA_DATE,DATE,Date,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Date,Applicant,
+4,DA_DROPDOWN,DROPDOWN,Dropdown,Test-Applicant-Reporting-Function,Dropdown-eFormFields,Dropdown,Applicant,
+5,DA_EIN_NUMBER,EIN_NUMBER,EIN Number,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Number,Applicant,
+6,DA_EMAIL_ADDRESS,EMAIL_ADDRESS,EmailAddress,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Short Text,Applicant,
+7,DA_LONG_TEXT,LONG_TEXT,Long Text,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Long Text,Applicant,
+8,DA_MANY_TO_MANY,MANY_TO_MANY,Many to Many,Test-Applicant-Reporting-Function,Dropdown-Lookup-Property-eFormFields,Many To Many,Applicant,
+9,DA_NUMERIC,NUMERIC,Numeric,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Number,Applicant,
+10,DA_NUMERIC2,NUMERIC2,Numeric2,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Number,Applicant,
+11,DA_PASSWORD,PASSWORD,Password,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Short Text,Applicant,
+12,DA_PHONE_NUMBER,PHONE_NUMBER,Phone Number,Test-Applicant-Reporting-Function,Type-Properties-eFormFields,Short Text,Applicant,
+13,DA_POSTAL_CODE,POSTAL_CODE,Postal Code,Test-Applicant-Reporting-Function,Type-Properties-eFormFields,Short Text,Applicant,
+14,DA_RADIO_BUTTON,RADIO_BUTTON,Radio Button,Test-Applicant-Reporting-Function,Dropdown-Lookup-Property-eFormFields,Number,Applicant,
+15,DA_REVIEW_SCORE,REVIEW_SCORE,Review Score,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Number,Applicant,
+16,DA_SHORT_TEXT,SHORT_TEXT,Short Text,Test-Applicant-Reporting-Function,Min-And-Max-Properties-eFormFields,Short Text,Applicant,
+17,DA_WEB_ADDRESS,WEB_ADDRESS,Web Address,Test-Applicant-Reporting-Function,No-Properties-eFormFields,Short Text,Applicant,
+18,DA_DROPDOWN_CHOICES,DROPDOWN_CHOICES,,AutoSave-Applicant-Profile,Sub-Choices-List,Dropdown,Applicant-Lists,
+19,DA_DATA_GRID_LOOKUP_A1,DATA_GRID_LOOKUP_A1,Dropdown Choices,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+20,DA_DATA_GRID_LOOKUP_A2,DATA_GRID_LOOKUP_A2,Data Grid Lookup _A1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+21,DA_DATA_GRID_LOOKUP_A3,DATA_GRID_LOOKUP_A3,Data Grid Lookup _A2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+22,DA_DATA_GRID_LOOKUP_A4,DATA_GRID_LOOKUP_A4,Data Grid Lookup _A3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+23,DA_DATA_GRID_LOOKUP_B1,DATA_GRID_LOOKUP_B1,Data Grid Lookup _A4,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+24,DA_DATA_GRID_LOOKUP_B2,DATA_GRID_LOOKUP_B2,Data Grid Lookup _B1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+25,DA_DATA_GRID_LOOKUP_B3,DATA_GRID_LOOKUP_B3,Data Grid Lookup _B2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+26,DA_DATA_GRID_LOOKUP_B4,DATA_GRID_LOOKUP_B4,Data Grid Lookup _B3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+27,DA_DATA_GRID_LOOKUP_C1,DATA_GRID_LOOKUP_C1,Data Grid Lookup _B4,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+28,DA_DATA_GRID_LOOKUP_C2,DATA_GRID_LOOKUP_C2,Data Grid Lookup _C1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+29,DA_DATA_GRID_LOOKUP_C3,DATA_GRID_LOOKUP_C3,Data Grid Lookup _C2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+30,DA_DATA_GRID_LOOKUP_C4,DATA_GRID_LOOKUP_C4,Data Grid Lookup _C3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+31,DA_DATA_GRID_NUMERIC_A1,DATA_GRID_NUMERIC_A1,Data Grid Lookup _C4,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+32,DA_DATA_GRID_NUMERIC_A2,DATA_GRID_NUMERIC_A2,Data Grid Numeric _A1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+33,DA_DATA_GRID_NUMERIC_A3,DATA_GRID_NUMERIC_A3,Data Grid Numeric _A2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+34,DA_DATA_GRID_NUMERIC_B1,DATA_GRID_NUMERIC_B1,Data Grid Numeric _A3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+35,DA_DATA_GRID_NUMERIC_B2,DATA_GRID_NUMERIC_B2,Data Grid Numeric _B1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+36,DA_DATA_GRID_NUMERIC_B3,DATA_GRID_NUMERIC_B3,Data Grid Numeric _B2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+37,DA_DATA_GRID_NUMERIC_C1,DATA_GRID_NUMERIC_C1,Data Grid Numeric _B3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+38,DA_DATA_GRID_NUMERIC_C2,DATA_GRID_NUMERIC_C2,Data Grid Numeric _C1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+39,DA_DATA_GRID_NUMERIC_C3,DATA_GRID_NUMERIC_C3,Data Grid Numeric _C2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Number,Applicant-Lists,
+40,DA_DATA_GRID_TEXT_A1,DATA_GRID_TEXT_A1,Data Grid Numeric _C3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+41,DA_DATA_GRID_TEXT_A2,DATA_GRID_TEXT_A2,Data Grid Text _A1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+42,DA_DATA_GRID_TEXT_A3,DATA_GRID_TEXT_A3,Data Grid Text _A2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+43,DA_DATA_GRID_TEXT_B1,DATA_GRID_TEXT_B1,Data Grid Text _A3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+44,DA_DATA_GRID_TEXT_B2,DATA_GRID_TEXT_B2,Data Grid Text _B1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+45,DA_DATA_GRID_TEXT_B3,DATA_GRID_TEXT_B3,Data Grid Text _B2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+46,DA_DATA_GRID_TEXT_C1,DATA_GRID_TEXT_C1,Data Grid Text _B3,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+47,DA_DATA_GRID_TEXT_C2,DATA_GRID_TEXT_C2,Data Grid Text _C1,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+48,DA_DATA_GRID_TEXT_C3,DATA_GRID_TEXT_C3,Data Grid Text _C2,LBF-Applicant Profile-Source-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Applicant-Lists,
+49,DA_ELIST_DG_A1,ELIST_DG_A1,Data Grid Text _C3,BF-FOPP-Applicant-eForm-Source,Sub-eList-DataGrid-eFormfield,Dropdown,Applicant-Lists,
+50,DA_ELIST_DG_A4,ELIST_DG_A4,eList DG _A1,BF-FOPP-Applicant-eForm-Source,Sub-eList-DataGrid-eFormfield,Number,Applicant-Lists,
+51,DA_ELIST_DG_A5,ELIST_DG_A5,eList DG _A4,BF-FOPP-Applicant-eForm-Source,Sub-eList-DataGrid-eFormfield,Short Text,Applicant-Lists,
+52,DA_CONTACT_INFO,CONTACT_INFO,eList DG _A5,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Short Text,Applicant-Lists,
+53,DA_COUNTRIES,COUNTRIES,Contact Info,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Dropdown,Applicant-Lists,
+54,DA_FNAME,FNAME,Countries,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Short Text,Applicant-Lists,
+55,DA_LNAME,LNAME,Fname,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Short Text,Applicant-Lists,
+56,DA_PROVINCE,PROVINCE,Lname,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Dropdown,Applicant-Lists,
+57,DA_STREET_NAME,STREET_NAME,Province,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Short Text,Applicant-Lists,
+58,DA_STREET_NUM,STREET_NUM,Street Name,BF-FOPP-Applicant-eForm-Source,Sub-eList-eFormField,Number,Applicant-Lists,
+59,DA_APPROVAL_DROPDOWN,APPROVAL_DROPDOWN,Street Num,LBF-Applicant Profile-Source-eLists,No-Propreties-Sub-Fields-LBF,Dropdown,Applicant-Lists,
+60,DS_AGREEMENT_DETAILS,AGREEMENT_DETAILS,No Propreties Sub Fields LBF,BF-FOPP-Award-eForm-Source,Agreement-Details-eFormField,Short Text,Submission,A-BF-FOPP-FOPP-Source
+61,DS_APPROVED,APPROVED,,BF-FOPP-ProjectApproval-eForm-Source,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Source
+62,DS_CHILD_DROPDOWN,CHILD_DROPDOWN,Agreement Details,BF-FOPP-ProjectApproval-eForm-Source,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Source
+63,DS_LONG_TEXT,LONG_TEXT,Approved,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Long Text,Submission,A-BF-FOPP-FOPP-Source
+64,DS_MANY_TO_MANY,MANY_TO_MANY,Child Dropdown,BF-FOPP-PO-Submission-eForm-Source,Dropdown-M2M-eFormFields,Many To Many,Submission,A-BF-FOPP-FOPP-Source
+65,DS_NUMERIC,NUMERIC,Long Text,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source
+66,DS_NUMERIC2,NUMERIC2,Many to Many,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source
+67,DS_PARENT_DROPDOWN,PARENT_DROPDOWN,Numeric,BF-FOPP-ProjectApproval-eForm-Source,Dropdown-eFormFields,Dropdown,Submission,A-BF-FOPP-FOPP-Source
+68,DS_RADIO_BUTTON,RADIO_BUTTON,Numeric2,BF-FOPP-PO-Submission-eForm-Source,Dropdown-M2M-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source
+69,DS_REVIEW_SCORE,REVIEW_SCORE,Parent Dropdown,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Number,Submission,A-BF-FOPP-FOPP-Source
+70,DS_SHORT_TEXT,SHORT_TEXT,Radio Button,BF-FOPP-Review-eForm-Source,Min-And-Max-Properties-eFormFields,Short Text,Submission,A-BF-FOPP-FOPP-Source
+71,DS_STEPS_TYPES,STEPS_TYPES,Review Score,LBF-Target-Steps-Submissions,e.Form Question Holder,Dropdown,Submission,A-LBF-PA-FOPP-Equal-eLists
+72,,,,,,,,
+73,,,,,,,,
+74,,,,,,,,
+75,,,,,,,,
+76,DS_CHECKBOX_READABILITY,CHECKBOX_READABILITY,File Description,AutoSave-Changing-eLists-Fields-Status,Sub-Checkbox-Readability-eFormField,Number,Submission - Lists,A-AutoSave-FOPP
+77,DS_CHECKBOX_VISIBILITY,CHECKBOX_VISIBILITY,Filename,AutoSave-Changing-eLists-Fields-Status,Sub-Checkbox-Visibility-eFormField,Number,Submission - Lists,A-AutoSave-FOPP
+78,DA_DATA_GRID_LOOKUP_A1,DATA_GRID_LOOKUP_A1,MangledFilename,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+79,DA_DATA_GRID_LOOKUP_A2,DATA_GRID_LOOKUP_A2,Checkbox Readability,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+80,DA_DATA_GRID_LOOKUP_A3,DATA_GRID_LOOKUP_A3,Checkbox Visibility,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+81,DA_DATA_GRID_LOOKUP_A4,DATA_GRID_LOOKUP_A4,Data Grid Lookup _A1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+82,DA_DATA_GRID_LOOKUP_B1,DATA_GRID_LOOKUP_B1,Data Grid Lookup _A2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+83,DA_DATA_GRID_LOOKUP_B2,DATA_GRID_LOOKUP_B2,Data Grid Lookup _A3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+84,DA_DATA_GRID_LOOKUP_B3,DATA_GRID_LOOKUP_B3,Data Grid Lookup _A4,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+85,DA_DATA_GRID_LOOKUP_B4,DATA_GRID_LOOKUP_B4,Data Grid Lookup _B1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+86,DA_DATA_GRID_LOOKUP_C1,DATA_GRID_LOOKUP_C1,Data Grid Lookup _B2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+87,DA_DATA_GRID_LOOKUP_C2,DATA_GRID_LOOKUP_C2,Data Grid Lookup _B3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+88,DA_DATA_GRID_LOOKUP_C3,DATA_GRID_LOOKUP_C3,Data Grid Lookup _B4,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+89,DA_DATA_GRID_LOOKUP_C4,DATA_GRID_LOOKUP_C4,Data Grid Lookup _C1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Dropdown,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+90,DA_DATA_GRID_NUMERIC_A1,DATA_GRID_NUMERIC_A1,Data Grid Lookup _C2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+91,DA_DATA_GRID_NUMERIC_A2,DATA_GRID_NUMERIC_A2,Data Grid Lookup _C3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+92,DA_DATA_GRID_NUMERIC_A3,DATA_GRID_NUMERIC_A3,Data Grid Lookup _C4,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+93,DA_DATA_GRID_NUMERIC_B1,DATA_GRID_NUMERIC_B1,Data Grid Numeric _A1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+94,DA_DATA_GRID_NUMERIC_B2,DATA_GRID_NUMERIC_B2,Data Grid Numeric _A2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+95,DA_DATA_GRID_NUMERIC_B3,DATA_GRID_NUMERIC_B3,Data Grid Numeric _A3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+96,DA_DATA_GRID_NUMERIC_C1,DATA_GRID_NUMERIC_C1,Data Grid Numeric _B1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+97,DA_DATA_GRID_NUMERIC_C2,DATA_GRID_NUMERIC_C2,Data Grid Numeric _B2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+98,DA_DATA_GRID_NUMERIC_C3,DATA_GRID_NUMERIC_C3,Data Grid Numeric _B3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Number,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+99,DA_DATA_GRID_TEXT_A1,DATA_GRID_TEXT_A1,Data Grid Numeric _C1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+100,DA_DATA_GRID_TEXT_A2,DATA_GRID_TEXT_A2,Data Grid Numeric _C2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+101,DA_DATA_GRID_TEXT_A3,DATA_GRID_TEXT_A3,Data Grid Numeric _C3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+102,DA_DATA_GRID_TEXT_B1,DATA_GRID_TEXT_B1,Data Grid Text _A1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+103,DA_DATA_GRID_TEXT_B2,DATA_GRID_TEXT_B2,Data Grid Text _A2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+104,DA_DATA_GRID_TEXT_B3,DATA_GRID_TEXT_B3,Data Grid Text _A3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+105,DA_DATA_GRID_TEXT_C1,DATA_GRID_TEXT_C1,Data Grid Text _B1,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+106,DA_DATA_GRID_TEXT_C2,DATA_GRID_TEXT_C2,Data Grid Text _B2,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+107,DA_DATA_GRID_TEXT_C3,DATA_GRID_TEXT_C3,Data Grid Text _B3,LBF-Applicant Submission-Equal-eLists,Data-Grid-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+108,DS_DROPDOWN,DROPDOWN,Data Grid Text _C1,AutoSave-Changing-eLists-Fields-Status,Sub-Dropdown-eFormField,Dropdown,Submission - Lists,A-AutoSave-FOPP
+109,DS_DROPDOWN_FROM_APPLICANT_PRO,DROPDOWN_FROM_APPLICANT_PRO,Data Grid Text _C2,AutoSave-Changing-eLists-Fields-Status,Sub-Dropdown-From-Applicant-Profile-eFormField,Dropdown,Submission - Lists,A-AutoSave-FOPP
+110,DS_LIST_TEXT1,LIST_TEXT1,Data Grid Text _C3,AutoSave-Changing-eLists-Fields-Status,Sub-Dropdown-From-List-eFormField,Short Text,Submission - Lists,A-AutoSave-FOPP
+111,DS_LIST_TEXT2,LIST_TEXT2,Dropdown,AutoSave-Changing-eLists-Fields-Status,Sub-Dropdown-From-List-eFormField,Short Text,Submission - Lists,A-AutoSave-FOPP
+112,DS_LIST_TEXT3,LIST_TEXT3,Dropdown From Applicant Profile,AutoSave-Changing-eLists-Fields-Status,Sub-Dropdown-From-List-eFormField,Short Text,Submission - Lists,A-AutoSave-FOPP
+113,DS_CHOICES,CHOICES,List Text1,AutoSave-Changing-eLists-Fields-Status,eList QH,Dropdown,Submission - Lists,A-AutoSave-FOPP
+114,DS_PASSWORD,PASSWORD,List Text2, LBF-Applicant Submission-Equal-eLists,Min-And-Max-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+115,DS_CHECKBOX,CHECKBOX,List Text3,BF-FOPP-ProjectApproval-eForm-Source,Sub-No-Properties-eLIst-eFormField,Number,Submission - Lists,A-BF-FOPP-FOPP-Source
+116,DS_DATE,DATE,Choices,BF-FOPP-ProjectApproval-eForm-Source,Sub-No-Properties-eLIst-eFormField,Date,Submission - Lists,A-BF-FOPP-FOPP-Source
+117,DS_EIN_NUMBER,EIN_NUMBER,Password,BF-FOPP-ProjectApproval-eForm-Source,Sub-No-Properties-eLIst-eFormField,Number,Submission - Lists,A-BF-FOPP-FOPP-Source
+118,DS_WEB_ADDRESS,WEB_ADDRESS,Checkbox,BF-FOPP-ProjectApproval-eForm-Source,Sub-No-Properties-eLIst-eFormField,Short Text,Submission - Lists,A-BF-FOPP-FOPP-Source
+119,DS_SUBMISSION_FORM,SUBMISSION_FORM,Date,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Short Text,Submission - Lists,A-BF-FOPP-FOPP-Source
+120,DS_SUBMISSION_NAME,SUBMISSION_NAME,EIN Number,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Short Text,Submission - Lists,A-BF-FOPP-FOPP-Source
+121,DS_SUBMISSION_POONLY,SUBMISSION_POONLY,Web Address,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Number,Submission - Lists,A-BF-FOPP-FOPP-Source
+122,DS_SUBMISSION_PUBLICATIONENDDA,SUBMISSION_PUBLICATIONENDDA,Submission Form,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Date,Submission - Lists,A-BF-FOPP-FOPP-Source
+123,DS_SUBMISSION_PUBLICATIONSTART,SUBMISSION_PUBLICATIONSTART,Submission Name,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Date,Submission - Lists,A-BF-FOPP-FOPP-Source
+124,DS_SUBMISSION_REQUIRED,SUBMISSION_REQUIRED,Submission POOnly,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Number,Submission - Lists,A-BF-FOPP-FOPP-Source
+125,DS_SUBMISSION_SCHEDULEDUEDATE,SUBMISSION_SCHEDULEDUEDATE,Submission PublicationEndDate,BF-FOPP-Award-eForm-Source,Submission-Details-eFormField,Date,Submission - Lists,A-BF-FOPP-FOPP-Source
+126,DS_PHONE_NUMBER,PHONE_NUMBER,Submission PublicationStartDate,LBF-Applicant Submission-Equal-eLists,Type-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists
+127,DS_POSTAL_CODE,POSTAL_CODE,Submission Required,LBF-Applicant Submission-Equal-eLists,Type-Propreties-Sub-Fields-LBF,Short Text,Submission - Lists,A-LBF-PA-FOPP-Equal-eLists

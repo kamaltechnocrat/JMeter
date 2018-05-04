@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"> 
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <appender name="console" class="org.apache.log4j.ConsoleAppender"> 
+    <param name="Target" value="System.out"/>
+    <param name="ImmediateFlush" value="true" /> 
+    <layout class="org.apache.log4j.PatternLayout"> 
+      <param name="ConversionPattern" value="%d{ISO8601} - %-5p - %c.%M - %m%n"/> 
+    </layout> 
+  </appender> 
+  
+  <appender name="logfile" class="org.apache.log4j.RollingFileAppender">
+	<param name="file" value="./Logs-Files/Watij-Logs/Grantium_QA_Watij.log"/>
+	<param name="append" value="true"/>
+	<layout class="org.apache.log4j.PatternLayout">
+		<param name="ConversionPattern" value="[%-25.25t] %d{ABSOLUTE} - %-5p - %70.70c.%M - %m%n"/>
+	</layout>
+  </appender>
+  
+  <appender name="watij_reporting_functions" class="org.apache.log4j.DailyRollingFileAppender">
+	<param name="file" value="./Logs-Files/Reporting-Functions-Logs/Reporting_Functions_Watij.log"/>
+	<param name="append" value="true"/>
+	<layout class="org.apache.log4j.PatternLayout">
+		<param name="ConversionPattern" value="%d{ISO8601} - %-5p - %c.%M - %m%n"/>
+	</layout>
+  </appender>
+  
+  <appender name="watij_log" class="org.apache.log4j.RollingFileAppender">
+	<param name="file" value="./Logs-Files/Watij-Logs/Watij_LogFile.log"/>
+	<param name="append" value="true"/>
+	<layout class="org.apache.log4j.PatternLayout">
+		<param name="ConversionPattern" value="%d{ISO8601} - %-5p - %c.%M - %m%n"/>
+	</layout>
+  </appender>
+  
+  <logger name="test_Suite.utils.reporting_Functions.ReportingFunctionsUtil">
+  	<level value="INFO" />
+  	<appender-ref ref="watij_reporting_functions" />
+  
+  </logger>
+  
+  <logger name="test_Suite">
+  	<level value="WARN" />
+  	<appender-ref ref="watij_log" />
+  </logger>
+  
+ <!--   <logger name="com.infoterra.grantium.model.security.SecurityRegistry">
+  	<level value="DEBUG" />
+  	<appender-ref ref="watij_log" />
+  </logger>
+  
+  <logger name="com.jniwrapper">
+  	<level value="NO"/>
+  </logger>
+  
+  <logger name="httpclient.wire.content">
+    <level value="NO" />
+  </logger>
+  
+  <logger name="httpclient.wire.header">
+    <level value="NO" />
+  </logger>
+  
+  <logger name="org.apache.commons.httpclient">
+    <level value="NO" />
+  </logger>
+  
+  <logger name="test_Suite.utils.cases.GeneralUtil.httpLog">
+    <level value="NO" />
+  </logger>-->
+  
+  <root> 
+    <level value="ERROR" /> 
+    <appender-ref ref="console" />
+    <appender-ref ref="logfile" />
+  </root>
+  
+</log4j:configuration>

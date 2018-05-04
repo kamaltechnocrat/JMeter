@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="9" name="Watij-Projects-Report" annotations="jdk">
+	<test name="PO Managing Projects Evaluation Enhancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.AmendSharedEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.AmendSharedPAEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.SharedEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.SharedPAEvaluation" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.UnsubmittedEvaluations" />
+			<class name="test_Suite.tests.r2_9.feat_1.evalEnhancement.UnsubmittedPAEvaluations" />
+		</classes>
+	</test>
+</suite>

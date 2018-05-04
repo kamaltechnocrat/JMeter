@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_Claim" formIdentifier="Post Award Submission" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="US" localeLangCode="en" title="Post Award Submission"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Post Award Submission"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Post Award Submission"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Post Award Submission"/>
+	</FormTitles>
+	<DatePublished date="2012.01.17 AD 20:44:43 EST"/>
+	<DefaultFormlet identifier="Initial Claim"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.MenuItemOnly" identifier="Menu Item Only">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles/>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Menu"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Menu"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Menu"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Menu"/>
+			</FormletMenuTitles>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.SubmissionList" identifier="Initial Claim">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Initial Claim"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Initial Claim"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Initial Claim"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Initial Claim"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Initial Claim"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Initial Claim"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Initial Claim"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Initial Claim"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayStepName_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+				</Property>
+				<Property propertyName="displayScore_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+				</Property>
+				<Property propertyName="displayAssociatedUserFormat">
+					<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+				</Property>
+				<Property propertyName="displayAssociatedUserForGroupIDs">
+					<Value isList="true">
+						<Choice value="G02 Reviewers"/>
+						<Choice value="G03 Approvers"/>
+						<Choice value="G06 Project Officers"/>
+						<Choice value="G10 Program Officers"/>
+						<Choice value="Staff"/>
+						<Choice value="Super"/>
+					</Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short Text" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedBringForward" type="Calculated Bring Forward">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Submission_Name}[%{AssociatedAwardSubmissionScheduleRow|C}]]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Enter Any Text:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Enter Any Text:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Enter Any Text:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Enter Any Text:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="2" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission Summary">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="US" localeLangCode="en" title="General Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="General Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="General Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="General Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

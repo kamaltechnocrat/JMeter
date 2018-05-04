@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserGroupIntegration version="6.1.0.0">
+    <IntegrateGroups>
+        <IntegrateGroup readonly="false" name="G3 NEWS Reviewer">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APPROVE_APPLICANT_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROJECT_ACTIVITIES">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="NOTIFICATION_LOG">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="INSTANT_NOTIFICATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_DETAILS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_ORGANIZATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_OFFICER_ASSIGNMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMEND_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="CANCEL_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EDIT_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EXPORT_LIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EDIT_DATA">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SCORING">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SUBMIT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AE_OVERRIDE_ORG_FILTER">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="SUBMISSION_FTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FULL_TEXT_SEARCH_VIEW_SUB_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT_PROJECTLIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="G3">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+        <IntegrateGroup readonly="false" name="G01 North Reviewer">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APPROVE_APPLICANT_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROJECT_ACTIVITIES">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="NOTIFICATION_LOG">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="INSTANT_NOTIFICATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_DETAILS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_ORGANIZATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_OFFICER_ASSIGNMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMEND_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="CANCEL_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EDIT_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EXPORT_LIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EDIT_DATA">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SCORING">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SUBMIT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AE_OVERRIDE_ORG_FILTER">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="SUBMISSION_FTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FULL_TEXT_SEARCH_VIEW_SUB_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT_PROJECTLIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G3 NEWS Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+        <IntegrateGroup readonly="false" name="G02 East Reviewer">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APPROVE_APPLICANT_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROJECT_ACTIVITIES">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="NOTIFICATION_LOG">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="INSTANT_NOTIFICATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_DETAILS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_ORGANIZATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_OFFICER_ASSIGNMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMEND_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="CANCEL_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EDIT_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EXPORT_LIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EDIT_DATA">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SCORING">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SUBMIT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AE_OVERRIDE_ORG_FILTER">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="SUBMISSION_FTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FULL_TEXT_SEARCH_VIEW_SUB_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT_PROJECTLIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G3 NEWS Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+        <IntegrateGroup readonly="false" name="G03 West Reviewer">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APPROVE_APPLICANT_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROJECT_ACTIVITIES">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="NOTIFICATION_LOG">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="INSTANT_NOTIFICATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_DETAILS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_ORGANIZATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_OFFICER_ASSIGNMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMEND_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="CANCEL_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EDIT_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EXPORT_LIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EDIT_DATA">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SCORING">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SUBMIT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AE_OVERRIDE_ORG_FILTER">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="SUBMISSION_FTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FULL_TEXT_SEARCH_VIEW_SUB_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT_PROJECTLIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G3 NEWS Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+        <IntegrateGroup readonly="false" name="G04 South Reviewer">
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APPROVE_APPLICANT_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMENDMENTS_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EVALUATE_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_ASSIGNED_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUB_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="MY_PROJECT_SUBMISSIONS_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="VIEW_SUBMISSIONS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROJECT_ACTIVITIES">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="NOTIFICATION_LOG">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="INSTANT_NOTIFICATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_DETAILS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_ORGANIZATION">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="APL_EDIT_PROJECT_OFFICER_ASSIGNMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AMEND_SUBMISSIONS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="CANCEL_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EDIT_AMENDMENTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EXPORT_LIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_EDIT_DATA">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SCORING">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_SUBMIT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="BULK_EVALUATION_VIEW_SUBMISSION_FORMS_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="AE_OVERRIDE_ORG_FILTER">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="SUBMISSION_FTS">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="FULL_TEXT_SEARCH_VIEW_SUB_PDF_EXPORT">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="REQUEST_AMENDMENT_PROJECTLIST">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G3 NEWS Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateGroup>
+    </IntegrateGroups>
+	<IntegrateUsers>
+        <IntegrateUser login-name="NReviewer1">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_NReviewer1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FNReviewer1">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LNReviewer1">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G01 North Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="NReviewer2">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_NReviewer2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FNReviewer2">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LNReviewer2">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G01 North Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="NReviewer3">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_NReviewer3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FNReviewer3">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LNReviewer3">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G01 North Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="NReviewer4">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_NReviewer4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FNReviewer4">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LNReviewer4">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G01 North Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="NReviewer5">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_NReviewer5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FNReviewer5">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LNReviewer5">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G01 North Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="North-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="EReviewer1">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_EReviewer1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FEReviewer1">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LEReviewer1">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G02 East Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="EReviewer2">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_EReviewer2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FEReviewer2">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LEReviewer2">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G02 East Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="EReviewer3">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_EReviewer3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FEReviewer3">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LEReviewer3">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G02 East Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="EReviewer4">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_EReviewer4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FEReviewer4">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LEReviewer4">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G02 East Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="EReviewer5">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_EReviewer5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FEReviewer5">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LEReviewer5">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G02 East Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="East-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="WReviewer1">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_WReviewer1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FWNReviewer1">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LWReviewer1">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G03 West Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="WReviewer2">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_WReviewer2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FWNReviewer2">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LWReviewer2">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G03 West Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="WReviewer3">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_WReviewer3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FWNReviewer3">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LWReviewer3">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G03 West Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="WReviewer4">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_WReviewer4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FWNReviewer4">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LWReviewer4">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G03 West Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="WReviewer5">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_WReviewer5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FWNReviewer5">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LWReviewer5">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G03 West Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="West-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="SReviewer1">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_SReviewer1@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FSNReviewer1">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LSReviewer1">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G04 South Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="SReviewer2">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_SReviewer2@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FSNReviewer2">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LSReviewer2">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G04 South Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="SReviewer3">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_SReviewer3@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FSNReviewer3">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LSReviewer3">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G04 South Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="SReviewer4">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_SReviewer4@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FSNReviewer4">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LSReviewer4">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G04 South Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+        <IntegrateUser login-name="SReviewer5">
+            <UserInfo>
+                <Address1 value="279 Laurier Ave. Suite 200">
+                </Address1>
+                <ApplicationLocale localeLangCode="en" localeCountryCode="CA">
+                </ApplicationLocale>
+                <City value="Ottawa">
+                </City>
+                <ConfirmAnswer value="a11">
+                </ConfirmAnswer>
+                <ConfirmQuestion value="a11">
+                </ConfirmQuestion>
+                <Country constant="CAN: CANADA">
+                </Country>
+                <Email value="qa_SReviewer5@g3-qa-autobuild.csdc-lan.csdcsystems.com">
+                </Email>
+                <EncryptPassword value="128-147-217-149-240-102-115-64-70-219-245-242-34-68-0-65-135-51-213-33">
+                </EncryptPassword>
+                <ExternallyManaged value="false">
+                </ExternallyManaged>
+                <FirstName value="FSNReviewer5">
+                </FirstName>
+                <Language constant="LANGUAGES_ENGLISH">
+                </Language>
+                <LastName value="LSReviewer5">
+                </LastName>
+                <Organization value="Grantium Inc.">
+                </Organization>
+                <PhoneNumber value="613-230-7890">
+                </PhoneNumber>
+                <Position value="QA">
+                </Position>
+                <PostalCode value="K1P-5J9">
+                </PostalCode>
+                <ProvinceStateOther value="ON.">
+                </ProvinceStateOther>
+                <Salutation constant="SALUTATIONS_MR">
+                </Salutation>
+            </UserInfo>
+            <AccessPoints>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="PROGRAM_OFFICE">
+                </AccessPoint>
+                <AccessPoint update-right="true" read-right="true" delete-right="true" create-right="true" accessPointKey="EXTERNAL_REVIEWER">
+                </AccessPoint>
+            </AccessPoints>
+            <Parents>
+                <Parent name="G04 South Reviewer">
+                </Parent>
+            </Parents>
+            <OrganizationalHierarchy>
+                <PrimaryOrganization>
+                    <HierarchicalOrganization identifier="South-Id">
+                    </HierarchicalOrganization>
+                </PrimaryOrganization>
+            </OrganizationalHierarchy>
+        </IntegrateUser>
+    </IntegrateUsers>
+</UserGroupIntegration>

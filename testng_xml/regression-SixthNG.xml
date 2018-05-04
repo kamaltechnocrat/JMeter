@@ -1,0 +1,349 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sixth-Regression-Report" verbose="2" annotations="jdk">
+	
+  	<test name="PO Managing EForms BF From FOPP preparation">
+	    <groups>
+	    	<run>
+	    		<include name="EFormsNG" />
+	    	</run>
+	    </groups>    
+	    <classes>
+	    	<class name="test_Suite.tests.r2_8.bfFromFOPP.Must_Run_First" />
+	    </classes>
+	</test>
+  
+	  <test name="PO Managing EForms BF From FOPP">
+	    <groups>
+	    	<run>
+	    		<include name="EFormsNG" />
+	    	</run>
+	    </groups>    
+	    <classes>
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInFO.BfOnAmend" />   	    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInPO.BfToSteps" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInFO.SrcProjAfterTransfer" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInPO.SrcProjAvail" />
+    	    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInFO.BfOnTransfer" />    	   	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInFO.BfToSteps" />
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInPO.BfOnAmend" />
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.bfInPO.BfOnTransfer" /> 
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInFO.SrcProjAvail" />    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInFO.SrcProjInWizard" />
+    	
+    	<class name="test_Suite.tests.r2_8.bfFromFOPP.createProjInPO.SrcProjAfterTransfer" />
+	    </classes>
+	  </test>
+	
+	<test name="PO Managing EForms Auto Save Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>		
+			<class name="test_Suite.tests.r2_8.autoSave.asConfig.AsAvailInFields" />
+			<class name="test_Suite.tests.r2_8.autoSave.asConfig.AsAvailInFieldsInLists" />
+			<class name="test_Suite.tests.r2_8.autoSave.asConfig.AsAvailInOtherFields" />	
+		</classes>	
+	</test>
+	
+	<test name="PO Managing EForms Auto Save Fields">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>		
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFieldStat" />		
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFieldStatInList" />		
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFormletStat" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFormletStatInList" />
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldNotSet" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldNotSetInList" />
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldSet" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldSetInList" />
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsPopFieldsVal" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsPopFieldsValInList" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms Workflow">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.workflow.DataGrid_BF_CalcValuesNG" />
+			<!-- <class name="test_Suite.tests.workflow.GeneratePaymentScheduleNG" /> -->
+			<class name="test_Suite.tests.workflow.GPS_BF_Award_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_Submission_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_SubmissionDateNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Projects Amendments Enhancement">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.OpenSubmissionIconInAmendList" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_FOApplicant_As_Amender_To_InitialClaim" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender_To_InitialClaim" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_FOApplicant_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_AssignsGroup_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_AssignStepOfficerBeforeReexecute" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_Execute_PA_GroupOfficerAssignment" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.PO_Assigns_Registrant_As_Amender" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_ExecuteApplicantAssignment" />
+			<class name="test_Suite.tests.r2_9.feat_3.amendment_Enhance.Re_ExecuteGroupOfficerAssignment" />
+		</classes>
+
+	</test>
+
+
+	<test name="PO Managing Multi Currency Setup">
+		<groups>
+			<run>
+				<include name="MultiCurrencyNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_0.MustRunFirst" />
+		</classes>
+		</test>
+	
+	<test name="PO Managing Multi Currency">
+		<groups>
+			<run>
+				<include name="MultiCurrencyNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_CurrencyLookup" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_CurrencySymbolAtField" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_ImportedEformField" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_NumericFieldValues" />
+			
+		
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms LBF Sync">
+		<groups>
+			<run>
+				<exclude name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_NoSync_Profile" />	
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Award_EqualFields" />	
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_EqualFields" />			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Sub_EqualFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_EqualFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_NoSync_AdminFrm" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_IPASS_EqualFields" />		
+			
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_MoreFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_EqualFieldsFO" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_MoreFields" />
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_Profile_LessFields" />									 
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_EqualFieldsFO" />	
+			<class name="test_Suite.tests.r2_8.lbf_Function.lbfOnSync.LBF_AdminFrm_LessFields" />
+		</classes>
+	</test>
+	
+	<test name="Manage Multiple Amendments">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAbilityToContinuePaStepsNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAbilityToRequestAmendOnParentStepNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAddingNewScheduleAndSubmitItNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestAddingNewScheduleOnAmendmentNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestTokenBackToPostAwardNG" />
+			<class name="test_Suite.tests.r3_2.multipleAmendments.TestTokenDoNotBackToPostAwardNG" />
+		</classes>	
+	</test>	
+	
+	
+	<test name="PO Managing Reference Table Setup">
+		<groups>
+			<run>
+				<exclude name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.referenceTable.MustRunFirst" />
+		</classes>
+		</test>
+	
+	<test name="PO Managing Reference Table">
+		<groups>
+			<run>
+				<exclude name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.referenceTable.test_DoubleFilter_eList" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_DoubleFilter" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_ReferenceTables_Amendments" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_ReferenceTables_In_WorkFlow" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_Single_Filter" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_SingleFilter_eList" />
+		</classes>
+	</test>
+	
+  	<test name="Setup ETL Reporting Data">
+    	<groups>
+    		<run>
+    			<include name="SetupReportingFunctionsNG" />
+    		</run>
+    	</groups>
+    	
+    	<classes>
+		    <class name="test_Suite.tests.rptFunctions.RF_PopAdminEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopOrgEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopProfileEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopProj_EForms" />
+    	</classes>
+  	</test>	
+
+  	<test name="BackOffice Managing ETL Fields">
+	    <groups>
+	    	<run>
+	    		<include name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingApplicantProfile_EFormsFields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingFOPP_EFormFields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingOrganization_EFormfields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingProj_EFormsFields" />
+	    </classes>
+	  </test>	
+
+  	<test name="BackOffice Managing ETL Tables">
+	    <groups>
+	    	<run>
+	    		<include name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_RebuildAndExecuteDatamart" />
+	    </classes>
+	  </test>
+	<!-- 
+	<test name="PO Managing Data Archive Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.MustRunFirst_DataArchive" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Phase I">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestReadyForArchiveProjects" />
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestScheduledForArchiveProjects" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Phase II">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseII_ArchivedProjects.Data_Archive_TestArchivedProjects" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Phase III">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseIII_DeleteArchived_Projects.Data_Archive_TestScheduledForDeletionProjects" />
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseIII_DeleteArchived_Projects.DataArchive_DeleteArchiveProjects" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Single Projects">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.Achiving_Single_SpecialProjects.DataArchive_TestAmendment_Link" />
+			<class name="test_Suite.tests.r5_2.DataArchive.Achiving_Single_SpecialProjects.DataArchive_TestBulkEvaluation_Link" />
+			<class name="test_Suite.tests.r5_2.DataArchive.Achiving_Single_SpecialProjects.DataArchive_TestEvaluateProjectsLink" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Configuration">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.Archive_Configuration.Reset_ArchiveConfiguration" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive UAPs">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.Group_UAPs_Set_Verify.Verify_UAP_Implementation" />
+		</classes>
+	</test>
+	 -->
+
+
+</suite>

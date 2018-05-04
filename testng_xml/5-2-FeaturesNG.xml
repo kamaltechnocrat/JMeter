@@ -1,0 +1,92 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="5.2 Features" verbose="9" annotations="jdk">
+	
+	<test name="PO Managing Data Archive Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.MustRunFirst_DataArchive" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Phase I">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestReadyForArchiveProjects" />
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseI_ReadyForArchive.DataArchive_TestScheduledForArchiveProjects" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Phase II">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseII_ArchivedProjects.Data_Archive_TestArchivedProjects" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Phase III">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseIII_DeleteArchived_Projects.Data_Archive_TestScheduledForDeletionProjects" />
+			<class name="test_Suite.tests.r5_2.DataArchive.PhaseIII_DeleteArchived_Projects.DataArchive_DeleteArchiveProjects" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Single Projects">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.Achiving_Single_SpecialProjects.DataArchive_TestAmendment_Link" />
+			<class name="test_Suite.tests.r5_2.DataArchive.Achiving_Single_SpecialProjects.DataArchive_TestBulkEvaluation_Link" />
+			<class name="test_Suite.tests.r5_2.DataArchive.Achiving_Single_SpecialProjects.DataArchive_TestEvaluateProjectsLink" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive Configuration">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.Archive_Configuration.Reset_ArchiveConfiguration" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Data Archive UAPs">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>	
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_2.DataArchive.Group_UAPs_Set_Verify.Verify_UAP_Implementation" />
+		</classes>
+	</test>
+	
+</suite>

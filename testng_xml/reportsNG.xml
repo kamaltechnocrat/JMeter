@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Reports-Report" verbose="2" annotations="jdk">
+	<test name="Managing Reports Step Up">
+		<groups>
+			<run>
+				<include name="ReportsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.MustRunFirstNG" />
+		</classes>
+	</test>
+	<test name="PO Managing Reports">
+		<groups>
+			<run>
+				<include name="ReportsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1939_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1940_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1941_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1942_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1943_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1944_01NG" />
+			
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1946_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1946_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1946_03NG" />
+			
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1947_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1947_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S1948_01NG" />
+			
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_04NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_05NG" />
+			<class name="test_Suite.tests.stories.release_1_5.manageReports.S2071_06NG" />
+			<class name="test_Suite.tests.cases.LaunchReportNG" />
+		</classes>
+	</test>
+</suite>

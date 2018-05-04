@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<quartz>
+	<job>
+		<job-detail>
+			<name>BulkLoadJobDetail</name>
+			<group>BulkLoadGroup</group>
+			<description>
+				
+			</description>
+			<job-class>
+				com.infoterra.grantium.service.integration.quartz.jobs.BulkLoadIntegrationJob
+			</job-class>
+			<volatility>false</volatility>
+			<durability>false</durability>
+			<recover>false</recover>
+
+			<job-data-map allows-transient-data="true">
+				<!-- Note This is an URL and not necessarily a folder on the local system.  -->
+				<entry>
+					<key>DATA_DIRECTORY_URL</key>
+					<value>file:///C:/AA_GrantiumData/Integrator</value>
+				</entry>
+				<entry>
+					<key>ADMINISTRATOR_LOGIN_NAME</key>
+					<value>Admin</value>
+				</entry>
+			</job-data-map>
+		</job-detail>
+		
+		<trigger>
+		    <cron>
+                <name>BulkLoadTrigger</name>
+                <group>BulkLoadGroup</group>
+                <job-name>BulkLoadJob</job-name>
+                <job-group>BulkLoadGroup</job-group>
+               
+                <cron-expression>0 * * ? * *</cron-expression>
+            </cron>
+        </trigger>
+		
+		<!--<trigger>
+			<simple>
+				<name>BulkLoadTrigger</name>
+				<group>BulkLoadGroup</group>
+				<job-name>BulkLoadJob</job-name>
+				<job-group>BulkLoadGroup</job-group>
+				<start-time>2001-06-10 6:10:00 PM</start-time>-->
+				<!-- 
+Do this only once during development  
+Should be changed to a cron job in production
+EXAMPLE:
+	<trigger>
+            <cron>
+                <name>BulkLoadTrigger</name>
+                <group>BulkLoadGroup</group>
+                <job-name>BulkLoadJob</job-name>
+                <job-group>BulkLoadGroup</job-group>
+               
+                <cron-expression>0 30 4 * * ?</cron-expression>
+            </cron>
+        </trigger>
+
+
+-->
+				<repeat-count>0</repeat-count>
+				<repeat-interval>10000</repeat-interval>
+			<!--</simple>
+		</trigger>-->
+	</job>
+</quartz>

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-AutoSave-OnChange-Report" annotations="jdk">
+	<test verbose="2" name="PO Managing EForms">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+
+		<classes>		
+			<class name="test_Suite.tests.r2_8.autoSave.asConfig.AsAvailInFields" />
+			<class name="test_Suite.tests.r2_8.autoSave.asConfig.AsAvailInFieldsInLists" />
+			<class name="test_Suite.tests.r2_8.autoSave.asConfig.AsAvailInOtherFields" />
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFieldStat" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFieldStatInList" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFormletStat" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsChFormletStatInList" />
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldNotSet" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldNotSetInList" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldSet" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsMandFieldSetInList" />
+			
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsPopFieldsVal" />
+			<class name="test_Suite.tests.r2_8.autoSave.asOnChange.AsPopFieldsValInList" />
+		</classes>
+	</test>
+</suite>

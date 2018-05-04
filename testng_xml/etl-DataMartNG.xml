@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ETL And Data Mart" verbose="9" annotations="jdk">
+	
+  	<test name="Setup ETL Reporting Data">
+    	<groups>
+    		<run>
+    			<include name="SetupReportingFunctionsNG" />
+    		</run>
+    	</groups>
+    	
+    	<classes>
+		    <class name="test_Suite.tests.rptFunctions.RF_PopAdminEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopOrgEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopProfileEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopProj_EForms" />
+    	</classes>
+  	</test>	
+
+  	<test name="BackOffice Managing ETL Fields">
+	    <groups>
+	    	<run>
+	    		<include name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingApplicantProfile_EFormsFields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingFOPP_EFormFields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingOrganization_EFormfields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingProj_EFormsFields" />
+	    </classes>
+	  </test>	
+
+  	<test name="BackOffice Managing ETL Tables">
+	    <groups>
+	    	<run>
+	    		<include name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_RebuildAndExecuteDatamart" />
+	    </classes>
+	  </test>
+</suite>

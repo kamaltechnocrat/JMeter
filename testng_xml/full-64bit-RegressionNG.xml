@@ -1,0 +1,485 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Full-Regression-Report" verbose="2" annotations="jdk">
+	<test name="preTest">
+		<groups>
+			<run>
+				<include name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Documents">
+		<groups>
+			<run>
+				<include name="DocumentsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.documents.Documents_TestingNG" />
+			<class name="test_Suite.tests.eForms.Test_DocumentsAttachmentListNG" />
+			<class name="test_Suite.tests.documents.TestDocumentDetailsMandatoryFields" />
+			<class name="test_Suite.tests.documents.TestDocumentsINFOPPStepNG" />
+			<class name="test_Suite.tests.documents.TestDownloadDocumentsNG" />
+			<class name="test_Suite.tests.documents.TestDocumentTypeAddedAndUsedNG" />
+		</classes>
+	</test>
+	
+	<test name="Publications">
+		<groups>
+			<run>
+				<include name="PublicationsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.general.H_FOPublicationProjectNG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2049_01NG" />
+		</classes>
+	</test>
+	
+	<test name="Garbage-Collections">
+		<groups>
+			<run>
+				<include name="PreClassNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.preClass_GC" />
+		</classes>
+	</test>
+	
+  	<test name="PO Managing EForms BF From FOPP preparation">
+	    <groups>
+	    	<run>
+	    		<include name="EFormsNG" />
+	    	</run>
+	    </groups>    
+	    <classes>
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.Must_Run_First" />
+	    </classes>
+	</test>
+  
+	  <test name="PO Managing EForms BF From FOPP">
+	    <groups>
+	    	<run>
+	    		<include name="EFormsNG" />
+	    	</run>
+	    </groups>    
+	    <classes>
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.createProjectInPO.SourceProjectAvailability" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.createProjectInPO.SourceProjectAvailabilityAfterProjectTransfer" />
+	    	
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.createProjectInFO.SourceProjectAvailability" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.createProjectInFO.SourceProjectAvailabilityAfterProjectTransfer" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.createProjectInFO.SourceProjectAvialabilityThroughPublicationWizard" />
+	    	    	
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.bringsDataForwardWhenRegistrantOpensEForm.BFDataAfterAmendment" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.bringsDataForwardWhenRegistrantOpensEForm.BFDataToSameSteps" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.bringsDataForwardWhenRegistrantOpensEForm.BFDataWhenTransferOccurs" />
+	    	
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.bringsDataForwardWhenPOUserOpensEForm.BFDataAfterAmendment" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.bringsDataForwardWhenPOUserOpensEForm.BFDataToSameSteps" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.bringsDataForwardWhenPOUserOpensEForm.BFDataWhenTransferOccurs" />
+	    	
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.adminConfiguresFOPPforBF.BringForwardSettingsAvailabilityInFoppDetails" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.adminConfiguresFOPPforBF.ClonningFOPPWithBFConfigured" />
+	    	<class name="test_Suite.tests.stories.release_2_8.bring_Forward_From_Funding_Opp.adminConfiguresFOPPforBF.SourceFOPPEFormsAvailabilityInEFormData" />
+	    </classes>
+	  </test>
+	
+	<test name="PO Managing EForms Workflow">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.workflow.DataGrid_BF_CalcValuesNG" />
+			<class name="test_Suite.tests.workflow.GeneratePaymentScheduleNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_Award_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_Submission_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_BF_FundingGridNG" />
+			<class name="test_Suite.tests.workflow.GPS_SubmissionDateNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms Auto Save Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change_Configuaration.AutoSave_Availability_InEFormFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change_Configuaration.AutoSave_Availability_InEFormFieldsOnListFormletsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change_Configuaration.AutoSave_Availability_InOtherEFormFieldsNG" />		
+		</classes>	
+	</test>
+	
+	<test name="PO Funding Opps">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.post_Award.A_PA_GnrlProgramNG" />
+			<class name="test_Suite.tests.post_Award.B_PA_FO_ProjectNG" />
+			<class name="test_Suite.tests.post_Award.C_PA_PO_ProjectNG" />
+			<class name="test_Suite.tests.post_Award.D_PA_NonCriticalReviewStepNG" />
+			<class name="test_Suite.tests.post_Award.F_PA_DoublePost_AwardNG" />
+			<class name="test_Suite.tests.post_Award.G_PA_DecisionStepNG" />
+			<class name="test_Suite.tests.general.J_FO_WSS_DecisionStepsNG" />
+			<class name="test_Suite.tests.workflow.Multi_WSS_DecisionStepsNG" />
+			<class name="test_Suite.tests.workflow.PausedSubmissionScheduleNG" />
+			<class name="test_Suite.tests.workflow.PA_TooManyEvalForms_AutoAssignNG" />
+			<class name="test_Suite.tests.general.A_GnrlProgramNG" />
+			<class name="test_Suite.tests.general.B_FOGnrlProjectNG" />
+			<class name="test_Suite.tests.general.C_POGnrlProjectNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms Auto Save Fields">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_ChangingFieldStatus_InEListFormletsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_ChangingFieldStatusNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_ChangingFormletStatus_InEListFormletsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_ChangingFormletStatusNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_PopulatesFieldsValues_InEListFormletsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_PopulatesFieldsValuesNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_WhenMandatoryFields_NotSet_InEListFormletsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_WhenMandatoryFields_NotSetNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_WhenMandatoryFields_Set_InEListFormletsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.auto_Save_On_Change.AutoSave_WhenMandatoryFields_SetNG" />		
+		</classes>
+	</test>
+	
+	<test name="Garbage-Collections">
+		<groups>
+			<run>
+				<include name="PreClassNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.preClass_GC" />
+		</classes>
+	</test>
+	
+	<test name="PO Projects">
+		<groups>
+			<run>
+				<include name="ProjectListNG" />
+				<include name="WorkflowNG" />
+				<include name="ApplicantsNG" />
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.projectList.TestSubmissionHistoryListNG" />
+			<class name="test_Suite.tests.general.G_Re_ExecuteOnSubmissionAmendNG" />
+			<class name="test_Suite.tests.applicants.TransferProjectsNG" />
+			<class name="test_Suite.tests.post_Award.E_PA_ProgramSubmissionStepNG" />
+			<class name="test_Suite.tests.workflow.AmendInitialClaim" />
+			<class name="test_Suite.tests.workflow.BlockReExecOnAmend" />
+			<class name="test_Suite.tests.workflow.ProjectStatusFilterInAppSub" />
+			<class name="test_Suite.tests.workflow.ReExecOnAmendNG" />
+			<class name="test_Suite.tests.workflow.UpdatingProjectNameAndNumber" />
+			
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2721_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2722_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2723_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2724_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_7.S2513_02NG" />
+		</classes>
+	</test>	
+	
+	<test name="PO Managing EForms LBF Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.CloningEFormWith_LBF_FunctionNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.LBF_FilterExpressionValidationNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.CloningFormletWith_LBF_functionNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.CloningPublishedEFormWith_LBF_FunctionNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.LBF_FunctionAvailabilityIneListTypeEFormNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.LBF_FunctionCRUD_NG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.list_BringForward_Formlet_Function.LBF_MabdatoryFieldsInFunctionDetailsNG" />		
+		</classes>	
+	</test>
+	
+	<test name="PO Managing EForms LBF Sync">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_NoSync_AdminEForm_SourceNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_NoSync_ProfileEForm_SourceNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_AdminEForm_EqualFields_FONG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_AdminEForm_MoreFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_AdminEForm_EqualFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_AdminEForm_LessFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_ApplicantProfile_EqualFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_ApplicantProfile_LessFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_ApplicantProfile_EqualFields_FONG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_ApplicantProfile_MoreFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_AwardEForm_EqualFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_PA_SubmissionEForm_EqualFieldsNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Synchronization.LBF_Sync_SubmissionEForm_EqualFieldsNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Reports">
+		<groups>
+			<run>
+				<include name="ReportsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_3.S1946_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_3.S1946_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_4.S1941_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_4.S1948_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1939_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1940_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1942_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1943_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2071_01NG" />
+			<!-- 
+				<class name="test_Suite.tests.cases.LaunchReportNG" />
+			-->
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_3.S1946_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_4.S1944_01NG" />
+		</classes>
+	</test>
+	
+	<test name="Garbage-Collections">
+		<groups>
+			<run>
+				<include name="PreClassNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.preClass_GC" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms LBF Filtering">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>			
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Data_Filtering.LBF_DataFiltering_AdminEFormNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Data_Filtering.LBF_DataFiltering_ApplicantProfileNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Data_Filtering.LBF_DataFiltering_AdminEForm_FONG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Data_Filtering.LBF_DataFiltering_ApplicantProfile_FONG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Data_Filtering.LBF_DataFiltering_PA_SubmissionEForm_NG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.bringForward_Data_Filtering.LBF_DataFiltering_SubmissionEForm_NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms Config">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<!-- 
+				<class name="test_Suite.tests.eForms.CreateFormsNG" />
+			-->	
+			<class name="test_Suite.tests.eForms.Test_G3UtilsNG" />
+			<class name="test_Suite.tests.eForms.TestAllEFormFieldsPDFNG" />
+			<class name="test_Suite.tests.eForms.TestEFormfieldFunctionsCRUDNG" />
+			<class name="test_Suite.tests.eForms.TestEFormFunctionCRUDNG" />
+			<class name="test_Suite.tests.eForms.TestFormletFunctionsCRUDNG" />	
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1886_01NG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Organizations">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.workflow.RegionalAssignmentNG" />
+		</classes>
+	</test>
+	
+	<test name="FO Front Office Applicants">
+		<groups>
+			<run>
+				<include name="ApplicantsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S2050_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_6.S1768_04NG" />
+		</classes>
+	</test>
+	
+	<test name="Garbage-Collections">
+		<groups>
+			<run>
+				<include name="PreClassNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.preClass_GC" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EForms LBF Amendment">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		<classes>
+			<!-- 
+				<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_AddRowsToSourceFormlet_OnAmendmentNG" />
+				<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_AddRowsToTargetFormlet_ThenAmendNG" />
+				<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_NoSync_OnAmendment_SubmissionEFormNG" />
+				<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_Sync_OnAmendment_SubmissionEForm_FONG" />
+			-->
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_DeleteRowsFromSourceFormlet_OnAmendmentNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_DeleteRowsFromTargetFormlet_ThenAmendNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_Sync_OnAmendment_SubmissionEFormNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_AddRowsToTargetFormlet_DeleteRowsFromSource_OnAmendmentNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_DeleteRowsFromTargetFormlet_AddRowsToSource_OnAmendmentNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_NoSync_OnAmendment_PA_SubmissionEFormNG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_NoSync_OnAmendment_SubmissionEForm_FONG" />
+			<class name="test_Suite.tests.stories.release_2_8.eForm_Function_Enhancements.Bring_Forward_On_Form_Amendment.LBF_Sync_OnAmendment_PA_SubmissionEFormNG" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Users">
+		<parameter name="programOffice" value="Def" />
+		<parameter name="frontOffice" value="Def" />
+
+		<parameter name="po-ForgotPassword" value="true" />
+		<parameter name="fo-ForgotPassword" value="true" />
+
+		<groups>
+			<run>
+				<include name="AuthenticationAPING" />
+				<include name="UsersNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3545_UserChangesPassword_AuthExtension_01NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3545_UserChangesPassword_AuthExtension_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2372_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2373_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2374_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2375_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2375_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2376_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2377_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2378_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2379_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_1.S2380_01NG" />
+		</classes>
+	</test>
+	
+	<test name="Back Office">
+		<parameter name="programOffice" value="Def" />
+		<parameter name="frontOffice" value="Def" />
+
+		<parameter name="po-LoginFields" value="true" />
+		<parameter name="po-ChangePassword" value="true" />
+		<parameter name="po-ForgotPassword" value="true" />
+
+		<parameter name="fo-LoginFields" value="true" />
+		<parameter name="fo-ChangePassword" value="true" />
+		<parameter name="fo-ForgotPassword" value="true" />
+		<parameter name="fo-Profile" value="true" />
+
+		<groups>
+			<run>
+				<include name="AuthenticationAPING" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_01NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_02NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3523_POUserLogsIn_AuthExtension_03NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_01NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_02NG" />
+			<class name="test_Suite.tests.stories.release_2_7_1.authentication_API_Enhancements.S3544_RegistrantLogsIn_AuthExtension_03NG" />
+		</classes>
+	</test>
+	
+	<test name="Garbage-Collections">
+		<groups>
+			<run>
+				<include name="PreClassNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.preClass_GC" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing EFormsList Filtering">
+		<groups>
+			<run>
+				<include name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+		<class name="test_Suite.tests.r2_8.eListFiltering.EFieldInListColumnConfig" /> 
+		<class name="test_Suite.tests.r2_8.eListFiltering.eListFilteringAvailability" />
+		<class name="test_Suite.tests.r2_8.eListFiltering.FilterEList" />
+		</classes>		
+	</test>
+	
+	<test name="PO Funding Opp Notifications">
+		<groups>
+			<run>
+				<exclude name="NotificationsNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.general.I_FO_FOPP_Notifications" />
+			<class name="test_Suite.tests.workflow.SubmissionScheduleNotificationsNG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_02NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_03NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_2.S1905_04NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1931_01NG" />
+			<class name="test_Suite.tests.stories.release_1_5.iter_1_5.S1931_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2360_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2360_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2391_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2625_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2626_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2627_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2628_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2631_01NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2631_02NG" />
+			<class name="test_Suite.tests.stories.release_2_0.iter_8.S2835_01NG" />
+		</classes>	
+	</test>
+</suite>

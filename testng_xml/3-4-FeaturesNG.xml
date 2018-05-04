@@ -1,0 +1,100 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="3.4.0.0 Features" verbose="9" annotations="jdk">
+ 
+	<test name=" PO - FO Amend In Place Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.StartWorkflowFirst" />
+		</classes>	
+	</test>
+	
+	<test name="PO - Managing Amend In Place">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendEvalInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendEvalNowInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendPASSInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendPASSNowInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendSubInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.AmendSubNowInRefSubmissionNG" />
+			<class name="test_Suite.tests.r3_4.amendInPlace.VerifySubAccessForInProgSubNG" />
+		</classes>
+	</test>
+	
+	<test name="PO - Managing Amendment Categories">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.r3_4.amendCategory.AddMoreAmendmentCategoriesNG" />
+		</classes>
+	</test>
+ 
+	<test name=" PO - Managing Reference Table Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.referenceTable.MustRunFirst" />
+		</classes>	
+	</test>
+
+	<test name=" PO - Managing Reference Table">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.referenceTable.test_DoubleFilter_eList" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_DoubleFilter" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_ReferenceTables_Amendments" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_ReferenceTables_In_WorkFlow" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_Single_Filter" />
+			<class name="test_Suite.tests.r3_4.referenceTable.test_SingleFilter_eList" />
+		</classes>	
+	</test>
+	
+	<test name=" PO - Bulk Evaluation Setup">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.MustRunFirst" />
+		</classes>	
+	</test>
+	
+	<test name=" PO - Bulk Evaluation">
+		<groups>
+			<run>
+				<include name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.BulkEvalPostAwardAmendedApprovalSteps" />
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.BulkEvalPostAwardApprovalSteps" />
+			<class name="test_Suite.tests.r3_4.bulkEvaluation.BulkEvalPreAwardApprovalSteps" />
+		</classes>	
+	</test> 
+
+</suite>

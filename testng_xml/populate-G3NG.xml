@@ -1,0 +1,101 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-Populate-G3-Report" verbose="9" annotations="jdk">
+  <test name="preTest">
+    <groups>
+    	<run>
+    		<include name="PreTestNG" />
+    	</run>
+    </groups>
+    <classes>
+      <class name="test_Suite.tests.preTest.PreTest_02NG"/>
+    </classes>
+  </test>  
+  
+  <test name="steupCFG">
+    <groups>
+    	<run>
+    		<include name="ProjectsNG" />
+    	</run>
+    </groups>
+    <classes>
+      <class name="test_Suite.tests.r3_0.CfgRunFirst"/>
+    </classes>
+  </test>
+  
+  <test name="populate G3">
+    <groups>
+    	<run>
+    		<include name="ProjectsNG" />
+    		<include name="ReportsNG" />
+    		<include name="WorkflowNG" />
+    		<include name="PublicationsNG" />
+    	</run>
+    </groups>
+    <classes>
+      <class name="test_Suite.tests.r3_0.post_AwardRe_Execution.CFGPostAwardStepAmendment"> 
+      	<methods>
+      		<include name="testCompleted_PANG" />
+      	</methods>
+      </class>
+      <class name="test_Suite.tests.cases.LaunchReportNG"/>
+      <class name="test_Suite.tests.workflow.GPS_BF_FundingGridNG"/>
+      <class name="test_Suite.tests.post_Award.B_PA_FO_ProjectNG" />
+      <class name="test_Suite.tests.post_Award.E_PA_ProgramSubmissionStepNG" />
+      <class name="test_Suite.tests.general.H_FOPublicationProjectNG" /> 
+    </classes>
+  </test>
+	
+  	<test name="Setup ETL Reporting Data">
+    	<groups>
+    		<run>
+    			<exclude name="SetupReportingFunctionsNG" />
+    		</run>
+    	</groups>
+    	
+    	<classes>
+		    <class name="test_Suite.tests.rptFunctions.RF_PopAdminEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopOrgEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopProfileEForm" />
+		    <class name="test_Suite.tests.rptFunctions.RF_PopProj_EForms" />
+    	</classes>
+  	</test>	
+
+  	<test name="BackOffice Managing ETL Fields">
+	    <groups>
+	    	<run>
+	    		<exclude name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingApplicantProfile_EFormsFields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingFOPP_EFormFields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingOrganization_EFormfields" />
+		    <class name="test_Suite.tests.rptFunctions.ETL_SettingProj_EFormsFields" />
+	    </classes>
+	  </test>	
+
+  	<test name="BackOffice Managing ETL Tables">
+	    <groups>
+	    	<run>
+	    		<exclude name="EtlNG" />
+	    	</run>
+	    </groups>
+	    
+	    <classes>
+		    <class name="test_Suite.tests.rptFunctions.ETL_RebuildAndExecuteDatamart" />
+	    </classes>
+	  </test>
+	
+	<test name="PO - FO 3.0 Features Testing Setup">
+		<groups>
+			<run>
+				<exclude name="EFormsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_0.SSmustRunFirst" />		
+		</classes>
+	</test>
+</suite>

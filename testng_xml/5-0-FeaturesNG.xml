@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="5.0 Feataures" verbose="9" annotations="jdk">
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<exclude name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>	
+	
+	<test name="PO Managing Multi Currency">
+		<groups>
+			<run>
+				<include name="MultiCurrencyNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_CurrencyLookup" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_CurrencySymbolAtField" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_ImportedEformField" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_NumericFieldsEformConfiguration" />
+			<class name="test_Suite.tests.r5_0.multiCurrency.Test_NumericFieldValues" />
+		
+		</classes>
+	</test>
+</suite>
+		

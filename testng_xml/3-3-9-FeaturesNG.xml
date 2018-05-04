@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="3_3_9-Fetaures-Report" verbose="9" annotations="jdk">
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<exclude name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>
+	
+	<test name="PO 3.3.9 Features Testing Setup">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r3_3_9.PrepareBudgetingFirst" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing FOPP Commitment And Balance Tracking">
+		<groups>
+			<run>
+				<include name="ProjectsNG" />			
+			</run>		
+		</groups>
+		
+		<classes>		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AmendAwardedAmountAndChange" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRefundedAmountBulk" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRefundedAmountSingle" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRescindedAmountBulk" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardedThenRescindedAmountSingle" />						
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardThenCancelAmountSingle" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.AwardThenRefundAmountSingle" />				
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.ReviewAndAwardAmountBulk" />		
+			<class name="test_Suite.tests.r3_3_9.commitmentAndBalance.ReviewAndAwardAmountSingle" />		
+		</classes>
+	</test>
+</suite>

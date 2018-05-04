@@ -1,0 +1,7 @@
+See http://infoterra-fsa01/PDnCS/G3%20Wiki/Generate%20Funding%20Opportunity%20Integration%20XSDs%20%20XML%20Schema.aspx
+
+1. Setup environment for Integrator import.
+2. Import FOPP and make it active.
+3. Copy .zip to Integrator folder.
+4. Start Application Server.
+5. Verify Applicant and Project history.

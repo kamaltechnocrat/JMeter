@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form formIdentifier="Reference-Single-Filter-eList" version="6.1.0.0" className="com.infoterra.grantium.model.forms.Form_Review">
+	<FormTitles>
+		<Title localeLangCode="en" localeCountryCode="CA" title="Reference Single Filter eList"/>
+		<Title localeLangCode="fr" localeCountryCode="CA" title="Reference Single Filter eList"/>
+		<Title localeLangCode="en" localeCountryCode="US" title="Reference Single Filter eList"/>
+		<Title localeLangCode="en" localeCountryCode="GB" title="Reference Single Filter eList"/>
+	</FormTitles>
+	<DatePublished date="2014.07.18 AD 11:36:31 EDT"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet identifier="Budget-Limits" className="com.infoterra.grantium.model.forms.formlets.EFormList" Order="0">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Budget Limits"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Budget Limits"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Budget Limits"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Budget Limits"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Budget Limits"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Budget Limits"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Budget Limits"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Budget Limits"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="List Count Validator" className="com.infoterra.grantium.model.forms.functions.ListCountValidator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet identifier="Yearly-Limit" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeLangCode="en" localeCountryCode="CA" title="Yearly Limit"/>
+						<Title localeLangCode="fr" localeCountryCode="CA" title="Yearly Limit"/>
+						<Title localeLangCode="en" localeCountryCode="US" title="Yearly Limit"/>
+						<Title localeLangCode="en" localeCountryCode="GB" title="Yearly Limit"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field identifier="YEARLY_BUDGETS" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions>
+								<Description localeLangCode="en" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="en" localeCountryCode="US" title=""/>
+								<Description localeLangCode="en" localeCountryCode="GB" title=""/>
+							</Descriptions>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="true">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title=""/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title=""/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title=""/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title=""/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Yearly Budgets"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Yearly Budgets"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Yearly Budgets"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Yearly Budgets"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Yearly Budgets"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Yearly Budgets"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Yearly Budgets"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Yearly Budgets"/>
+							</FieldLabels>
+							<ToolTips>
+								<ToolTip localeLangCode="en" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="US" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="GB" title=""/>
+							</ToolTips>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[20]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="EXPENSE_TYPE" className="com.infoterra.grantium.model.forms.fields.Field_ReferenceTableDropDown" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions>
+								<Description localeLangCode="en" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="en" localeCountryCode="US" title=""/>
+								<Description localeLangCode="en" localeCountryCode="GB" title=""/>
+							</Descriptions>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Expense Type"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Expense Type"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Expense Type"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Expense Type"/>
+							</FieldLabels>
+							<ToolTips>
+								<ToolTip localeLangCode="en" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="US" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="GB" title=""/>
+							</ToolTips>
+							<Properties>
+								<Property propertyName="referenceTableID">
+									<Value isList="false">
+										<Choice value="Budget Reference Table"/>
+									</Value>
+								</Property>
+								<Property propertyName="refTableDisplayFieldID">
+									<Value isList="false">
+										<Choice value="EXPENSE_TYPE"/>
+									</Value>
+								</Property>
+								<Property propertyName="refTableFieldID1">
+									<Value isList="false">
+										<Choice value="YEARLY_BUDGETS"/>
+									</Value>
+								</Property>
+								<Property propertyName="filterFieldIdentifier1">
+									<Value valueClass="java.lang.String"><![CDATA[YEARLY_BUDGETS]]></Value>
+								</Property>
+								<Property propertyName="refTableFieldID2"/>
+								<Property propertyName="filterFieldIdentifier2">
+									<Value/>
+								</Property>
+								<Property propertyName="refTableFieldID3"/>
+								<Property propertyName="filterFieldIdentifier3">
+									<Value/>
+								</Property>
+								<Property propertyName="refTableFieldID4"/>
+								<Property propertyName="filterFieldIdentifier4">
+									<Value/>
+								</Property>
+								<Property propertyName="forceValueChoice">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="BUDGET_LIMIT" className="com.infoterra.grantium.model.forms.fields.Field_Number" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Calculated Value" className="com.infoterra.grantium.model.forms.functions.ComputedValue">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value/>
+										</Property>
+										<Property propertyName="expression">
+											<Value valueClass="java.lang.String"><![CDATA[//Retrieve the allocated budget limit from the reference table
+
+
+data = %{G3Utils}.referenceTableDataRow("Budget Reference Table", ${EXPENSE_TYPE}, "|F");
+
+result = null;
+if (null != data)
+{
+  result = data.get("ALLOCATED_BUDGET");
+}
+result;]]></Value>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions>
+								<Description localeLangCode="en" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="en" localeCountryCode="US" title=""/>
+								<Description localeLangCode="en" localeCountryCode="GB" title=""/>
+							</Descriptions>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title=""/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title=""/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title=""/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title=""/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="Budget"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="Budget"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="Budget"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="Budget"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Budget Limit"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Budget Limit"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Budget Limit"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Budget Limit"/>
+							</FieldLabels>
+							<ToolTips>
+								<ToolTip localeLangCode="en" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="US" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="GB" title=""/>
+							</ToolTips>
+							<Properties>
+								<Property propertyName="minimum">
+									<Value valueClass="java.lang.Double"><![CDATA[0.0]]></Value>
+								</Property>
+								<Property propertyName="maximum">
+									<Value valueClass="java.lang.Double"><![CDATA[1.0E7]]></Value>
+								</Property>
+								<Property propertyName="numDecimals">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+								<Property propertyName="groupDigits">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="decoration">
+									<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+								</Property>
+								<Property propertyName="currencySymbol">
+									<Value isList="false">
+										<Choice value="CURRENCY_SYMBOL_DOLLAR"/>
+									</Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field identifier="Short" className="com.infoterra.grantium.model.forms.fields.Field_Text" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions>
+								<Function type="Calculated Value" className="com.infoterra.grantium.model.forms.functions.ComputedValue">
+									<Properties>
+										<Property propertyName="intParameter1">
+											<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+										</Property>
+										<Property propertyName="stringParameter1">
+											<Value valueClass="java.lang.String"><![CDATA[]]></Value>
+										</Property>
+										<Property propertyName="expression">
+											<Value valueClass="java.lang.String"><![CDATA[data = %{G3Utils}.referenceTableDataRow("Budget Reference Table", ${EXPENSE_TYPE}, "|F");
+
+data.get("EXPENSE_TYPE");]]></Value>
+										</Property>
+									</Properties>
+								</Function>
+							</FieldFunctions>
+							<Descriptions>
+								<Description localeLangCode="en" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<Description localeLangCode="en" localeCountryCode="US" title=""/>
+								<Description localeLangCode="en" localeCountryCode="GB" title=""/>
+							</Descriptions>
+							<ListColumnInfo columnWidth="20" columnOrder="0" Filter="false">
+								<NoDataStrings>
+									<NoDataString localeLangCode="en" localeCountryCode="CA" title=""/>
+									<NoDataString localeLangCode="fr" localeCountryCode="CA" title=""/>
+									<NoDataString localeLangCode="en" localeCountryCode="US" title=""/>
+									<NoDataString localeLangCode="en" localeCountryCode="GB" title=""/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="CA" title="EXPENSE TYPE"/>
+									<ColumnInfoTitle localeLangCode="fr" localeCountryCode="CA" title="EXPENSE TYPE"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="US" title="EXPENSE TYPE"/>
+									<ColumnInfoTitle localeLangCode="en" localeCountryCode="GB" title="EXPENSE TYPE"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeLangCode="en" localeCountryCode="CA" title="Short"/>
+								<Label localeLangCode="fr" localeCountryCode="CA" title="Short"/>
+								<Label localeLangCode="en" localeCountryCode="US" title="Short"/>
+								<Label localeLangCode="en" localeCountryCode="GB" title="Short"/>
+							</FieldLabels>
+							<ToolTips>
+								<ToolTip localeLangCode="en" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="fr" localeCountryCode="CA" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="US" title=""/>
+								<ToolTip localeLangCode="en" localeCountryCode="GB" title=""/>
+							</ToolTips>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_SHARED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

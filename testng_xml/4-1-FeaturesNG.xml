@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="4.1 Features" verbose="9" annotations="jdk">
+	
+	<test name="preTest">
+		<groups>
+			<run>
+				<exclude name="PreTestNG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test_Suite.tests.preTest.PreTest_02NG" />
+		</classes>
+	</test>	
+	
+	<test name="PO Managing Audit Setup">
+		<groups>
+			<run>
+				<include name="AuditRepNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_1.Audit.auditRunFirst" />
+		</classes>
+	</test>
+	
+	<test name="PO Managing Audit">
+		<groups>
+			<run>
+				<include name="AuditRepNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_1.Audit.auditEventsNG" />
+			<class name="test_Suite.tests.r4_1.Audit.auditExportNG" />
+			<class name="test_Suite.tests.r4_1.Audit.auditHistoryNG" />
+		</classes>
+	</test>
+	
+	<test name="FO-PO Shared Amendment Setup">
+		<groups>
+			<run>
+				<exclude name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_RunFirst" />
+		</classes>	
+	</test>
+	
+	<test name="FO-PO MAnaging Shared Amendment">
+		<groups>
+			<run>
+				<exclude name="WorkflowNG" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_AppliesinAppSubListsOnly" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_AppliesToReExecuted" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_AppliesToStepStaff" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_ExistsInAppSettings" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_FOFacingSubOnly" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_OnAmendNowNG" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_OnAmendNowPANG" />
+			<class name="test_Suite.tests.r4_1.sharedFO_PO_Amendment.TestGSSAAS_PersistencyOnChanges" />
+		</classes>	
+	</test>
+</suite>

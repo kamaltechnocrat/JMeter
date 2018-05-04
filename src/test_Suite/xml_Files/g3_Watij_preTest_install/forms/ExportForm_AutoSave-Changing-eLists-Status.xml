@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission" formIdentifier="AutoSave-Changing-eLists-Status" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="AutoSave Changing eLists Status"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="AutoSave Changing eLists Status"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="AutoSave Changing eLists Status"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="AutoSave Changing eLists Status"/>
+	</FormTitles>
+	<DatePublished date="2009.05.21 AD 15:11:03 EDT"/>
+	<DefaultFormlet identifier="eList"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission-Summary">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="eList">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="eList"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="eList"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="eList"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="eList"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="eList"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="eList"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="eList"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="eList"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="eList QH">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="eList QH"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="eList QH"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="eList QH"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="eList QH"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="Choices" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Choice"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Choice"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Choice"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Choice"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Choose:"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Choose:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Choose:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Choose:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="lookupID">
+									<Value isList="false">
+										<Choice value="Auto Save Child"/>
+									</Value>
+								</Property>
+								<Property propertyName="forceValueChoice">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="autoSaveOnChange">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="2" className="com.infoterra.grantium.model.forms.formlets.MenuItemOnly" identifier="Control Action Menu">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles/>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Control Action"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Control Action"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Control Action"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Control Action"/>
+			</FormletMenuTitles>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="3" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Dropdown-From-List-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From List eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From List eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From List eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From List eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From List eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From List eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From List eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From List eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Dropdown-From-List-eFormField">
+					<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Dropdown From List eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Dropdown From List eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Dropdown From List eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Dropdown From List eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From List eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From List eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From List eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From List eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+							<Properties>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Dropdown-From-List|F} == "ReadOnly"]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-List-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="text1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="text1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="text1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="text1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDownFromList" identifier="Dropdown-From-List" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Dropdown-From-List"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Dropdown-From-List"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Dropdown-From-List"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Dropdown-From-List"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="sourceFieldIdentifier">
+							<Value valueClass="java.lang.String"><![CDATA[Choices]]></Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="4" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Dropdown-From-Applicant-Profile-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From Applicant Profile eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From Applicant Profile eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Dropdown-From-Applicant-Profile-eFormField">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Dropdown From Applicant Profile eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Dropdown From Applicant Profile eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Dropdown From Applicant Profile eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Dropdown From Applicant Profile eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From Applicant Profile eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From Applicant Profile eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+							<Properties>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Dropdown-From-Applicant-Profile|F} == "ReadOnly"]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-Profile-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Sub-Profile-Text1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Sub-Profile-Text1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Sub-Profile-Text1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Sub-Profile-Text1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Sub-Profile-Text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Sub-Profile-Text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Sub-Profile-Text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Sub-Profile-Text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDownFromList_TextByValue_FromAF" identifier="Dropdown-From-Applicant-Profile" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Applicant Profile:"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Applicant Profile:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Applicant Profile:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Applicant Profile:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="sourceFieldIdentifier">
+							<Value valueClass="java.lang.String"><![CDATA[Dropdown-Choices]]></Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="5" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Child-Dropdown-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Child Dropdown eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Child Dropdown eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Child Dropdown eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Child Dropdown eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Child Dropdown eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Child Dropdown eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Child Dropdown eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Child Dropdown eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Child-Dropdown-eFormField">
+					<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Child Dropdown eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Child Dropdown eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Child Dropdown eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Child Dropdown eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Child Dropdown eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Child Dropdown eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Child Dropdown eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Child Dropdown eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+							<Properties>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Child-Dropdown|F} == "ReadOnly"]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-Child-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Sub-Child-Text1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Sub-Child-Text1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Sub-Child-Text1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Sub-Child-Text1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Sub-Child-Text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Sub-Child-Text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Sub-Child-Text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Sub-Child-Text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="Parent-Dropdown" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Parent-Dropdown"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Parent-Dropdown"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Parent-Dropdown"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Parent-Dropdown"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="Auto Save Parent"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_ChildDropDown" identifier="Child-Dropdown" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Child-Dropdown"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Child-Dropdown"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Child-Dropdown"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Child-Dropdown"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="parentDropdownFieldIdentifier">
+							<Value valueClass="java.lang.String"><![CDATA[Parent-Dropdown]]></Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="6" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Dropdown-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Dropdown-eFormField">
+					<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Dropdown eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Dropdown eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Dropdown eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Dropdown eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Dropdown eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+							<Properties>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Dropdown|F} == "ReadOnly"]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-Dropdown-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Sub-Dropdown-Text1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Sub-Dropdown-Text1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Sub-Dropdown-Text1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Sub-Dropdown-Text1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Sub-Dropdown-Text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Sub-Dropdown-Text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Sub-Dropdown-Text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Sub-Dropdown-Text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_DropDown" identifier="Dropdown" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Dropdown"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Dropdown"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Dropdown"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Dropdown"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="Auto Save Child"/>
+							</Value>
+						</Property>
+						<Property propertyName="forceValueChoice">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="7" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Checkbox-Visibility-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Visibility eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Visibility eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Checkbox-Visibility-eFormField">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Checkbox Visibility eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Checkbox Visibility eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Checkbox Visibility eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Checkbox Visibility eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Visibility eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Visibility eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+							<Properties>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Checkbox-Visibility} == true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-Check-Visibility-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Sub-Check-Visibility-Text1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Sub-Check-Visibility-Text1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Sub-Check-Visibility-Text1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Sub-Check-Visibility-Text1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Sub-Check-Visibility-Text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Sub-Check-Visibility-Text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Sub-Check-Visibility-Text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Sub-Check-Visibility-Text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" identifier="Checkbox-Visibility" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Checkbox-Visibility"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Checkbox-Visibility"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Checkbox-Visibility"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Checkbox-Visibility"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="8" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Checkbox-Readability-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Readability eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Readability eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Readability eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Readability eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Readability eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Readability eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Readability eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Readability eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Checkbox-Readability-eFormField">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Checkbox Readability eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Checkbox Readability eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Checkbox Readability eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Checkbox Readability eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Readability eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Readability eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Readability eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Readability eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+							<Properties>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[${Checkbox-Readability|F} == "ReadOnly"]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-Check-Readability-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Sub-Check-Readability-Text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Sub-Check-Readability-Text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Sub-Check-Readability-Text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Sub-Check-Readability-Text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Checkbox" identifier="Checkbox-Readability" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Checkbox-Readability"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Checkbox-Readability"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Checkbox-Readability"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Checkbox-Readability"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="9" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Radio-Button-eFormField">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Radio Button eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Radio Button eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Radio Button eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Radio Button eFormField"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="1"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Radio Button eFormField"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Radio Button eFormField"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Radio Button eFormField"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Radio Button eFormField"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Radio-Button-eFormField">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Radio Button eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Radio Button eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Radio Button eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Radio Button eFormField"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Radio Button eFormField"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Radio Button eFormField"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Radio Button eFormField"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Radio Button eFormField"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Sub-Radio-Text1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Sub-Radio-Text1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Sub-Radio-Text1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Sub-Radio-Text1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Sub-Radio-Text1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Sub-Radio-Text1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Sub-Radio-Text1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Sub-Radio-Text1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Sub-Radio-Text1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_RadioButtons" identifier="Radio-Button" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Radio-Button"/>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Radio-Button"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Radio-Button"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Radio-Button"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="lookupID">
+							<Value isList="false">
+								<Choice value="Auto Save Child"/>
+							</Value>
+						</Property>
+						<Property propertyName="autoSaveOnChange">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="10" className="com.infoterra.grantium.model.forms.formlets.MenuItemOnly" identifier="Result-Action-Menu">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles/>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Result Action"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Result Action"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Result Action"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Result Action"/>
+			</FormletMenuTitles>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="11" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Dropdown-From-List-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From List Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From List Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From List Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From List Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From List Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From List Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From List Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From List Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Dropdown-From-List|F} == "ReadOnly"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedVisibility_Formlet" type="Calculated Formlet Visibility">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Dropdown-From-List|F} != "Invisible"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Dropdown-From-List-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Dropdown From List Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Dropdown From List Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Dropdown From List Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Dropdown From List Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From List Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From List Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From List Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From List Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-1" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short Text 1"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short Text 1"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short Text 1"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short Text 1"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 1"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 1"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 1"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 1"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="12" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Dropdown-From-Applicant-Profile-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From Applicant Profile Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From Applicant Profile Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Dropdown-From-Applicant-Profile|F} == "ReadOnly"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedVisibility_Formlet" type="Calculated Formlet Visibility">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Dropdown-From-Applicant-Profile|F} != "Invisible"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Dropdown-From-Applicant-Profile-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Dropdown From Applicant Profile Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Dropdown From Applicant Profile Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Dropdown From Applicant Profile Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Dropdown From Applicant Profile Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown From Applicant Profile Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown From Applicant Profile Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-7" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short Text 7"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short Text 7"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short Text 7"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short Text 7"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 7"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 7"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 7"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 7"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="13" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Child-Dropdown-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Child Dropdown Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Child Dropdown Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Child Dropdown Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Child Dropdown Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Child Dropdown Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Child Dropdown Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Child Dropdown Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Child Dropdown Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Child-Dropdown|F} == "ReadOnly"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedVisibility_Formlet" type="Calculated Formlet Visibility">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Child-Dropdown|F} != "Invisible"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Child-Dropdown-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Child Dropdown Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Child Dropdown Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Child Dropdown Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Child Dropdown Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Child Dropdown Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Child Dropdown Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Child Dropdown Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Child Dropdown Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-2" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short Text 2"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short Text 2"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short Text 2"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short Text 2"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 2"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 2"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 2"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 2"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="14" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Dropdown-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Dropdown Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Dropdown|F} == "ReadOnly"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedVisibility_Formlet" type="Calculated Formlet Visibility">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Dropdown|F} != "Invisible"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Dropdown-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Dropdown Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Dropdown Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Dropdown Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Dropdown Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Dropdown Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Dropdown Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Dropdown Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Dropdown Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-3" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short Text 3"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short Text 3"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short Text 3"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short Text 3"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 3"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 3"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 3"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 3"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="15" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Checkbox-Visibility-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Visibility Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Visibility Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedVisibility_Formlet" type="Calculated Formlet Visibility">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Checkbox-Visibility} == true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Checkbox-Visibility-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Checkbox Visibility Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Checkbox Visibility Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Checkbox Visibility Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Checkbox Visibility Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Visibility Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Visibility Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-4" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short-Text-4"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short-Text-4"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short-Text-4"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short-Text-4"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 4"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 4"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 4"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 4"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="16" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Checkbox-Readability-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Readability Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Readability Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Readability Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Readability Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Readability Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Readability Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Readability Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Readability Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Checkbox-Readability} == true]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Checkbox-Readability-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Checkbox Readability Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Checkbox Readability Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Checkbox Readability Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Checkbox Readability Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Checkbox Readability Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Checkbox Readability Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Checkbox Readability Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Checkbox Readability Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-5" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short-Text-5"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short-Text-5"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short-Text-5"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short-Text-5"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 5"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 5"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 5"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 5"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="17" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Radio-Button-Formlet">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Radio Button Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Radio Button Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Radio Button Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Radio Button Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Radio Button Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Radio Button Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Radio Button Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Radio Button Formlet"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly_Formlet" type="Calculated Formlet Read Only">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Radio-Button} == "ReadOnly"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+				<Function className="com.infoterra.grantium.model.forms.functions.ComputedVisibility_Formlet" type="Calculated Formlet Visibility">
+					<Properties>
+						<Property propertyName="expression">
+							<Value valueClass="java.lang.String"><![CDATA[${Radio-Button} != "Invisible"]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Sub-Radio-Button-Formlet">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Sub Radio Button Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Sub Radio Button Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Sub Radio Button Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Sub Radio Button Formlet"/>
+					</FormletTitles>
+					<IncludeInSummary include="true"/>
+					<FormletMenuTitles>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Radio Button Formlet"/>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Radio Button Formlet"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Radio Button Formlet"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Radio Button Formlet"/>
+					</FormletMenuTitles>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short-Text-6" mandatory="false">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="false" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Short-Text-6"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Short-Text-6"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Short-Text-6"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Short-Text-6"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="Short Text 6"/>
+								<Label localeCountryCode="CA" localeLangCode="en" title="Short Text 6"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="Short Text 6"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="Short Text 6"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

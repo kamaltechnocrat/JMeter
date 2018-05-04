@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ApplicantSubmission" formIdentifier="Submission BF-DG" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Applicant Submission BF-DG"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Applicant Submission BF-DG"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="Applicant Submission BF-DG"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Applicant Submission BF-DG"/>
+	</FormTitles>
+	<DatePublished date="2008.10.22 AD 08:38:29 EDT"/>
+	<DefaultFormlet identifier="e.Form Question Holder"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.MenuItemOnly" identifier="Menu Item Only">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles/>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Menu"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Menu"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Menu"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Menu"/>
+			</FormletMenuTitles>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="e.Form Question Holder">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Formlet"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Formlet"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Formlet"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Formlet"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Grid" identifier="Num DG Field" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedValue" type="Calculated Value">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[5]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[D1]]></Value>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[(${Num DG Field!A1} + ${Num DG Field!B1}) * ${Num DG Field!C1}]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedValue" type="Calculated Value">
+							<Properties>
+								<Property propertyName="intParameter1">
+									<Value valueClass="java.lang.Integer"><![CDATA[5]]></Value>
+								</Property>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[A5]]></Value>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[foreach (item in ${Num DG Field!A1:A4}) { x=x+item; }]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[A5]]></Value>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+						<Function className="com.infoterra.grantium.model.forms.functions.ComputedReadOnly" type="Calculated Read Only">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value valueClass="java.lang.String"><![CDATA[D1]]></Value>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[true]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Data-Grid"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Data-Grid"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Data-Grid"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Data-Grid"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="pdfExport_TopRowAsTitle">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+						<Property propertyName="pdfExport_LeftColumnAsTitle">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+					<CellTypes>
+						<CellType className="com.infoterra.grantium.model.forms.fields.Field_Grid$CellType_Numeric">
+							<Properties>
+								<Property propertyName="minimumValue">
+									<Value/>
+								</Property>
+								<Property propertyName="maximumValue">
+									<Value/>
+								</Property>
+								<Property propertyName="numberOfDecimals">
+									<Value value="2" valueClass="java.lang.Integer"/>
+								</Property>
+								<Property propertyName="decoration">
+									<Value value="1" valueClass="java.lang.Integer"/>
+								</Property>
+								<Property propertyName="groupDigits">
+									<Value value="true" valueClass="java.lang.Boolean"/>
+								</Property>
+								<Property propertyName="mandatory">
+									<Value value="false" valueClass="java.lang.Boolean"/>
+								</Property>
+								<Property propertyName="alignment">
+									<Value value="0" valueClass="java.lang.Integer"/>
+								</Property>
+								<Property propertyName="backgroundcolorcode">
+									<Value value="" valueClass="java.lang.String"/>
+								</Property>
+								<Property propertyName="backgroundcolor">
+									<Value value="" valueClass="java.lang.String"/>
+								</Property>
+							</Properties>
+							<CellLocations>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="4" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="0" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="4" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="1" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="4" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="2" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+								<CellLocation>
+									<Property propertyName="row">
+										<Value value="4" valueClass="java.lang.Integer"/>
+									</Property>
+									<Property propertyName="column">
+										<Value value="3" valueClass="java.lang.Integer"/>
+									</Property>
+								</CellLocation>
+							</CellLocations>
+						</CellType>
+					</CellTypes>
+					<ColumnWidths>
+						<ColumnWidth identifier="0" value="20"/>
+						<ColumnWidth identifier="1" value="20"/>
+						<ColumnWidth identifier="2" value="20"/>
+						<ColumnWidth identifier="3" value="20"/>
+					</ColumnWidths>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet Order="2" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Submission Summary">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

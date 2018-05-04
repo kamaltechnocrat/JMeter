@@ -1,0 +1,2 @@
+
+			<sysproperty key="log4j.configuration" value="file://localhost/${basedir}/${src.tests.dir}/log4j.xml" />

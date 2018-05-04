@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ApplicantTypesImportEngin version="6.1.0.0">
+    <ApplicantTypes>
+        <ApplicantTypeItem identifier="G3_APPLICANT_TYPE_ORGANIZATION" autoGen="false" associationType="G3_APPLICANT_TYPE_ASSOCIATION_TYPE_REGULAR" active="true">
+        </ApplicantTypeItem>
+        <ApplicantTypeItem identifier="G3_APPLICANT_TYPE_INDIVIDUAL" autoGen="true" associationType="G3_APPLICANT_TYPE_ASSOCIATION_TYPE_REGULAR" active="true">
+        </ApplicantTypeItem>
+        <ApplicantTypeItem identifier="G3_APPLICANT_TYPE_STUDENT" autoGen="true" associationType="G3_APPLICANT_TYPE_ASSOCIATION_TYPE_SELF_REPRESENTED" active="true">
+        </ApplicantTypeItem>
+        <ApplicantTypeItem identifier="G3_APPLICANT_TYPE_PARENT" autoGen="true" associationType="G3_APPLICANT_TYPE_ASSOCIATION_TYPE_PARENTABLE" active="true">
+        </ApplicantTypeItem>
+        <ApplicantTypeItem identifier="G3_APPLICANT_TYPE_INACTIVE" autoGen="true" associationType="G3_APPLICANT_TYPE_ASSOCIATION_TYPE_SELF_REPRESENTED" active="false">
+        </ApplicantTypeItem>
+    </ApplicantTypes>
+    <ApplicantTypeTexts>
+        <ApplicantTypeTextItem text="Organization" applicantTypeIdentifier="G3_APPLICANT_TYPE_ORGANIZATION">
+            <Locale localeLangCode="fr" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Organization" applicantTypeIdentifier="G3_APPLICANT_TYPE_ORGANIZATION">
+            <Locale localeLangCode="en" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Organization" applicantTypeIdentifier="G3_APPLICANT_TYPE_ORGANIZATION">
+            <Locale localeLangCode="en" localeCountryCode="US">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Organization" applicantTypeIdentifier="G3_APPLICANT_TYPE_ORGANIZATION">
+            <Locale localeLangCode="en" localeCountryCode="GB">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Individu" applicantTypeIdentifier="G3_APPLICANT_TYPE_INDIVIDUAL">
+            <Locale localeLangCode="fr" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Individual" applicantTypeIdentifier="G3_APPLICANT_TYPE_INDIVIDUAL">
+            <Locale localeLangCode="en" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Individual" applicantTypeIdentifier="G3_APPLICANT_TYPE_INDIVIDUAL">
+            <Locale localeLangCode="en" localeCountryCode="US">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Individual" applicantTypeIdentifier="G3_APPLICANT_TYPE_INDIVIDUAL">
+            <Locale localeLangCode="en" localeCountryCode="GB">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Student" applicantTypeIdentifier="G3_APPLICANT_TYPE_STUDENT">
+            <Locale localeLangCode="en" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Student" applicantTypeIdentifier="G3_APPLICANT_TYPE_STUDENT">
+            <Locale localeLangCode="fr" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Student" applicantTypeIdentifier="G3_APPLICANT_TYPE_STUDENT">
+            <Locale localeLangCode="en" localeCountryCode="US">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Student" applicantTypeIdentifier="G3_APPLICANT_TYPE_STUDENT">
+            <Locale localeLangCode="en" localeCountryCode="GB">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="University" applicantTypeIdentifier="G3_APPLICANT_TYPE_PARENT">
+            <Locale localeLangCode="en" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="University" applicantTypeIdentifier="G3_APPLICANT_TYPE_PARENT">
+            <Locale localeLangCode="fr" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="University" applicantTypeIdentifier="G3_APPLICANT_TYPE_PARENT">
+            <Locale localeLangCode="en" localeCountryCode="US">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="University" applicantTypeIdentifier="G3_APPLICANT_TYPE_PARENT">
+            <Locale localeLangCode="en" localeCountryCode="GB">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Inactive" applicantTypeIdentifier="G3_APPLICANT_TYPE_INACTIVE">
+            <Locale localeLangCode="en" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Inactive" applicantTypeIdentifier="G3_APPLICANT_TYPE_INACTIVE">
+            <Locale localeLangCode="fr" localeCountryCode="CA">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Inactive" applicantTypeIdentifier="G3_APPLICANT_TYPE_INACTIVE">
+            <Locale localeLangCode="en" localeCountryCode="US">
+            </Locale>
+        </ApplicantTypeTextItem>
+        <ApplicantTypeTextItem text="Inactive" applicantTypeIdentifier="G3_APPLICANT_TYPE_INACTIVE">
+            <Locale localeLangCode="en" localeCountryCode="GB">
+            </Locale>
+        </ApplicantTypeTextItem>
+    </ApplicantTypeTexts>
+</ApplicantTypesImportEngin>

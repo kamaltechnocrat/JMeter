@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_ReferenceTable" formIdentifier="Assoc-School-Reference-Table" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Assoc School Reference Table"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Assoc School Reference Table"/>
+		<Title localeCountryCode="US" localeLangCode="en" title="Assoc School Reference Table"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Assoc School Reference Table"/>
+	</FormTitles>
+	<DatePublished date="2011.08.09 AD 14:11:28 EDT"/>
+	<DefaultFormlet identifier="Reference Table"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.EFormList" identifier="Reference Table">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Reference Table"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Reference Table"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Table de référence"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Reference Table"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles/>
+			<Properties>
+				<Property propertyName="disableAddButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+				<Property propertyName="disableDeleteButton">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.ListCountValidator" type="List Count Validator">
+					<Properties>
+						<Property propertyName="intParameter1">
+							<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+						</Property>
+						<Property propertyName="intParameter2">
+							<Value/>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<SubFormlets>
+				<Formlet className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Reference Table Row">
+					<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+					<FormletTitles>
+						<Title localeCountryCode="CA" localeLangCode="en" title="Reference Table Row"/>
+						<Title localeCountryCode="US" localeLangCode="en" title="Reference Table Row"/>
+						<Title localeCountryCode="CA" localeLangCode="fr" title="Rangée de la table de référence"/>
+						<Title localeCountryCode="GB" localeLangCode="en" title="Reference Table Row"/>
+					</FormletTitles>
+					<IncludeInSummary include="false"/>
+					<FormletMenuTitles/>
+					<FormletFunctions>
+						<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+							<Properties>
+								<Property propertyName="booleanParameter1">
+									<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FormletFunctions>
+					<Fields>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="School-Name" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="true" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Name"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Name"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Name"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Name"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="School Name:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="School Name:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="School Name:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="School Name:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+								<Property propertyName="maximumLength">
+									<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+						<Field className="com.infoterra.grantium.model.forms.fields.Field_Number" identifier="School-Code" mandatory="true">
+							<LineSpacing value="0"/>
+							<FieldFunctions/>
+							<Descriptions/>
+							<ListColumnInfo Filter="true" columnOrder="0" columnWidth="20">
+								<NoDataStrings>
+									<NoDataString localeCountryCode="CA" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="CA" localeLangCode="fr" title="---"/>
+									<NoDataString localeCountryCode="US" localeLangCode="en" title="---"/>
+									<NoDataString localeCountryCode="GB" localeLangCode="en" title="---"/>
+								</NoDataStrings>
+								<ColumnInfoTitles>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="en" title="Code"/>
+									<ColumnInfoTitle localeCountryCode="CA" localeLangCode="fr" title="Code"/>
+									<ColumnInfoTitle localeCountryCode="US" localeLangCode="en" title="Code"/>
+									<ColumnInfoTitle localeCountryCode="GB" localeLangCode="en" title="Code"/>
+								</ColumnInfoTitles>
+							</ListColumnInfo>
+							<FieldLabels>
+								<Label localeCountryCode="CA" localeLangCode="en" title="School Code:"/>
+								<Label localeCountryCode="CA" localeLangCode="fr" title="School Code:"/>
+								<Label localeCountryCode="US" localeLangCode="en" title="School Code:"/>
+								<Label localeCountryCode="GB" localeLangCode="en" title="School Code:"/>
+							</FieldLabels>
+							<Properties>
+								<Property propertyName="minimum">
+									<Value/>
+								</Property>
+								<Property propertyName="maximum">
+									<Value/>
+								</Property>
+								<Property propertyName="numDecimals">
+									<Value valueClass="java.lang.Integer"><![CDATA[2]]></Value>
+								</Property>
+								<Property propertyName="groupDigits">
+									<Value valueClass="java.lang.Boolean"><![CDATA[true]]></Value>
+								</Property>
+								<Property propertyName="decoration">
+									<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+								</Property>
+							</Properties>
+						</Field>
+					</Fields>
+				</Formlet>
+			</SubFormlets>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

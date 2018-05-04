@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form className="com.infoterra.grantium.model.forms.Form_Award" formIdentifier="Basic Award" version="6.1.0.0">
+	<FormTitles>
+		<Title localeCountryCode="US" localeLangCode="en" title="Award Form"/>
+		<Title localeCountryCode="CA" localeLangCode="en" title="Award Form"/>
+		<Title localeCountryCode="CA" localeLangCode="fr" title="Award Form"/>
+		<Title localeCountryCode="GB" localeLangCode="en" title="Award Form"/>
+	</FormTitles>
+	<DatePublished date="2010.03.09 AD 08:55:35 EST"/>
+	<DefaultFormlet identifier="Agreement Details"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet Order="0" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" identifier="Agreement Summary">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="US" localeLangCode="en" title="General Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="General Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="General Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="General Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="US" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Submission Summary"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Submission Summary"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[1]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions/>
+			<Fields/>
+		</Formlet>
+		<Formlet Order="1" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" identifier="Agreement Details">
+			<PrintOptions inclusion="2" pageBreak="0" pageOrientation="1"/>
+			<FormletTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Agreement Details"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Agreement Details"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Agreement Details"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Agreement Details"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="true"/>
+			<FormletMenuTitles>
+				<Title localeCountryCode="CA" localeLangCode="en" title="Agreement Details"/>
+				<Title localeCountryCode="CA" localeLangCode="fr" title="Agreement Details"/>
+				<Title localeCountryCode="US" localeLangCode="en" title="Agreement Details"/>
+				<Title localeCountryCode="GB" localeLangCode="en" title="Agreement Details"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator" type="Mandatory Field Validator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field className="com.infoterra.grantium.model.forms.fields.Field_Text" identifier="Short Text" mandatory="true">
+					<LineSpacing value="0"/>
+					<FieldFunctions/>
+					<Descriptions/>
+					<FieldLabels>
+						<Label localeCountryCode="CA" localeLangCode="en" title="Enter Any Text:"/>
+						<Label localeCountryCode="CA" localeLangCode="fr" title="Enter Any Text:"/>
+						<Label localeCountryCode="US" localeLangCode="en" title="Enter Any Text:"/>
+						<Label localeCountryCode="GB" localeLangCode="en" title="Enter Any Text:"/>
+					</FieldLabels>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_PUBLIC"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

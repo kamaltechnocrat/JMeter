@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form formIdentifier="C-Fetch-Data-Post-Award-Submission" version="6.1.0.0" className="com.infoterra.grantium.model.forms.Form_Claim">
+	<FormTitles>
+		<Title localeLangCode="en" localeCountryCode="CA" title="C Fetch Data Post Award Submission"/>
+		<Title localeLangCode="fr" localeCountryCode="CA" title="C Fetch Data Post Award Submission"/>
+		<Title localeLangCode="en" localeCountryCode="GB" title="C Fetch Data Post Award Submission"/>
+		<Title localeLangCode="en" localeCountryCode="US" title="C Fetch Data Post Award Submission"/>
+	</FormTitles>
+	<DatePublished date="2013.10.15 AD 13:12:33 IST"/>
+	<RenderTombstoneData value="0"/>
+	<RenderPubApplyNowButton value="0"/>
+	<RenderNextBackButtons value="true"/>
+	<FormFunctions/>
+	<Formlets>
+		<Formlet identifier="All_Fields" className="com.infoterra.grantium.model.forms.formlets.EFormQuestionHolder" Order="0">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="All_Fields"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="All_Fields"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="All_Fields"/>
+			</FormletMenuTitles>
+			<FormletFunctions>
+				<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields>
+				<Field identifier="Long Text" className="com.infoterra.grantium.model.forms.fields.Field_LongText" mandatory="false">
+					<LineSpacing value="0"/>
+					<FieldFunctions>
+						<Function type="Calculated Visibility" className="com.infoterra.grantium.model.forms.functions.ComputedVisibility">
+							<Properties>
+								<Property propertyName="stringParameter1">
+									<Value/>
+								</Property>
+								<Property propertyName="expression">
+									<Value valueClass="java.lang.String"><![CDATA[visible = false;
+foreach(item in %{G3Utils}.getEFormFieldDataFromAppProfile("Field_7|F"))
+{
+  if (item == "Alaska")
+      visible = true;
+}
+visible;]]></Value>
+								</Property>
+							</Properties>
+						</Function>
+					</FieldFunctions>
+					<Descriptions>
+						<Description localeLangCode="en" localeCountryCode="CA" title=""/>
+						<Description localeLangCode="fr" localeCountryCode="CA" title=""/>
+						<Description localeLangCode="en" localeCountryCode="GB" title=""/>
+						<Description localeLangCode="en" localeCountryCode="US" title=""/>
+					</Descriptions>
+					<FieldLabels>
+						<Label localeLangCode="en" localeCountryCode="CA" title="Long Text:"/>
+						<Label localeLangCode="fr" localeCountryCode="CA" title="Long Text:"/>
+						<Label localeLangCode="en" localeCountryCode="GB" title="Long Text:"/>
+						<Label localeLangCode="en" localeCountryCode="US" title="Long Text:"/>
+					</FieldLabels>
+					<ToolTips>
+						<ToolTip localeLangCode="en" localeCountryCode="CA" title=""/>
+						<ToolTip localeLangCode="fr" localeCountryCode="CA" title=""/>
+						<ToolTip localeLangCode="en" localeCountryCode="GB" title=""/>
+						<ToolTip localeLangCode="en" localeCountryCode="US" title=""/>
+					</ToolTips>
+					<Properties>
+						<Property propertyName="minimumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+						</Property>
+						<Property propertyName="maximumLength">
+							<Value valueClass="java.lang.Integer"><![CDATA[2000]]></Value>
+						</Property>
+						<Property propertyName="numLines">
+							<Value valueClass="java.lang.Integer"><![CDATA[4]]></Value>
+						</Property>
+						<Property propertyName="displayStyle">
+							<Value valueClass="java.lang.Integer"><![CDATA[3]]></Value>
+						</Property>
+					</Properties>
+				</Field>
+			</Fields>
+		</Formlet>
+		<Formlet identifier="Submission Summary" className="com.infoterra.grantium.model.forms.formlets.SubmissionSummary" Order="1">
+			<PrintOptions inclusion="2" pageBreak="1" pageOrientation="0"/>
+			<FormletTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Submission Summary"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Submission Summary"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Submission Summary"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Submission Summary"/>
+			</FormletTitles>
+			<MenuOptions indentLevel="0"/>
+			<IncludeInSummary include="false"/>
+			<FormletMenuTitles>
+				<Title localeLangCode="en" localeCountryCode="CA" title="Submission Summary"/>
+				<Title localeLangCode="fr" localeCountryCode="CA" title="Submission Summary"/>
+				<Title localeLangCode="en" localeCountryCode="GB" title="Submission Summary"/>
+				<Title localeLangCode="en" localeCountryCode="US" title="Submission Summary"/>
+			</FormletMenuTitles>
+			<Properties>
+				<Property propertyName="displayLastUpdatedTime_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayLastUpdatedBy">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow_wrapper">
+					<Value valueClass="java.lang.Integer"><![CDATA[0]]></Value>
+				</Property>
+				<Property propertyName="displayFieldsBelow">
+					<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+				</Property>
+			</Properties>
+			<FormletFunctions>
+				<Function type="Mandatory Field Validator" className="com.infoterra.grantium.model.forms.functions.MandatoryFieldValidator">
+					<Properties>
+						<Property propertyName="booleanParameter1">
+							<Value valueClass="java.lang.Boolean"><![CDATA[false]]></Value>
+						</Property>
+					</Properties>
+				</Function>
+			</FormletFunctions>
+			<Fields/>
+		</Formlet>
+	</Formlets>
+	<OrganizationalHierarchy>
+		<PrimaryOrganization>
+			<HierarchicalOrganization identifier="G3"/>
+			<OrganizationAccessType typeKey="G3_ORGANIZATION_ACCESS_LEVEL_RESTRICTED"/>
+		</PrimaryOrganization>
+	</OrganizationalHierarchy>
+</Form>

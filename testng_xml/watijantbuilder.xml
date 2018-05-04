@@ -1,0 +1,233 @@
+<project default="runTest" basedir=".">
+	
+	<taskdef resource="testngtasks" classpath="Lib/TestNGLib/testng-5.5-jdk15.jar" />
+	
+	<taskdef name="querybaseurls" classname="com.grantium.deployment.anttasks.QueryBaseURLSTask">
+		<classpath>
+			<fileset dir="../antlib/autodeploy/lib">
+				<include name="**/*.jar"/>
+			</fileset>
+		</classpath>
+	</taskdef>
+	
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<fileset dir="../antlib/ant-contrib">
+				<include name="**/*.jar"/>
+			</fileset>
+		</classpath>
+	</taskdef>
+	
+	<target name="init">
+		<mkdir dir="build/classes"/>
+		<if>
+		 	<equals arg1="${buildVersion}" arg2=""/>
+		 	<then>
+		 		<property name="$" value=""/>
+		 	</then>
+		 </if>
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="build/classes" debug="true">
+			<classpath>
+				<fileset dir="Lib">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="runTest" depends="compile">
+		<!--
+		<property name="tagBranchPath" value="/tags/g3_TRUNK_hourly_2007_Apr_10_14_00" />
+		<property name="buildVersion" value="g3_TRUNK_hourly_2007_Apr_10_14_00" />
+		-->
+		<echo message="passed buildVersion=${buildVersion}" />
+		<echo message="passed tagBranchPath=${tagBranchPath}" />
+		<if>
+			<isset property="buildVersion"/>
+			 	<then>
+					<property name="tagBranchPath" value="/tags/${buildVersion}"/>
+			 	</then>
+			<else>
+		 		<property name="tagBranchPath" value="/trunk" />
+			</else>
+		</if>
+		<if>
+		 	<isset property="artifactsDir" />
+			 	<then>
+			 		<echo message="artifactsDir=${artifactsDir}" />
+			 	</then>
+			    <else>
+			    	<property name="artifactsDir" value="${basedir}/build/artifacts" />
+		    	</else>
+		</if>
+		
+		<echo message="made buildVersion=${buildVersion}" />
+		<echo message="made tagBranchPath=${tagBranchPath}" />
+		
+		<!-- sleep for 10min to allow deployment to complete -->
+     	<if>
+     		<isset property="grantium.watij.sleep"/>
+     		<then>
+     			<echo message="Sleeping for ${grantium.watij.sleep} minutes" />
+     			<sleep minutes="${grantium.watij.sleep}" />
+     		</then>
+		</if>
+				
+		
+		<querybaseurls tagBranchPath="${tagBranchPath}" 
+									   deploymentmanagerhost="infoterra-dev02.infoterra.com"
+									   deploymentmanagerport="4242"
+									   baseurlsoutname="baseURLS"
+									   />
+		
+		<if>
+			<equals arg1="${baseURLS}" arg2="" />
+			<then>
+				<fail message="No base URLS to run against" />
+			</then>
+		</if>
+		
+		
+		
+		<foreach list="${baseURLS}" delimiter="," param="baseURL" target="runTestForBaseURLS">
+			<param name="tagBranchPath" value="${tagBranchPath}"/>
+			<param name="artifactsDir" value="${artifactsDir}/${tagBranchPath}"/>
+			<param name="baseURL" value="${baseURL}" />
+		</foreach>
+		
+	</target>
+	
+	<target name="sanityTest" depends="compile">
+		<!--
+		<property name="tagBranchPath" value="/tags/g3_TRUNK_hourly_2007_Apr_10_14_00" />
+		<property name="buildVersion" value="g3_TRUNK_hourly_2007_Apr_10_14_00" />
+		-->
+		<echo message="passed buildVersion=${buildVersion}" />
+		<echo message="passed tagBranchPath=${tagBranchPath}" />
+		<if>
+			<isset property="buildVersion"/>
+			 	<then>
+					<property name="tagBranchPath" value="/tags/${buildVersion}"/>
+			 	</then>
+			<else>
+		 		<property name="tagBranchPath" value="/trunk" />
+			</else>
+		</if>
+		<if>
+		 	<isset property="artifactsDir" />
+			 	<then>
+			 		<echo message="artifactsDir=${artifactsDir}" />
+			 	</then>
+			    <else>
+			    	<property name="artifactsDir" value="${basedir}/build/artifacts" />
+		    	</else>
+		</if>
+		
+		<echo message="made buildVersion=${buildVersion}" />
+		<echo message="made tagBranchPath=${tagBranchPath}" />
+		
+		<!-- sleep for 10min to allow deployment to complete -->
+     	<if>
+     		<isset property="grantium.watij.sleep"/>
+     		<then>
+     			<echo message="Sleeping for ${grantium.watij.sleep} minutes" />
+     			<sleep minutes="${grantium.watij.sleep}" />
+     		</then>
+		</if>
+				
+		
+		<querybaseurls tagBranchPath="${tagBranchPath}" 
+									   deploymentmanagerhost="infoterra-dev02.infoterra.com"
+									   deploymentmanagerport="4242"
+									   baseurlsoutname="baseURLS"
+									   />
+		
+		<if>
+			<equals arg1="${baseURLS}" arg2="" />
+			<then>
+				<fail message="No base URLS to run against" />
+			</then>
+		</if>
+		
+		
+		
+		<foreach list="${baseURLS}" delimiter="," param="baseURL" target="sanityTestForBaseURLS">
+			<param name="tagBranchPath" value="${tagBranchPath}"/>
+			<param name="artifactsDir" value="${artifactsDir}/${tagBranchPath}"/>
+			<param name="baseURL" value="${baseURL}" />
+		</foreach>
+		
+	</target>
+	
+	<target name="runTestForBaseURLS">
+		<echo message="Running test for baseURL: ${baseURL}"/>
+		<echo message="Running test with tagBranchPath: ${tagBranchPath}"/>
+		 
+		 
+		 <testng outputdir="${artifactsDir}/reports/testng-watij"
+						verbose="0"
+						dumpcommand="true"
+						failureproperty="ngTestsFailed"
+						annotations="JDK"
+				>
+					<xmlfileset file="testng-gnrl.xml"/>		
+					<sourcedir>
+						<dirset dir="src" />
+					</sourcedir>
+					<classpath>
+						<pathelement path="build/classes"/>
+						<fileset dir="Lib">
+							<include name="**/*.jar"/>
+						</fileset>
+					</classpath>
+		 			
+	 				<sysproperty key="grantium.watij.tagBranchPath" value="${tagBranchPath}"/>
+					<sysproperty key="grantium.watij.basedir" value="${basedir}\grantium_qa_watij\src\test_Suite\xml_Files\"/>	
+					<sysproperty key="grantium.watij.serverBase" value="${baseURL}" />
+				 	<sysproperty key="log4j.configuration" value="file:///${basedir}/src/log4j.xml" />
+				</testng>
+						
+				<fail if="ngTestsFailed"> 
+					Watij TestNG Tests Failed, so we are failing the build...
+				</fail>
+
+	</target>
+	
+	<target name="sanityTestForBaseURLS">
+		<echo message="Running sanityTest for baseURL: ${baseURL}"/>
+		<echo message="Running sanityTest with tagBranchPath: ${tagBranchPath}"/>
+		 
+		 
+		 <testng outputdir="${artifactsDir}/reports/testng-watij"
+						verbose="0"
+						dumpcommand="true"
+						failureproperty="ngTestsFailed"
+						annotations="JDK"
+				>
+					<xmlfileset file="testng-sanity.xml"/>		
+					<sourcedir>
+						<dirset dir="src" />
+					</sourcedir>
+					<classpath>
+						<pathelement path="build/classes"/>
+						<fileset dir="Lib">
+							<include name="**/*.jar"/>
+						</fileset>
+					</classpath>
+		 			
+	 				<sysproperty key="grantium.watij.tagBranchPath" value="${tagBranchPath}"/>
+					<sysproperty key="grantium.watij.basedir" value="src\test_Suite\xml_Files\"/>	
+					<sysproperty key="grantium.watij.serverBase" value="${baseURL}" />
+				 	<sysproperty key="log4j.configuration" value="file:///${basedir}/src/log4j.xml" />
+				</testng>
+						
+				<fail if="ngTestsFailed"> 
+					Watij TestNG Tests Failed, so we are failing the build...
+				</fail>
+
+	</target>
+	
+</project>

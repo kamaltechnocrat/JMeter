@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watij-AllSuites-Report" verbose="9" annotations="jdk">
+
+<test name="PO Managing Non Workflow Data Setup">
+		<groups>
+			<run>
+				<exclude name="FetchNonWorkFlowData" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Must_RunFirst" />
+		</classes>
+	</test>
+	
+
+<test name="PO Managing Non Workflow Data">
+		<groups>
+			<run>
+				<include name="FetchNonWorkFlowData" />
+			</run>
+		</groups>
+		
+		<classes>	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_AdminEfromData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_AppProfileData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_appProfileMajorFunctionsData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_BudgetEformData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_GridViewofList_Data" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_OrganizationEformData" />	
+			<class name="test_Suite.tests.r5_1.fetch_non_WorkFlow_Data.Test_ProjectEformData" />		
+		</classes>
+	</test>	
+	</suite>
